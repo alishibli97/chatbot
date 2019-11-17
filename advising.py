@@ -4,7 +4,7 @@ with open('D:/ali/aub courses/EECE/EECE 634/project/advising.scenario-1.train.js
     data = json.load(json_file)
     i=0
     for convo in data:
-#        print("message-so far in conversation "+str(i)+":",data[3])
+#        print("message-so far in conversation "+str(i)+":",data['messages-so-far'])
         print("options-for-correct-answers in conversation "+str(i)+":",convo['options-for-correct-answers'])
         print("")
         i+=1
