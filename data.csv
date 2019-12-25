@@ -1,4 +1,4 @@
-user1,user2,Link,Type,,,,
+ï»¿user1,user2,Link,Type,,,,
 Hi,Hello,,0,,,,
 Hello,Hi,,0,,,,
 Hey,Hey,,0,,,Type,Category
@@ -29,33 +29,59 @@ What library should i use to download a copy of Gmail emails through Python scri
 Can you recommend what Python library to use for accessing AMQP (RabbitMQ)? From my research pika seems to be the preferred one.,"Pika is the RabbitMQ recommended library, you might also want to look at Celery ",https://stackoverflow.com/questions/5031606/good-python-library-for-amqp,1,,,,
 What is the simplest way - or library - to add a subscriber to mailchimp with python 2.5 on google app engine?,The MailChimp API has all the details for the functionality that you want.I have not used any of the Python libraries.,https://stackoverflow.com/questions/11667551/add-subscriber-to-mailchimp-with-python,1,,,,
 What's a good Python library to manipulate frames of a video file?,"I've often needed the same thing and as far as I know, there is no good solution with bindings in Python. Where 30 is the target frame rate, 320x240 the image dimension and tmp%06d.jpg the pattern to use to store the generated jpegs. Then you can use PIL to manipulate each frame and mencoder or ffmpeg to stich the images back again into a movie. Obviously, you'll lose the audio track.",https://stackoverflow.com/questions/5619053/whats-a-good-python-library-to-manipulate-frames-of-a-video-file,1,,,,
-What library can I use to implement event driven programming in Python?,It looks like you want a library like PyDispatcher for signal registration and dispatching rather than an event-loop for networking.,https://stackoverflow.com/questions/9526574/what-library-can-i-use-to-implement-event-driven-programming-in-python,1,,,,
+What library can I use to implement event driven programming in Python?,It looks like you want a library likeÂ PyDispatcherÂ for signal registration and dispatching rather than an event-loop for networking.,https://stackoverflow.com/questions/9526574/what-library-can-i-use-to-implement-event-driven-programming-in-python,1,,,,
 What would be a good python library to use to write a portable version of pacman with nice graphics?,and what about PyGame,https://stackoverflow.com/questions/5743946/what-would-be-a-good-python-library-to-use-to-write-a-portable-version-of-pacman,1,,,,
 How to convert HTML CSS class into style in pure python - what kind of library could be used on GAE,Take a look at xhtml2pdf (under Apache License) for the code that combines the HTML and CSS together and then change the output from PDF to HTML.,https://stackoverflow.com/questions/5670684/how-to-convert-html-css-class-into-style-in-pure-python-what-kind-of-library-c,1,,,,
-Any library to Tidy Up Python Code using pep8 conventions?,You can take a look to PythonTidy which is officially working till python2.5 (and seems to be supported in python2.6) :,https://stackoverflow.com/questions/8213845/library-to-tidy-up-python-code-using-pep8-conventions,1,,,,
-I have a database of which products every user has viewed and I want to recommend a product based on what similar users have viewed. Is there a Python library that can achieve this?,You can check out pysuggest.,https://stackoverflow.com/questions/2136941/efficient-library-to-recommend-product-based-on-user-history,1,,,,
+Any library to Tidy Up Python Code using pep8 conventions?,You can take a look toÂ PythonTidyÂ which is officially working till python2.5 (and seems to be supported in python2.6) :,https://stackoverflow.com/questions/8213845/library-to-tidy-up-python-code-using-pep8-conventions,1,,,,
+I have a database of which products every user has viewed and I want to recommend a product based on what similar users have viewed. Is there a Python library that can achieve this?,You can check outÂ pysuggest.,https://stackoverflow.com/questions/2136941/efficient-library-to-recommend-product-based-on-user-history,1,,,,
 what python library should we use to extract table with complex headers from a PDF?,PDF does not have a dedicated method to describe tables.,https://stackoverflow.com/questions/5652a7189/what-python-library-should-we-use-to-extract-table-with-complex-headers-from-a-p,1,,,,
 Python - Any Library to create mp3 files?,PyMedia,https://stackoverflow.com/questions/9976900/python-any-library-to-create-mp3-files,1,,,,
 What is the best library in python to use to interface with a SQL database?,Without any detail we cannot reasonably answer this. ,https://stackoverflow.com/questions/2532135/what-is-the-best-library-in-python-to-use-to-interface-with-a-sql-database,1,,,,
-What SOAP client libraries exist for Python?,"If you only need SOAP client, there is well maintained library called zeep. ",https://stackoverflow.com/questions/206154/what-soap-client-libraries-exist-for-python-and-where-is-the-documentation-for/206964#206964,1,,,,
-"What would be the best Python library to use when producing text-based images requiring things such as leading, kerning, outlines, drop-shadows, etc?","What you seem to want to do is exactly what LaTeX was designed for. With plasTeX, you can convert LaTeX markup to an image. ",https://stackoverflow.com/questions/1972044/image-library-with-advanced-text-effects,1,,,,
+What SOAP client libraries exist for Python?,"If you only need SOAP client, there is well maintained library calledÂ zeep. ",https://stackoverflow.com/questions/206154/what-soap-client-libraries-exist-for-python-and-where-is-the-documentation-for/206964#206964,1,,,,
+"What would be the best Python library to use when producing text-based images requiring things such as leading, kerning, outlines, drop-shadows, etc?","What you seem to want to do is exactly what LaTeX was designed for. WithÂ plasTeX, you can convert LaTeX markup to an image.Â ",https://stackoverflow.com/questions/1972044/image-library-with-advanced-text-effects,1,,,,
 What libraries are good for audio feature vector representation? ,"If I'm not mistaken, scikit.audiolab is merely for reading/writing audio files but I think in addition you'll want to look at the signal processing libraries in scipy to actually build your feature vectors.",https://stackoverflow.com/questions/16818827/python-what-libraries-are-good-for-audio-feature-vector-representation,1,,,,
 What is the python library used to write rest service in python? ,"Several python solutions exists , here are some of them :Django REST ,Flask-RESTful,Sandman,Restless,Eve",https://stackoverflow.com/questions/27438985/what-is-the-python-library-used-to-write-rest-service-in-python,1,,,,
-Are there any NLP library to convert contractions words back?,"Normally, NLP libraries such as Spacy and NLTK do a good job doing tokenization transforming like ""It's"" into [""It"", ""'s""]. but transforming something like what's into [""what"", ""is""] is more problematic, because you can have examples such `""Amy's ballet studio"" where the ""'s"" is not ""is"".",,1,,,,
+Are there any NLP library to convert contractions words back?,"Normally, NLP libraries such asÂ SpacyÂ andÂ NLTKÂ do a good job doing tokenization transforming likeÂ ""It's""Â intoÂ [""It"", ""'s""]. but transforming something likeÂ what'sÂ intoÂ [""what"", ""is""]Â is more problematic, because you can have examples such `""Amy's ballet studio"" where the ""'s"" is not ""is"".",,1,,,,
 I would like to generate a heatmap in python with the axis labels being the field names and the rows names.What is the recommended library to use for that task?,you would probably benefit from looking at matplotlib/seaborn,https://stackoverflow.com/questions/45690898/create-a-heatmap-using-python,1,,,,
-What lightweight python library for simple scientific visualization in 3D,"Have you looked at mayavi? Don't know if it meets your definition of ""lightweight"", but it does seem popular and reasonably easy to use for its power.",https://stackoverflow.com/questions/1380861/what-lightweight-python-library-for-simple-scientific-visualization-in-3d,1,,,,
+What lightweight python library for simple scientific visualization in 3D,"Have you looked atÂ mayavi? Don't know if it meets your definition of ""lightweight"", but it does seem popular and reasonably easy to use for its power.",https://stackoverflow.com/questions/1380861/what-lightweight-python-library-for-simple-scientific-visualization-in-3d,1,,,,
 What library is the fastest to make hundreds of DNS queries in multi-tasking.,Twisted's DNS library is cross platform.,https://stackoverflow.com/questions/4034251/fastest-dns-library-for-python,1,,,,
-Which library must i import for s = Sound()?,You are probably referring to The Snack Sound Toolkit which doesn't appear to be maintained anymore.,https://stackoverflow.com/questions/33058483/which-library-must-i-import-for-s-sound,1,,,,
-"Which library to import in Python to read data from an Excel file, for automation testing using Selenium?","The xlrd library is what you are looking for to read excel files. And to write, you can use xlwt.",https://stackoverflow.com/questions/36548270/which-library-to-import-in-python-to-read-data-from-an-excel-file-for-automatio,1,,,,
-What stable Python library can I use to implement Hidden Markov Models? ,pomegranate library has support for HMM and the documentation is really helpful,https://datascience.stackexchange.com/questions/8460/python-library-to-implement-hidden-markov-models,1,,,,
-Best Python library for statistical inference?,"statsmodels is a good, and fairly standard, package to statistics.For Bayesian interference you can go with PyMC - ",https://datascience.stackexchange.com/questions/5122/best-python-library-for-statistical-inference,1,,,,
+Which library must i import for s = Sound()?,You are probably referring toÂ The Snack Sound ToolkitÂ which doesn't appear to be maintained anymore.,https://stackoverflow.com/questions/33058483/which-library-must-i-import-for-s-sound,1,,,,
+"Which library to import in Python to read data from an Excel file, for automation testing using Selenium?","TheÂ xlrdÂ library is what you are looking for to read excel files. And to write, you can useÂ xlwt.",https://stackoverflow.com/questions/36548270/which-library-to-import-in-python-to-read-data-from-an-excel-file-for-automatio,1,,,,
+WhatÂ stableÂ Python library can I use to implement Hidden Markov Models?Â ,pomegranateÂ library has support for HMM and the documentation is really helpful,https://datascience.stackexchange.com/questions/8460/python-library-to-implement-hidden-markov-models,1,,,,
+Best Python library for statistical inference?,"statsmodelsÂ is a good, and fairly standard, package to statistics.For Bayesian interference you can go withÂ PyMCÂ -Â ",https://datascience.stackexchange.com/questions/5122/best-python-library-for-statistical-inference,1,,,,
 What Python library can help visualize/render a 4d (coordinates+position) matrix?,Is this what your looking for:Slicer4python,https://stackoverflow.com/questions/16721855/what-python-library-can-help-visualize-render-a-4d-coordinatesposition-matrix,1,,,,
-What does “SyntaxError: Missing parentheses in call to 'print'” mean in Python?,"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary.",https://stackoverflow.com/questions/25445439/what-does-syntaxerror-missing-parentheses-in-call-to-print-mean-in-python,2,,,,
-input() error - NameError: name '…' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use raw_input.",https://stackoverflow.com/questions/21122540/input-error-nameerror-name-is-not-defined,2,,,,
-input() error - NameError: name '…' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use raw_input.",https://stackoverflow.com/questions/21122540/input-error-nameerror-name-is-not-defined,2,,,,
-I'm getting Key error in python.Can anyone please explain why this is happening?,A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.,https://stackoverflow.com/questions/10116518/im-getting-key-error-in-python,2,,,,
-"Whenever I try to import requests, I get an error saying ImportError: No module named requests.",Use pip install requests,https://stackoverflow.com/questions/17309288/importerror-no-module-named-requests,2,,,,
-When I try to run the code it gives me the following error:  “ 'dict' object has no attribute 'iteritems' ”,"if you are in python3 , use dict.items() instead of dict.iteritems()",https://stackoverflow.com/questions/30418481/error-dict-object-has-no-attribute-iteritems,2,,,,
+"What I'm looking for is a Python web development framework that is integrated with an ORM, is able to generate the interfaces BUT provides an easy way for me to customize the interface to create an AJAX intensive app","Various options in Python you can look at -
+
+Django (obviously!)
+Pylons
+Nagare
+Flask
+Django is really good. And no your info is not correct, HTML templates are real easy to edit them.
+
+",https://stackoverflow.com/questions/4260324/i-need-a-good-web-development-framework-for-python,1,,,,
+Python - Best GUI library for the job?,PySide: http://www.pyside.org/,https://stackoverflow.com/questions/3743572/python-best-gui-library-for-the-job,1,,,,
+What networking libraries/frameworks exist for Python?,Consider the Twisted framework.,https://stackoverflow.com/questions/1468780/what-networking-libraries-frameworks-exist-for-python/1469904,1,,,,
+"I have been using Django for web-development, and have become quite fond of that framework. However, I would like to use a similar framework but for more general network applications. Is there such a framework? ",Twisted should be able to help you. ,https://stackoverflow.com/questions/3650818/general-network-mvc-framework-for-python,1,,,,
+" I get this error:
+
+TypeError: '<' not supported between instances of 'int' and 'list'","all(3 < i for i in [4, 5])
+all acts on a sequence of Booleans; it does not distribute over arbitrary arguments. ",https://stackoverflow.com/questions/58403569/python-typeerror-not-supported-between-instances-of-int-and-list,2,,,,
+"So, here is the code I am running and it's giving me a TypeError. I am trying to traverse a 2d array and then returning the path from starting point to the target point. This is the error I am getting:
+
+path = Grid.main(*Grid.get_start_cordinates())
+
+TypeError: get_start_cordinates() missing 1 required positional argument: 'self'",use the object you created not the class.,https://stackoverflow.com/questions/58078382/typeerror-while-running-bfs-algo-code-in-python,2,,,,
+" Can someone explain what is a memory error, and how to overcome this problem?","A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead.",https://stackoverflow.com/questions/11283220/memory-error-in-python,2,,,,
+What does â€œSyntaxError: Missing parentheses in call to 'print'â€ mean in Python?,"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary.",https://stackoverflow.com/questions/25445439/what-does-syntaxerror-missing-parentheses-in-call-to-print-mean-in-python,2,,,,
+input() error - NameError: name 'â€¦' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, useÂ raw_input.",https://stackoverflow.com/questions/21122540/input-error-nameerror-name-is-not-defined,2,,,,
+input() error - NameError: name 'â€¦' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, useÂ raw_input.",https://stackoverflow.com/questions/21122540/input-error-nameerror-name-is-not-defined,2,,,,
+I'm getting Key error in python.Can anyone please explain why this is happening? KeyError: 'variablename',A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.,https://stackoverflow.com/questions/10116518/im-getting-key-error-in-python,2,,,,
+"Whenever I try to import requests, I get an error saying ImportError: No module named requests.",UseÂ pip install requests,https://stackoverflow.com/questions/17309288/importerror-no-module-named-requests,2,,,,
+When I try to run the code it gives me the following error:  â€œ 'dict' object has no attribute 'iteritems' â€,"if you are in python3 , useÂ dict.items()Â instead ofÂ dict.iteritems()",https://stackoverflow.com/questions/30418481/error-dict-object-has-no-attribute-iteritems,2,,,,
 How to fix Python Enum - AttributeError(name) from None error?,"The correct syntax for defining an enum is:
 
 class Status(Enum):
@@ -85,19 +111,101 @@ But I get the error:
 ImportError: No module named 'file.py'; file is not a package","There isn't any need to add file.py while importing. Just write from file import function, and then call the function using function(a, b). The reason why this may not work, is because file is one of Python's core modules, so I suggest you change the name of your file.
 
 Note that if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.",https://stackoverflow.com/questions/20309456/call-a-function-from-another-file-in-python,2,,,,
-str' object has no attribute 'decode'. Python 3 error? AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore.",https://stackoverflow.com/questions/28583565/str-object-has-no-attribute-decode-python-3-error,2,,,,
+str' object has no attribute 'decode'. Python 3 error? AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that isÂ already decoded. You have aÂ str, there is no need to decode from UTF-8 anymore.",https://stackoverflow.com/questions/28583565/str-object-has-no-attribute-decode-python-3-error,2,,,,
 But have got no idea to solve the error.TypeError: unhashable type: 'list',You can't have a set of lists since lists are not hashable. There are several answers here. you can check this one out,https://stackoverflow.com/questions/28539245/python-error-unhashable-type-list,2,,,,
 "tried reduce(xor, [1,2,3,4]) got the following error NameError: name 'reduce' is not defined in Python","You can add
 
 from functools import reduce
 before you use the reduce.",https://stackoverflow.com/questions/8689184/nameerror-name-reduce-is-not-defined-in-python,2,,,,
-TypeError: Can't convert 'int' object to str implicitly. Does anyone know how to solve this? Thanks ahead.,"You cannot concatenate a string with an int. You would need to convert your int to a string using the str function, or use formatting to format your output.",https://stackoverflow.com/questions/13654168/typeerror-cant-convert-int-object-to-str-implicitly,2,,,,
+TypeError: Can't convert 'int' object to str implicitly. Does anyone know how to solve this? Thanks ahead.,"You cannot concatenate aÂ stringÂ with anÂ int. You would need to convert yourÂ intÂ to aÂ stringÂ using theÂ strÂ function, or useÂ formattingÂ to format your output.",https://stackoverflow.com/questions/13654168/typeerror-cant-convert-int-object-to-str-implicitly,2,,,,
 "I'm trying learn Python (3 to be more specific) and I'm getting this error:
 ValueError: zero length field name in format
 I googled it and I found out you need to specify the numbers","I'm gonna guess that you are running python 2.6 by accident somehow.
 
 This feature is only available for at least 3.1 if you are using python 3, or 2.7 if you are using python 2.",https://stackoverflow.com/questions/5446964/valueerror-zero-length-field-name-in-format-error-in-python-3-0-3-1-3-2,2,,,,
 here is the error I get: IndexError: list index out of range,"As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Without debugging your code fully, I would check the line where you are adding guesses based on input",https://stackoverflow.com/questions/9256013/python-indexerror-list-index-out-of-range,2,,,,
+I am trying to read in a JSON file into Python pandas (0.14.0) data frame.I am getting the following error: ValueError: Trailing data,"From version 0.19.0 of Pandas you can use the lines parameter, like so:
+import pandas as pd
+data = pd.read_json('/path/to/file.json', lines=True)",https://stackoverflow.com/questions/30088006/loading-a-file-with-more-than-one-line-of-json-into-pandas,2,,,,
+When I execute this Python code I am getting EOFError: EOF when reading a line,"EOF error is expected if no data is given when calling input or raw_input as explained in the documentation.
+
+Also, it's advisable to use raw_input and not input when getting input from the user on python 2",https://stackoverflow.com/questions/35668520/python-eof-error-when-reading-input,2,,,,
+"For the entire time-series I'm trying to divide today's value by yesterdays and log the result using the following:
+
+df[""B""] = math.log(df[""A""] / df[""A""].shift(1))
+However I get the following error:
+
+TypeError: cannot convert the series to <class 'float'>
+Could someone let me know how to fix this please?","You can use numpy.log instead. Math.log is expecting a single number, not array.",https://stackoverflow.com/questions/42988348/typeerror-cannot-convert-the-series-to-class-float,2,,,,
+"My code generates this error:
+
+TypeError: wrapper() takes exactly 1 argument (2 given)
+I know I'm creating the api instance correctly as I'm using it to successfully call the linode_ip_list method prior to calling the disk list method.
+
+Just to see what happens, if I don't provide the linode_id argument, I get this error:
+
+linode.api.MissingRequiredArgument: 'LinodeID'
+If I call the method with a linode ID, the error says I'm giving it two arguments. But if I don't give it any arguments, it says I'm missing an argument. At this point, I'm not sure if the LinodeID should be an integer or a string but I get the same error in either case. How do I call this method so that I don't get the TypeError argument?
+
+Thanks!","The @__api_request decorator takes a list for each of its arguments:
+
+def __api_request(required=[], optional=[], returns=[]):
+    """"""Decorator to define required and optional parameters""""""
+    for k in required:
+      [...]
+But, you are passing in an integer
+
+linode_id = 1800300
+disks = api.linode_disk_list(linode_id)
+And you are getting conflicting error message about the amount of parameters because the wrapper() method takes an arbitrary amount of keyword arguments
+
+ def wrapper(self, **kw):",https://stackoverflow.com/questions/36727822/i-dont-understand-this-python-typeerror,2,,,,
+It all pretty much runs smoothly but I can't figure out how to stop a type-error ocurring about half way through.TypeError: unsupported operand type(s) for +: 'int' and 'str'," you can't do arithmetic on strings. Python is a dynamically-typed language, but not a weakly-typed one. level= raw_input('blah')
+try:
+    level= int(level)
+except ValueError:
+    # user put something non-numeric in, tell them off",https://stackoverflow.com/questions/320827/python-type-error-issue,2,,,,
+"I am trying to write an assert function in Python to test whether the output of my function is a particular array of values.
+
+Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.]), I get the following error:
+
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",the assert function doesn't work well when working with numpy. Use allclose() instead.,https://stackoverflow.com/questions/58033350/python-assert-function-valueerror-the-truth-value-of-an-array-with-more-than,2,,,,
+"Throws this error message:
+ValueError: setting an array element with a sequence.
+Can anyone show me what to do to fix the problem in the broken code above so that it stops throwing an error message?","From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+
+numpy.array([[1,2], [2, 3, 4]])
+or
+
+numpy.array([[1,2], [2, [3, 4]]])
+will yield this error message, because the shape of the input list isn't a (generalised) ""box"" that can be turned into a multidimensional array. So probably UnFilteredDuringExSummaryOfMeansArray contains sequences of different lengths.
+
+Edit: Another possible cause for this error message is trying to use a string as an element in an array of type float:
+
+numpy.array([1.2, ""abc""], dtype=float)
+That is what you are trying according to your edit. If you really want to have a NumPy array containing both strings and floats, you could use the dtype object, which enables the array to hold arbitrary Python objects:
+
+numpy.array([1.2, ""abc""], dtype=object)
+Without knowing what your code shall accomplish, I can't judge if this is what you want.So you need to work with a scalar p, or perform your sum directly on the array.",https://stackoverflow.com/questions/4674473/valueerror-setting-an-array-element-with-a-sequence,2,,,,
+I'm getting the following error when executing the following script:TypeError: 'NoneType' object is not iterable,"The problem is that get_playable_podcast has no return statement. In such a case, Python defaults to returning None - which you then pass into compile_playable_podcast. Since None is not iterable, compile_playable_podcast rightfully raises a TypeError.",https://stackoverflow.com/questions/57123708/exceptions-typeerror-when-executing-python-script,2,,,,
+Why am I getting 'str' object is not callable?,"Because on line 25 you defined Fill as a string
+
+ 
+
+Fill = ""DEMFWfill""
+
+ 
+
+Then you tried to call it on line 32
+
+ 
+
+outFill = Fill(DEMrs)
+
+ 
+
+because you overwrote the function 'Fill' with a string",https://community.esri.com/thread/205799-why-am-i-getting-str-object-is-not-callable,2,,,,
+"Why am I getting the error ""TypeError: list indices must be integers or slices, not str""? But if I change the values in the list to integers, wouldn't doing items.remove(items[1]) just remove the item in index position 1?","You are using a string as an integer here items.remove(items['1']), remove does not work like that.",https://stackoverflow.com/questions/52005295/python-typeerror-with-lists,2,,,,
 How to make a chain of function decorators?,Check out the documentation of how decorators work. You should use the at @ operator.,https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators,5,,,,
 How do I get the index of an item in a list?,You can use the index operator on the list.,https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-given-a-list-containing-it-in-python,5,,,,
 How do I pass a variable by reference?,"Arguments are passed by assignment. So if you pass a mutable object into a method, the method gets a reference to the same object and you can mutate it.",https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference,5,,,,
