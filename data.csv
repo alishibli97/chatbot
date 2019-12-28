@@ -1,11 +1,11 @@
 user1,user2,Link,Type,<U>appened user1,<U>appended user2,<U>appended type<END>
-Bye,Bye,,0,,,
-ok,Ok.,,0,,,
-are you self-conscious?,"Everything in this world is magic, except for the magician; for in that sleep, what dreams may come.",,0,,,
-Hi,Hello,,0,<U>Hi,<U>Hello,<U>0<END>
-Hello,Hi,,0,<U>Hello,<U>Hi,<U>0<END>
-Hey,Hey,,0,<U>Hey,<U>Hey,<U>0<END>
-Yo,Yo,,0,<U>Yo,<U>Yo,<U>0<END>
+Bye,Bye,,0,<U>Bye,<U>Bye,<U>0
+ok,Ok.,,0,<U>ok,<U>Ok.,<U>0
+are you self-conscious?,"Everything in this world is magic, except for the magician; for in that sleep, what dreams may come.",,0,<U>are you self-conscious?,"<U>Everything in this world is magic, except for the magician; for in that sleep, what dreams may come.",<U>0
+Hi,Hello,,0,<U>Hi,<U>Hello,<U>0
+Hello,Hi,,0,<U>Hello,<U>Hi,<U>0
+Hey,Hey,,0,<U>Hey,<U>Hey,<U>0
+Yo,Yo,,0,<U>Yo,<U>Yo,<U>0
 What's up?,Nothing much,,0,<U>What's up?,<U>Nothing much,<U>0<END>
 How are you?,"I am good, and you?",,0,<U>How are you?,"<U>I am good, and you?",<U>0<END>
 What are you doing?,Talking with you.,,0,<U>What are you doing?,<U>Talking with you.,<U>0<END>
