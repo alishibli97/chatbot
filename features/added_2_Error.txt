@@ -34,7 +34,7 @@ end-of-file condition
 operation fail
 module is not found
 out of range
-key is not found
+key (|is )not found
 out of memory
 not found
 exception
