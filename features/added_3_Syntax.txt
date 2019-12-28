@@ -1,3 +1,2 @@
-How do I write
-How do we write
+How (do|can|would) (I|we) write
 How is .* written

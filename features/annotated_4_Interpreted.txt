@@ -1,1 +1,1 @@
-[]
+["interpreted", "interpret", "interprets", "interpretations", "interpretor"]
