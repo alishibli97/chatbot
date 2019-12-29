@@ -1,10 +1,13 @@
-﻿name,description
-Beautiful Soup,"Beautiful Soup is a library that makes it easy to scrape information from web pages. It sits atop an HTML or XML parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree."
-Statsmodels,Statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
+﻿name,description,keywords
+Beautiful Soup,"Beautiful Soup is a Python library for getting data out of HTML, XML, and other markup languages. Say you’ve found some webpages that display data relevant to your research, such as date or address information, but that do not provide any way of downloading the data directly. Beautiful Soup helps you pull particular content from a webpage, remove the HTML markup, and save the information. It is a tool for web scraping that helps you clean up and parse the documents you have pulled down from the web.
+
+The Beautiful Soup documentation will give you a sense of variety of things that the Beautiful Soup library will help with, from isolating titles and links, to extracting all of the text from the html tags, to altering the HTML within the document you’re working with.",scrape-webpage-web page-web-HTML-tags-parse-tree
+Statsmodels,Statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.,statistical-computations-descriptive statistics-estimation-inference-statistical models
+pomegranate,"pomegranate has a variety of built-in features that are implemented for all of the models. These include different training strategies such as semi-supervised learning, learning with missing values, and mini-batch learning. It also includes support for massive data supports with out-of-core learning, multi-threaded parallelism, and GPU support.",
 pomegranate,"pomegranate is a Python package that implements fast and flexible probabilistic models ranging from individual probability distributions to compositional models such as Bayesian networks and hidden Markov models. The core philosophy behind pomegranate is that all probabilistic models can be viewed as a probability distribution in that they all yield probability estimates for samples and can be updated given samples and their associated weights. The primary consequence of this view is that the components that are implemented in pomegranate can be stacked more flexibly than other packages. For example, one can build a Gaussian mixture model just as easily as building an exponential or log normal mixture model. But that’s not all! One can create a Bayes classifier that uses different types of distributions on each features, perhaps modeling time-associated features using an exponential distribution and counts using a Poisson distribution. Lastly, since these compositional models themselves can be viewed as probability distributions, one can build a mixture of Bayesian networks or a hidden Markov model Bayes’ classifier that makes predictions over sequences.
 
-In addition to a variety of probability distributions and models, pomegranate has a variety of built-in features that are implemented for all of the models. These include different training strategies such as semi-supervised learning, learning with missing values, and mini-batch learning. It also includes support for massive data supports with out-of-core learning, multi-threaded parallelism, and GPU support."
-xlrd,"Extract data from Excel spreadsheets (.xls and .xlsx, versions 2.0 onwards) on any platform. Pure Python (2.7, 3.4+). Strong support for Excel dates. Unicode-aware."
+",probabilistic models-probability-distributions-compositional models-bayesian-hidden markov models-HMM-estimates-samples-Gaussian mixture model-mixture model-Bayes-classifier-Poisson distribution-predictions-semi-supervised learning-missing values-mini-batch learning-GPU
+xlrd,"Extract data from Excel spreadsheets (.xls and .xlsx, versions 2.0 onwards) on any platform. Pure Python (2.7, 3.4+). Strong support for Excel dates. Unicode-aware.",Extract-data-Excel-spreadsheets-.xls-.xlsx
 Twisted,"Twisted is an event-based framework for internet applications, supporting Python 2.7 and Python 3.5+. It includes modules for many different purposes, including the following:
 
 twisted.web: HTTP clients and servers, HTML templating, and a WSGI server
@@ -14,8 +17,8 @@ twisted.mail: IMAPv4, POP3, SMTP clients and servers
 twisted.positioning: Tools for communicating with NMEA-compatible GPS receivers
 twisted.names: DNS client and tools for making your own DNS servers
 twisted.trial: A unit testing framework that integrates well with Twisted-based code.
-Twisted supports all major system event loops – select (all platforms), poll (most POSIX platforms), epoll (Linux), kqueue (FreeBSD, macOS), IOCP (Windows), and various GUI event loops (GTK+2/3, Qt, wxWidgets). Third-party reactors can plug into Twisted, and provide support for additional event loops."
-Twisted,"PyOpenGL is the most common cross platform Python binding to OpenGL and related APIs. The binding is created using the standard ctypes library, and is provided under an extremely liberal BSD-style Open-Source license. OpenGL v1.1 to 4.4
+Twisted supports all major system event loops – select (all platforms), poll (most POSIX platforms), epoll (Linux), kqueue (FreeBSD, macOS), IOCP (Windows), and various GUI event loops (GTK+2/3, Qt, wxWidgets). Third-party reactors can plug into Twisted, and provide support for additional event loops.",event-internet-applications-HTTP-clients-servers-HTML templating-WSGI-SSH-Telnet-terminal-emulator-IRC-XMPP-IM-protocols-IMAPv4-POP3-SMTP-NMEA-compatible-GPS-receiver-DNS-tools-making your own DNS-unit testing-event loops-select-poll-POSIX-epoll-Linux-kqueue-FreeBSD-macOS-IOCP-Windows-GUI-GTK-Qt-wxWidgets-Third-party-reactors
+PyOpenGL,"PyOpenGL is the most common cross platform Python binding to OpenGL and related APIs. The binding is created using the standard ctypes library, and is provided under an extremely liberal BSD-style Open-Source license. OpenGL v1.1 to 4.4
 GLES 1 to 3.1 (Experimental)
 GLU
 EGL, WGL, GLX
@@ -32,7 +35,7 @@ Raw XLib
 OSMesa
 Raspberry Pi BCM
 Tkinter (if you have installed the Togl widget for Tk) There are quite a few 3D-related libraries available for use with Python, many of them either based on, or extensible with PyOpenGL.  PyOpenGL's author collects pointers to them on his site.  There is another commonly used binding of OpenGL for Python which is part of the Pyglet game development environment.
-"
+",binding-OpenGL-APIs-extensions-GL-GLES-EGL-WGL-GLX-external-GUI libraries-wxPython-PyGame-PyQt-PySide-PyGTK-Raw XLib-OSMesa-Raspberry Pi BCM-Tkinter-Togl widget-3D-Pyglet
 mayavi,"Mayavi is a general purpose, cross-platform tool for 2-D and 3-D scientific data visualization. Its features include:
 
 Visualization of scalar, vector and tensor data in 2 and 3 dimensions
@@ -43,25 +46,32 @@ Saving of visualizations
 Saving rendered visualization in a variety of image formats
 Convenient functionality for rapid scientific plotting via mlab (see mlab documentation)
 See the Mayavi Users Guide for more information.
-Unlike its predecessor MayaVi1, Mayavi has been designed with scriptability and extensibility in mind from the ground up. While the mayavi2 application is usable by itself, it may be used as an Envisage plugin which allows it to be embedded in user applications natively. Alternatively, it may be used as a visualization engine for any application."
-matplotlib,"Matplotlib strives to produce publication quality 2D graphics
-for interactive graphing, scientific publishing, user interface development and web application servers targeting multiple user interfaces and hardcopy output formats."
-seaborn,"Seaborn is a library for making statistical graphics in Python. It is built on top of matplotlib and closely integrated with pandas data structures.
+Unlike its predecessor MayaVi1, Mayavi has been designed with scriptability and extensibility in mind from the ground up. While the mayavi2 application is usable by itself, it may be used as an Envisage plugin which allows it to be embedded in user applications natively. Alternatively, it may be used as a visualization engine for any application.",2D-3D-scientific-data-visualization-scalar-vector-tensor-VTK-XML- PLOT3D-rapid-plotting-mlab-scriptability-extensibility-Envisage-plugin-embedded-user-applications-natively-visualization engine
+matplotlib,"Matplotlib is an amazing visualization library in Python for 2D plots of arrays. Matplotlib is a multi-platform data visualization library built on NumPy arrays and designed to work with the broader SciPy stack. It was introduced by John Hunter in the year 2002.
 
-Here is some of the functionality that seaborn offers:
+One of the greatest benefits of visualization is that it allows us visual access to huge amounts of data in easily digestible visuals. Matplotlib consists of several plots like line, bar, scatter, histogram etc.",2D-graphics-interactive-graphing-scientific-publishing-user interface-development-web application-plotting-
+seaborn,"Seaborn is a Python Library that allows to build beautiful data visualizations.
 
-A dataset-oriented API for examining relationships between multiple variables
-Specialized support for using categorical variables to show observations or aggregate statistics
-Options for visualizing univariate or bivariate distributions and for comparing them between subsets of data
-Automatic estimation and plotting of linear regression models for different kinds dependent variables
-Convenient views onto the overall structure of complex datasets
-High-level abstractions for structuring multi-plot grids that let you easily build complex visualizations
-Concise control over matplotlib figure styling with several built-in themes
-Tools for choosing color palettes that faithfully reveal patterns in your data
-Seaborn aims to make visualization a central part of exploring and understanding data. Its dataset-oriented plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots."
-nltk,"The Natural Language Toolkit (NLTK) is a Python package for natural language processing. NLTK requires Python 2.7, 3.5, 3.6, or 3.7."
+In my experience, Seaborn turns out to be very effective during data exploration as it allows to do the following:
+
+Building histograms.
+Plotting Kernel Density Estimates.
+Building beautiful scatterplots in order to get a feeling about the data.
+Boxplots are also available in this library as they give you a sense on how data is distributed.
+Building Heatmaps…
+In short, Seaborn would allow to quickly understand the data on hand in a more visual way.",statistical-graphics-matplotlib-visualizing-univariate-bivariate-distributions-automatic estimation-estimation-plotting-linear regression-dependent variables-grids-explore-data-patterns
+nltk,"The Natural Language Toolkit (NLTK) is a Python package for natural language processing. NLTK requires Python 2.7, 3.5, 3.6, or 3.7. 2. Accessing Text Corpora and Lexical Resources
+3. Processing Raw Text
+4. Writing Structured Programs
+5. Categorizing and Tagging Words (minor fixes still required)
+6. Learning to Classify Text
+7. Extracting Information from Text
+8. Analyzing Sentence Structure
+9. Building Feature Based Grammars
+10. Analyzing the Meaning of Sentences (minor fixes still required)
+11. Managing Linguistic Data (minor fixes still required)",Natural Language-natural language processing-NLP-Text-Corpora-Lexical-processing -raw-categorizing-Tagging-Words-Classify Text-Extracting-Information-Analyzing-Sentence Structure-Grammars-Meaning of Sentences-Linguistic-Tokenize-parse tree
 spacy,"spaCy: Industrial-strength NLP
-spaCy is a library for advanced Natural Language Processing in Python and Cython. It's built on the very latest research, and was designed from day one to be used in real products. spaCy comes with pretrained statistical models and word vectors, and currently supports tokenization for 50+ languages. It features state-of-the-art speed, convolutional neural network models for tagging, parsing and named entity recognition and easy deep learning integration. It's commercial open-source software, released under the MIT license."
+spaCy is a library for advanced Natural Language Processing in Python and Cython. It's built on the very latest research, and was designed from day one to be used in real products. spaCy comes with pretrained statistical models and word vectors, and currently supports tokenization for 50+ languages. It features state-of-the-art speed, convolutional neural network models for tagging, parsing and named entity recognition and easy deep learning integration. It's commercial open-source software, released under the MIT license.",NLP-Natural Language Processing-Cython-pretrained-statistical models-word vectors-tokenization-tagging- parsing-named entity recognition-NER
 Django REST framework ,"Django REST framework is a powerful and flexible toolkit for building Web APIs.
 
 Some reasons you might want to use REST framework:
@@ -71,11 +81,11 @@ Authentication policies including packages for OAuth1a and OAuth2.
 Serialization that supports both ORM and non-ORM data sources.
 Customizable all the way down - just use regular function-based views if you don't need the more powerful features.
 Extensive documentation, and great community support.
-Used and trusted by internationally recognised companies including Mozilla, Red Hat, Heroku, and Eventbrite."
-Flask-RESTful,Flask-RESTful provides the building blocks for creating a great REST API.
+Used and trusted by internationally recognised companies including Mozilla, Red Hat, Heroku, and Eventbrite.",REST-Web API-API-OAuth1a-OAuth2-Serialization-ORM-Restful
+Flask-RESTful,Flask-RESTful provides the building blocks for creating a great REST API.,REST-API-Restful
 sandman,"sandman2 automagically generates a RESTful API service from your existing database, without requiring you to write a line of code. Simply point sandman2 to your database, add salt for seasoning, and voila!, a fully RESTful API service with hypermedia support starts running, ready to accept HTTP requests.
 
-This is a big deal. It means every single database you interact with, from the SQLite database that houses your web browser’s data up to your production PostgreSQL server can be endowed with a REST API and accessed programatically, using any number of HTTP client libraries available in every language. sandman2 frees your data."
+This is a big deal. It means every single database you interact with, from the SQLite database that houses your web browser’s data up to your production PostgreSQL server can be endowed with a REST API and accessed programatically, using any number of HTTP client libraries available in every language. sandman2 frees your data.",generates-RESTful API service-from database-automatically-SQLite-PostgreSQL-automatically generates
 zeep,"A fast and modern Python SOAP client
 
 Highlights:
@@ -86,12 +96,104 @@ Support for WS-Addressing headers
 Support for WSSE (UserNameToken / x.509 signing)
 Support for tornado async transport via gen.coroutine (Python 2.7+)
 Support for asyncio via aiohttp (Python 3.5+)
-Experimental support for XOP messages"
+Experimental support for XOP messages",SOAP client-SOAP-Soap 1.1-Soap 1.2-HTTP binding
 PyMedia,"A Python library for accessing and manipulating media files. It makes audio and video playback/creation a snap for even a newcomer to programming. This tutorial aims to walk you through installing and using the PyMedia library.
-For the sake of simplicity most of the examples have been kept concise and straightforward. In a 'real world' application, you would need to take care of error handling, input validation and so on. A multimedia processing module which makes possible video/audio manipulation directly from Python. It understands the following formats: avi, mpg, mp3, ogg, aac, ac3, vob, cda etc."
+For the sake of simplicity most of the examples have been kept concise and straightforward. In a 'real world' application, you would need to take care of error handling, input validation and so on. A multimedia processing module which makes possible video/audio manipulation directly from Python. It understands the following formats: avi, mpg, mp3, ogg, aac, ac3, vob, cda etc.  Video file as pictures
+  
+Save your video clip into the set of BMP pictures and enjoy your favourite snapshot.
+
+ 
+  Get your video back after you have it as pictures
+  
+Restores your mpeg1/2 video file from the set of BMP/JPG images.
+
+ 
+  Voice recorder
+  
+Record any sound from microphone or line-in and save it as an mp3 file( your personal digital recorder ).
+
+ 
+  Play standard WAV file
+  
+Play your regular WAV file with pymedia.
+
+ 
+  Simple audio player
+  
+Play your favourite music in any supported format with pymedia.
+
+ 
+  Simple audio recoder
+  
+Change the format of your compressed audio files into something different.
+
+ 
+  Simple video player
+  
+Play all you favourite video files and navigate through the file using the keyboard.
+
+ 
+  Simple video recoder
+  
+Recode your video files into the MPEG1 or MPEG2.
+For the sake of simplicity most of the examples have been kept concise and straightforward. In a 'real world' application, you would need to take care of error handling, input validation and so on.  Make some noise
+  Playing a WAV file
+  
+A simple WAV file player. Your first chance to blast some audio through your speakers with PyMedia.
+
+ 
+  Uncompressing an audio stream
+  
+Convert a compressed audio file into the universal WAV format, suitable for storing on CD or tweaking in your favorite sound editing program.
+
+ 
+  Simple audio player
+  
+Play your favorite music files in any of the formats supported by PyMedia (see documentation for list)
+
+ 
+  Recode audio
+  
+Don't like the file format your music is in? Re-encode it in the format of your choice!
+
+ 
+  A video is worth a thousand words!
+  Recode video
+  
+Extract video from a file or stream and save it as an mpeg1 or mpeg2 video file.
+
+ 
+  Video demuxing
+  
+Demux you video source into separate streams
+
+ 
+  Advanced multimedia
+  Simple video player
+  
+A very useful example, showing how to play all kinds of media files with PyMedia. You will need pygame or pydfb for the video playback.
+
+ 
+  Encode video on fly
+  
+A simple example that will show you how to convert movies or video streams in any supported format into mpeg1 or mpeg2 files.
+
+ 
+  All examples unsorted
+  Audio CD grabber
+  
+Read( grab ) track( song ) from the audio cd into the file.
+
+ 
+  Decompress mp3 file
+  
+Decompress any compressed file into the standard WAV file.
+
+ 
+ ",accessing-manipulating-media files-media-audio-video-playback-creation-avi-mpg-mp3-ogg-aac-ac3-vob-cda
 pysuggest,"SUGGEST is a Top-N recommendation engine that implements a variety of recommendation algorithms. Top-N recommender systems, a personalized information filtering technology, are used to identify a set of N items that will be of interest to a certain user. In recent years, top-N recommender systems have been used in a number of different applications such to recommend products a customer will most likely buy; recommend movies, TV programs, or music a user will find enjoyable; identify web-pages that will be of interest; or even suggest alternate ways of searching for information.
 
-The algorithms implemented by SUGGEST are based on collaborative filtering that is the most successful and widely used framework for building recommender systems. SUGGEST implements two classes of collaborative filtering-based top-N recommendation algorithms, called user-based and item-based."
+The algorithms implemented by SUGGEST are based on collaborative filtering that is the most successful and widely used framework for building recommender systems. SUGGEST implements two classes of collaborative filtering-based top-N recommendation algorithms, called user-based and item-based.",SUGGEST-Top N-recommendation-recommendation algorithms-recommender systems-personalized-information filtering-interest-certain user-recommend-information-collaborative filtering
 NumPy,"NumPy is the fundamental package for scientific computing with Python. It contains among other things:
 
 a powerful N-dimensional array object
@@ -104,8 +206,14 @@ useful linear algebra, Fourier transform, and random number capabilities
 
 Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.
 
-NumPy is licensed under the BSD license, enabling reuse with few restrictions."
+NumPy is licensed under the BSD license, enabling reuse with few restrictions.",scientific computing-scientific-n dimensional-dimentional array-linear algebra-Fourier transform-random number-scientific-matrix
 Theano,"Theano is another useful Python library assists data scientists in performing large multi-dimensional arrays related computing operations. It is more like TensorFlow but the only difference is, it is not that efficient.
+
+It is getting used for distributed and parallel computing based tasks. Through it, you can optimize, express or evaluate you array-enabled mathematical operations. It is tightly coupled with NumPy powered by implemented numpy.ndarray function.
+
+Due to GPU based infrastructure, it holds the capability to process operations in faster ways than CPU. It stands fit for speed and stability optimizations delivering us the expected outcomes.
+
+For faster evaluation, its dynamic C code generator is popular among data scientists. Here, they can perform unit-testing to identify flaws in the whole model.","Theano is another useful Python library assists data scientists in performing large multi-dimensional arrays related computing operations. It is more like TensorFlow but the only difference is, it is not that efficient.
 
 It is getting used for distributed and parallel computing based tasks. Through it, you can optimize, express or evaluate you array-enabled mathematical operations. It is tightly coupled with NumPy powered by implemented numpy.ndarray function.
 
@@ -118,22 +226,32 @@ It allows fast prototyping, supports recurrent and convolution networks individu
 
 Keras provides a user-friendly environment reducing your effort in cognitive load with simple APIs giving us the required results.  Due to its modular nature, one can use varieties of modules from neural layers, optimizers, activation functions etc.., for developing a new model.
 
-It is an open source library written in Python. For data scientists having trouble adding new modules, Keras is a good option where they can simply add a new module as classes and functions."
+It is an open source library written in Python. For data scientists having trouble adding new modules, Keras is a good option where they can simply add a new module as classes and functions.",
 PyTorch,"It helps them in dynamic computational graphs design, fast tensor computations accelerated through GPUs., and various other complex tasks. In neural network algorithms, PyTorch APIs plays an effective role.
 
 The hybrid front-end PyTorch platform is very easy to use allows us transitioning in graph mode for optimizations. For achieving accurate results in asynchronous collective operations and establishing a peer to peer communication it provides a native supports to the users.
 
 With native ONNX (Open Neural Network Exchange. support, one can export models to leverage visualizers, platforms, run-times, and various other resources. The best part of PyTorch it enables a cloud-based environment for easy scaling of resources used in deployment or testing.
 
-It is developed on the concept of another ML library called as Torch. Since the past few years, PyTorch is getting more popular among data scientists due to trending data-centric demands."
+It is developed on the concept of another ML library called as Torch. Since the past few years, PyTorch is getting more popular among data scientists due to trending data-centric demands.",
 SciPy,"SciPy is another Python library for researchers, developers and data scientists. Do not get confused with the SciPy stack and library. It provides statistics, optimizations, integration and linear algebra packages for computation. It is based on NumPy concept to deal with complex mathematical problems.
 
 It provides numerical routines for optimization and integration. It inherits varieties of sub-modules to choose from. If you have just started your data science career, SciPy can be very helpful to guide you throughout the whole numerical computations thing.
 
-We can see how Python programming is assisting data scientists in crunching and analyzing large and unstructured data sets. Other libraries like TensorFlow, SciKit-Learn, Eli5 are also available to assist them throughout this journey."
+We can see how Python programming is assisting data scientists in crunching and analyzing large and unstructured data sets. Other libraries like TensorFlow, SciKit-Learn, Eli5 are also available to assist them throughout this journey.",
 pandas,"PANDAS referred as Python Data Analysis Library. PANDAS is another open source Python library for availing high-performance data structures and analysis tools. It is developed over the Numpy package. It contains DataFrame as its main data structure.
 
-With DataFrame you can store and manage data from tables by performing manipulation over rows and columns. Methods like square bracket notations reduce person’s effort in data analysis tasks like square bracket notations. Here, you will get tools for accessing data in-memory data structures performing read and write tasks even if they are in multiple formats such as CSV, SQL, HDFS or excel etc."
+With DataFrame you can store and manage data from tables by performing manipulation over rows and columns. Methods like square bracket notations reduce person’s effort in data analysis tasks like square bracket notations. Here, you will get tools for accessing data in-memory data structures performing read and write tasks even if they are in multiple formats such as CSV, SQL, HDFS or excel etc.DataFrame object for data manipulation with integrated indexing.
+Tools for reading and writing data between in-memory data structures and different file formats.
+Data alignment and integrated handling of missing data.
+Reshaping and pivoting of data sets.
+Label-based slicing, fancy indexing, and subsetting of large data sets.
+Data structure column insertion and deletion.
+Group by engine allowing split-apply-combine operations on data sets.
+Data set merging and joining.
+Hierarchical axis indexing to work with high-dimensional data in a lower-dimensional data structure.
+Time series-functionality: Date range generation[4] and frequency conversion, moving window statistics, moving window linear regressions, date shifting and lagging.
+Provides data filtration.",
 SciKit-Learn,"1. Supervised learning
 1.1. Linear Models
 1.2. Linear and Quadratic Discriminant Analysis
@@ -193,147 +311,51 @@ SciKit-Learn,"1. Supervised learning
 8.1. Strategies to scale computationally: bigger data
 8.2. Computational Performance
 8.3. Parallelism, resource management, and configuration
-"
+",
 gensim,"Gensim is an open-source library for unsupervised topic modeling and natural language processing, using modern statistical machine learning.
 
-Gensim is implemented in Python and Cython. Gensim is designed to handle large text collections using data streaming and incremental online algorithms, which differentiates it from most other machine learning software packages that target only in-memory processing. Gensim includes streamed parallelized implementations of fastText,[1] word2vec and doc2vec algorithms,[2] as well as latent semantic analysis (LSA, LSI, SVD), non-negative matrix factorization (NMF), latent Dirichlet allocation (LDA), tf-idf and random projections.[3]
+Gensim is implemented in Python and Cython. Gensim is designed to handle large text collections using data streaming and incremental online algorithms, which differentiates it from most other machine learning software packages that target only in-memory processing. Gensim includes streamed parallelized implementations of fastText,word2vec and doc2vec algorithms,[2] as well as latent semantic analysis (LSA, LSI, SVD), non-negative matrix factorization (NMF), latent Dirichlet allocation (LDA), tf-idf and random projections.[3]
 
-Some of the novel online algorithms in Gensim were also published in the 2011 PhD dissertation Scalability of Semantic Analysis in Natural Language Processing of Radim Řehůřek, the creator of Gensim"
+Some of the novel online algorithms in Gensim were also published in the 2011 PhD dissertation Scalability of Semantic Analysis in Natural Language Processing of Radim Řehůřek, the creator of Gensim",
 Tensorflow,"TensorFlow Federated (TFF) is an open-source framework for machine learning and other computations on decentralized data. TFF has been developed to facilitate open research and experimentation with Federated Learning (FL), an approach to machine learning where a shared global model is trained across many participating clients that keep their training data locally. For example, FL has been used to train prediction models for mobile keyboards without uploading sensitive typing data to servers.
 
-TFF enables developers to simulate the included federated learning algorithms on their models and data, as well as to experiment with novel algorithms. The building blocks provided by TFF can also be used to implement non-learning computations, such as aggregated analytics over decentralized data."
+TFF enables developers to simulate the included federated learning algorithms on their models and data, as well as to experiment with novel algorithms. The building blocks provided by TFF can also be used to implement non-learning computations, such as aggregated analytics over decentralized data.",
 Kivy,"Innovative user interfaces made easy.
 
-Kivy is an open source, cross-platform Python framework for the development of applications that make use of innovative, multi-touch user interfaces. The aim is to allow for quick and easy interaction design and rapid prototyping whilst making your code reusable and deployable.
-
-Kivy is written in Python and Cython, based on OpenGL ES 2, supports various input devices and has an extensive widget library. With the same codebase, you can target Windows, macOS, Linux, Android and iOS. All Kivy widgets are built with multitouch support.
-
-Kivy is MIT licensed, actively developed by a great community and is supported by many projects managed by the Kivy Organization."
+Kivy is an open source, cross-platform Python framework for the development of applications that make use of innovative, touch user interfaces. The aim is to allow for quick and easy interaction design and rapid prototyping whilst making your code reusable and deployable.
+All Kivy widgets are built with multitouch support.",
 PyQt,"Qt is set of cross-platform C++ libraries that implement high-level APIs for accessing many aspects of modern desktop and mobile systems. These include location and positioning services, multimedia, NFC and Bluetooth connectivity, a Chromium based web browser, as well as traditional UI development.
 
 PyQt5 is a comprehensive set of Python bindings for Qt v5. It is implemented as more than 35 extension modules and enables Python to be used as an alternative application development language to C++ on all supported platforms including iOS and Android.
 
-PyQt5 may also be embedded in C++ based applications to allow users of those applications to configure or enhance the functionality of those applications."
-OpenCV,"OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize and modify the code.
-
-The library has more than 2500 optimized algorithms, which includes a comprehensive set of both classic and state-of-the-art computer vision and machine learning algorithms. These algorithms can be used to detect and recognize faces, identify objects, classify human actions in videos, track camera movements, track moving objects, extract 3D models of objects, produce 3D point clouds from stereo cameras, stitch images together to produce a high resolution image of an entire scene, find similar images from an image database, remove red eyes from images taken using flash, follow eye movements, recognize scenery and establish markers to overlay it with augmented reality, etc. OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 18 million. The library is used extensively in companies, research groups and by governmental bodies.
-
-Along with well-established companies like Google, Yahoo, Microsoft, Intel, IBM, Sony, Honda, Toyota that employ the library, there are many startups such as Applied Minds, VideoSurf, and Zeitera, that make extensive use of OpenCV. OpenCV’s deployed uses span the range from stitching streetview images together, detecting intrusions in surveillance video in Israel, monitoring mine equipment in China, helping robots navigate and pick up objects at Willow Garage, detection of swimming pool drowning accidents in Europe, running interactive art in Spain and New York, checking runways for debris in Turkey, inspecting labels on products in factories around the world on to rapid face detection in Japan.
-
-It has C++, Python, Java and MATLAB interfaces and supports Windows, Linux, Android and Mac OS. OpenCV leans mostly towards real-time vision applications and takes advantage of MMX and SSE instructions when available. A full-featured CUDAand OpenCL interfaces are being actively developed right now. There are over 500 algorithms and about 10 times as many functions that compose or support those algorithms. OpenCV is written natively in C++ and has a templated interface that works seamlessly with STL containers."
-PyMedia,"for accessing and manipulating media files. It makes audio and video playback/creation a snap for even a newcomer to programming. This tutorial aims to walk you through installing and using the PyMedia library.
-For the sake of simplicity most of the examples have been kept concise and straightforward. In a 'real world' application, you would need to take care of error handling, input validation and so on.  Make some noise
-  Playing a WAV file
-  
-A simple WAV file player. Your first chance to blast some audio through your speakers with PyMedia.
-
- 
-  Uncompressing an audio stream
-  
-Convert a compressed audio file into the universal WAV format, suitable for storing on CD or tweaking in your favorite sound editing program.
-
- 
-  Simple audio player
-  
-Play your favorite music files in any of the formats supported by PyMedia (see documentation for list)
-
- 
-  Recode audio
-  
-Don't like the file format your music is in? Re-encode it in the format of your choice!
-
- 
-  A video is worth a thousand words!
-  Recode video
-  
-Extract video from a file or stream and save it as an mpeg1 or mpeg2 video file.
-
- 
-  Video demuxing
-  
-Demux you video source into separate streams
-
- 
-  Advanced multimedia
-  Simple video player
-  
-A very useful example, showing how to play all kinds of media files with PyMedia. You will need pygame or pydfb for the video playback.
-
- 
-  Encode video on fly
-  
-A simple example that will show you how to convert movies or video streams in any supported format into mpeg1 or mpeg2 files.
-
- 
-  All examples unsorted
-  Audio CD grabber
-  
-Read( grab ) track( song ) from the audio cd into the file.
-
- 
-  Decompress mp3 file
-  
-Decompress any compressed file into the standard WAV file.
-
- 
-  Video file as pictures
-  
-Save your video clip into the set of BMP pictures and enjoy your favourite snapshot.
-
- 
-  Get your video back after you have it as pictures
-  
-Restores your mpeg1/2 video file from the set of BMP/JPG images.
-
- 
-  Voice recorder
-  
-Record any sound from microphone or line-in and save it as an mp3 file( your personal digital recorder ).
-
- 
-  Play standard WAV file
-  
-Play your regular WAV file with pymedia.
-
- 
-  Simple audio player
-  
-Play your favourite music in any supported format with pymedia.
-
- 
-  Simple audio recoder
-  
-Change the format of your compressed audio files into something different.
-
- 
-  Simple video player
-  
-Play all you favourite video files and navigate through the file using the keyboard.
-
- 
-  Simple video recoder
-  
-Recode your video files into the MPEG1 or MPEG2."
+PyQt5 may also be embedded in C++ based applications to allow users of those applications to configure or enhance the functionality of those applications.",
 scikits.audiolab,"Audiolab is a python package for audio file IO using numpy arrays. It supports many different audio formats, including wav, aiff, au, flac, ogg, htk. It also supports output to audio device (Mac OS X and Linux only).
 
 For simplicity, a matlab-like API is provided for simple import/export; a more complete API is also available.
 
-Audiolab is essentially a wrapper around Erik de Castro Lopo’s excellent libsndfile"
-PythonTidy ,"Python scripts are usually so good looking that no beautification is required. However, from time to time, it may be necessary to alter the style to conform to changing standards. This script converts programs in a consistent way. It abstracts the pretty presentation of the symbolic code from the humdrum[1] process of writing it and getting it to work.
+Audiolab is essentially a wrapper around Erik de Castro Lopo’s excellent libsndfile",
+PythonTidy ,"Python scripts are usually so good looking that no beautification is required. However, from time to time, it may be necessary to alter the style to conform to changing standards. It abstracts the pretty presentation of the symbolic code from the humdrum[1] process of writing it and getting it to work.
+Reads Python code from standard input and writes a revised version to standard output.
 
-This script assumes that the input Python code is well-formed and works to begin with. It doesn’t check. If all goes well, the output Python code will work, too. Of course, you are advised to test it fully to be sure."
+Suffice it to say that input defaults to ‘-‘, the standard input, and output defaults to ‘-‘, the standard output.
+
+It means to encapsulate the wisdom revealed in:
+
+o Rossum, Guido van, and Barry Warsaw. “PEP 8: Style Guide for Python Code.” 23 Mar. 2006. Python.org. 28 Nov. 2006 <http://www.python.org/dev/peps/pep-0008/>.
+
+",
 PyGame,"Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language. It is a Free and Open Source python programming language library for making multimedia applications like games built on top of the excellent SDL library. Like SDL, pygame is highly portable and runs on nearly every platform and operating system. Millions of people have downloaded pygame itself, which is a whole lot of bits flying across the interwebs.
 
-pygame.org (the website) welcomes all Python game, art, music, sound, video and multimedia projects. "
+pygame.org (the website) welcomes all Python game, art, music, sound, video and multimedia projects. ",
 xhtml2pdf,"xhtml2pdf is a html2pdf converter using the ReportLab Toolkit, the HTML5lib and pyPdf. It supports HTML 5 and CSS 2.1 (and some of CSS 3). It is completely written in pure Python so it is platform independent.
 
-The main benefit of this tool that a user with Web skills like HTML and CSS is able to generate PDF templates very quickly without learning new technologies."
+The main benefit of this tool that a user with Web skills like HTML and CSS is able to generate PDF templates very quickly without learning new technologies.",
 PyDispatcher,"Dispatcher mechanism for creating event models
 
 PyDispatcher is an enhanced version of Patrick K. O’Brien’s original dispatcher.py module. It provides the Python programmer with a robust mechanism for event routing within various application contexts.
 
-Included in the package are the robustapply and saferef modules, which provide the ability to selectively apply arguments to callable objects and to reference instance methods using weak-references."
-mailchimp,"A straighforward python client for v3 of MailChimp API. Mailchimp is an American marketing automation platform and an email marketing service.Find your people, build your audience, and establish your brand from day one with Mailchimp's all‑in‑one Marketing Platform.And we send one billion emails nearly every day. Our industry-leading email tools—which work in tandem with all the other channels our all-in-one Marketing Platform offers—are designed to help grow your business faster and increase revenue."
+Included in the package are the robustapply and saferef modules, which provide the ability to selectively apply arguments to callable objects and to reference instance methods using weak-references.",
+mailchimp,"A straighforward python client for v3 of MailChimp API. Mailchimp is an American marketing automation platform and an email marketing service.Find your people, build your audience, and establish your brand from day one with Mailchimp's all‑in‑one Marketing Platform.And we send one billion emails nearly every day. Our industry-leading email tools—which work in tandem with all the other channels our all-in-one Marketing Platform offers—are designed to help grow your business faster and increase revenue.",
 ADOdb,"ADOdb is a database abstraction library for PHP Originally based on the same concept as Microsoft's ActiveX Data Objects. It allows developers to write applications in a consistent way regardless of the underlying database system storing the information. The advantage is that the database system can be changed without re-writing every call to it in the application. ADOdb supports the following databases:
 
 ActiveX Data Objects
@@ -359,8 +381,8 @@ In addition to the Database Abstraction Layer, ADOdb includes the following feat
 
 Schema management tools: a suite of tools to interrogate the attributes of tables, fields and indexes in databases as well as providing cross-database schema management including a full suite of XML based functions
 Date and time library: provides a drop-in replacement for PHP date functions, but provide access to dates outside the normal range of dates supported by normal PHP functions
-Session management tools: allows storing session data in a database table or as encrypted data"
-appJar,"appJar is a cross-platform, open source Python library for developing GUIs (graphical user interfaces).[2] It can run on Linux, OS X, and Windows. Beautiful Soup is a Python package for parsing HTML and XML documents (including having malformed markup, i.e. non-closed tags, so named after tag soup). It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping."
+Session management tools: allows storing session data in a database table or as encrypted data",
+appJar,"appJar is a cross-platform, open source Python library for developing GUIs (graphical user interfaces).[2] It can run on Linux, OS X, and Windows. ",
 CGAL,"The Computational Geometry Algorithms Library (CGAL) is an open source software library of computational geometry algorithms.Geometry kernels - basic geometric operations on geometric primitives
 Arithmetic and algebra
 Convex hull algorithms
@@ -375,11 +397,7 @@ Geometry processing
 Search structures
 Shape analysis, fitting, and distances
 Interpolation
-Kinetic data structures"
-CheetahTemplate,"Cheetah (or CheetahTemplate) is a template engine that uses the Python programming language. It can be used standalone or combined with other tools and frameworks. It is often used for server-side scripting and dynamic web content by generating HTML, but can also be used to generate source code. 
-
-Templating engines encourage clean separation of content, graphic design, and program code. This leads to more modular, flexible, and reusable site architectures, shorter development time, and code that is easier to understand and maintain. Cheetah compiles templates into optimized, yet readable, Python code. It gives template authors full access to any Python data and functionality, while providing a way for administrators to selectively restrict access to Python when needed."
-Construct,"Construct is a python library for the construction and deconstruction of data structures in a declarative fashion. In this context, construction, or building, refers to the process of converting (serializing) a programmatic object into a binary representation. Deconstruction, or parsing, refers to the opposite process of converting (deserializing) binary data into a programmatic object. Being declarative means that user code defines the data structure, instead of the convention of writing procedural code to accomplish the goal. Construct can work seamlessly with bit- and byte-level data granularity and various byte-ordering. Using declarative code has many benefits. For example, the same code that can parse can also build (symmetrical), debugging and testing are much simpler (provable to some extent), creating new constructs is easy (wrapping components), and many more. If one is familiar with the C (programming language), one can think of constructs as casting from char * to struct foo * and vice versa, rather than writing code that unpacks the data."
+Kinetic data structures",
 Cubes,"Cubes is a light-weight open source multidimensional modelling and OLAP toolkit for development reporting applications and browsing of aggregated data written in Python programming language released under the MIT License.
 
 Cubes provides to an analyst or any application end-user ""understandable and natural way of reporting using concept of data Cubes – multidimensional data objects"". OLAP and aggregated browsing (default is ROLAP)
@@ -387,17 +405,14 @@ logical model of OLAP cubes in JSON or provided from external sources
 hierarchical dimensions (attributes that have hierarchical dependencies, such as category-subcategory or country-region)
 multiple hierarchies in a dimension
 arithmetic expressions for computing derived measures and aggregates
-localizable metadata and data"
-Dask,Dask is a library for parallel computing in Python.
+localizable metadata and data",
+Dask,Dask is a library for parallel computing in Python.,
 Genshi,"Genshi is a template engine for XML-based vocabularies written in Python. Genshi is used to easily insert generated output into XML-based languages, usually HTML, and reuse elements between documents. Genshi's syntax is based on Kid, but its architecture is different. Genshi aims to implement some of its functionality while processing templates faster, by dynamically processing templates using a stream based API, instead of compiling templates to Python code.
 
 Genshi can be used with several Python web frameworks, such as CherryPy, TurboGears, Pylons and web2py. Genshi has replaced Kid in the TurboGears 2.x web framework. Genshi directly interprets templates (unlike Kid, which generates Python code)
 Genshi uses XInclude for template reuse
 Genshi adds attributes Kid does not have, like py:choose
-Genshi templates are easier to debug, because it tracks template source file names and line numbers, and errors from Genshi's interpreter produce more comprehensible stack traces than from Kid's generated code. "
-IronPython,"IronPython is an implementation of the Python programming language targeting the .NET Framework and Mono. One of IronPython's key advantages is in its function as an extensibility layer to application frameworks written in a .NET language. It is relatively simple to integrate an IronPython interpreter into an existing .NET application framework. Once in place, downstream developers can use scripts written in IronPython that interact with .NET objects in the framework, thereby extending the functionality in the framework's interface, without having to change any of the framework's code base.[29]
-
-IronPython makes extensive use of reflection. When passed in a reference to a .NET object, it will automatically import the types and methods available to that object. This results in a highly intuitive experience when working with .NET objects from within an IronPython script."
+Genshi templates are easier to debug, because it tracks template source file names and line numbers, and errors from Genshi's interpreter produce more comprehensible stack traces than from Kid's generated code. ",
 Jinja ,"Jinja is a web template engine for the Python programming language and is licensed under a BSD License created by Armin Ronacher. It is similar to the Django template engine but provides Python-like expressions while ensuring that the templates are evaluated in a sandbox. It is a text-based template language and thus can be used to generate any markup as well as sourcecode.
 
 The Jinja template engine allows customization of tags,[2] filters, tests, and globals.[3] Also, unlike the Django template engine, Jinja allows the template designer to call functions with arguments on objects. Jinja is Flask's default template engine. sand boxed execution
@@ -406,30 +421,113 @@ template inheritance
 compiles down to the optimal Python code just-in-time
 optional ahead-of-time template compilation
 easy to debug (for example, line numbers of exceptions directly point to the correct line in the template)
-configurable syntax"
+configurable syntax",
 Kamaelia,"Kamaelia is a free software/open source Python-based systems-development tool and concurrency framework produced by BBC Research & Development.
 
 Kamaelia applications are produced by linking independent components together. These components communicate entirely through ""inboxes"" and ""outboxes"" (queues) largely removing the burdens of thread-safety and IPC from the developer. This also makes components reusable in different systems, allows easy unit testing and results in parallelism (between components) by default.
 
 Components are generally implemented as generators - a method more light-weight than allocating a thread to each (though this is also supported). As a result, switching between the execution of components in Kamaelia systems is very fast.
 
-Applications that have been produced using Kamaelia include a Freeview digital video recorder, a network-shared whiteboard, a 3D GUI, an HTTP Server, an audio mixer, a stream multicasting system and a simple BitTorrent client."
+Applications that have been produced using Kamaelia include a Freeview digital video recorder, a network-shared whiteboard, a 3D GUI, an HTTP Server, an audio mixer, a stream multicasting system and a simple BitTorrent client.",
 Kid ,"Kid is a simple template engine for XML-based vocabularies written in Python. Kid claims to have many of the best features of XSLT, TAL, and PHP, but ""with much of the limitations and complexity stamped out"".
 
 Kid initially acted as the View component of the TurboGears framework in the framework's version 1.x implementation; however, the TurboGears project team has since replaced it with Genshi, citing perceived performance advantages.[1]
 
-Kid is used by the Fedora Project in the repoview utility [2] which creates a set of static HTML pages within a YUM repository"
-Kivy ,"Kivy is a free and open source Python library for developing mobile apps and other multitouch application software with a natural user interface (NUI). It is distributed under the terms of the MIT License, and can run on Android, iOS, GNU/Linux, OS X, and Windows.
+Kid is used by the Fedora Project in the repoview utility [2] which creates a set of static HTML pages within a YUM repository",
+imaplib ,"IMAP is an email retrieval protocol which does not download the emails. It just reads them and displays them. This is very useful in low bandwidth condition. Python’s client side library called imaplib is used for accessing emails over imap protocol.
 
-Kivy is the main framework developed by the Kivy organization,[2] alongside Python for Android,[3] Kivy iOS,[4] and several other libraries meant to be used on all platforms. In 2012, Kivy got a $5000 grant from the Python Software Foundation for porting it to Python 3.3.[5] Kivy also supports the Raspberry Pi which was funded through Bountysource.[6]
+IMAP stands for Internet Mail Access Protocol. It was first proposed in 1986.
 
-The framework contains all the elements for building an application such as:
+Key Points:
 
-extensive input support for mouse, keyboard, TUIO, and OS-specific multitouch events,
-a graphic library using only OpenGL ES 2, and based on Vertex Buffer Object and shaders,
-a wide range of widgets that support multitouch,
-an intermediate language (Kv)[7] used to easily design custom widgets.
-Kivy is the evolution of the PyMT project, and is recommended for new projects"
-PyEphem,"PyEphem is a library that implements astronomical algorithms for the Python programming language. It is free under the LGPL.[1]
+IMAP allows the client program to manipulate the e-mail message on the server without downloading them on the local computer.
 
-The library is written in Python and C, with code for calculating positions of bodies taken from XEphem by permission"
+The e-mail is hold and maintained by the remote server.
+
+It enables us to take any action such as downloading, delete the mail without reading the mail.It enables us to create, manipulate and delete remote message folders called mail boxes.
+
+IMAP enables the users to search the e-mails.
+
+It allows concurrent access to multiple mailboxes on multiple mail servers.",
+Celery,"Task queues are used as a mechanism to distribute work across threads or machines.
+
+A task queue's input is a unit of work, called a task, dedicated worker processes then constantly monitor the queue for new work to perform.
+
+it communicates via messages, usually using a broker to mediate between clients and workers. To initiate a task a client puts a message on the queue, the broker then delivers the message to a worker.
+
+the system can consist of multiple workers and brokers, giving way to high availability and horizontal scaling.
+
+
+It is usually used with a message broker to send and receive messages. The RabbitMQ, Redis transports are feature complete, but there's also experimental support for a myriad of other solutions, including using SQLite for local development.
+
+A single Celery process can process millions of tasks a minute, with sub-millisecond round-trip latency (using RabbitMQ, py-librabbitmq, and optimized settings).
+
+It supports...
+Message Transports
+
+RabbitMQ, Redis, Amazon SQS
+Concurrency
+
+Prefork, Eventlet, gevent, single threaded (solo)
+Result Stores
+
+AMQP, Redis
+memcached
+SQLAlchemy, Django ORM
+Apache Cassandra, IronCache, Elasticsearch
+Serialization
+
+pickle, json, yaml, msgpack.
+zlib, bzip2 compression.
+Cryptographic message signing.",
+sqlalchemy,"The Python SQL Toolkit and Object Relational Mapper
+
+Introduction
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL. SQLAlchemy provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing database access, adapted into a simple and Pythonic domain language.
+
+Major SQLAlchemy features include:
+
+An industrial strength ORM, built from the core on the identity map, unit of work, and data mapper patterns. These patterns allow transparent persistence of objects using a declarative configuration system. Domain models can be constructed and manipulated naturally, and changes are synchronized with the current transaction automatically.
+A relationally-oriented query system, exposing the full range of SQL’s capabilities explicitly, including joins, subqueries, correlation, and most everything else, in terms of the object model. Writing queries with the ORM uses the same techniques of relational composition you use when writing SQL. While you can drop into literal SQL at any time, it’s virtually never needed.
+A comprehensive and flexible system of eager loading for related collections and objects. Collections are cached within a session, and can be loaded on individual access, all at once using joins, or by query per collection across the full result set.
+A Core SQL construction system and DBAPI interaction layer. The SQLAlchemy Core is separate from the ORM and is a full database abstraction layer in its own right, and includes an extensible Python-based SQL expression language, schema metadata, connection pooling, type coercion, and custom types.
+All primary and foreign key constraints are assumed to be composite and natural. Surrogate integer primary keys are of course still the norm, but SQLAlchemy never assumes or hardcodes to this model.
+Database introspection and generation. Database schemas can be “reflected” in one step into Python structures representing database metadata; those same structures can then generate CREATE statements right back out - all within the Core, independent of the ORM.
+SQLAlchemy’s philosophy:
+
+SQL databases behave less and less like object collections the more size and performance start to matter; object collections behave less and less like tables and rows the more abstraction starts to matter. SQLAlchemy aims to accommodate both of these principles.
+An ORM doesn’t need to hide the “R”. A relational database provides rich, set-based functionality that should be fully exposed. SQLAlchemy’s ORM provides an open-ended set of patterns that allow a developer to construct a custom mediation layer between a domain model and a relational schema, turning the so-called “object relational impedance” issue into a distant memory.
+The developer, in all cases, makes all decisions regarding the design, structure, and naming conventions of both the object model as well as the relational schema. SQLAlchemy only provides the means to automate the execution of these decisions.
+With SQLAlchemy, there’s no such thing as “the ORM generated a bad query” - you retain full control over the structure of queries, including how joins are organized, how subqueries and correlation is used, what columns are requested. Everything SQLAlchemy does is ultimately the result of a developer- initiated decision.
+Don’t use an ORM if the problem doesn’t need one. SQLAlchemy consists of a Core and separate ORM component. The Core offers a full SQL expression language that allows Pythonic construction of SQL constructs that render directly to SQL strings for a target database, returning result sets that are essentially enhanced DBAPI cursors.
+Transactions should be the norm. With SQLAlchemy’s ORM, nothing goes to permanent storage until commit() is called. SQLAlchemy encourages applications to create a consistent means of delineating the start and end of a series of operations.
+Never render a literal value in a SQL statement. Bound parameters are used to the greatest degree possible, allowing query optimizers to cache query plans effectively and making SQL injection attacks a non-issue.",
+Django,"Django is  web application framework written in Python programming language that follows the MVC (model-view-controller) architecture pattern. Maintained by the Django Software Foundation is free of cost that doesn't require licensing. The main objective of this framework is to ease out the creation of complex and database-driven websites.
+
+- Django framework has a form serialization and validation system capable to translate between HTML forms and values suitable to be stored in the database
+- It has a lightweight and standalone web server for both development and testing
+- Caching framework
+- Admin Interface (CRUD)
+- Internationalization
+- User management, Session, and role-based permissions
+- Object-relational mapping (ORM)
+- Great documentation",
+autopep8,autopep8 automatically formats Python code to conform to the PEP 8 pep8 style guide. It uses the pycodestyle utility to determine what parts of the code needs to be formatted. autopep8 is capable of fixing most of the formatting issues that can be reported by pycodestyle.,
+Py-Networking,"Py-Networking (PN) is a python library that provides a new way to interact and configure your networking devices. PN abstract the physical device and provides to the user an uniform API that does not depends from the specific device configuration or configuration syntax. PN does not emulate features that device maybe missing but if two different devices implement a specific feature, this is exposed to the user in the same way.",
+cmath,"This module is always available. It provides access to mathematical functions for complex numbers. The functions in this module accept integers, floating-point numbers or complex numbers as arguments. They will also accept any Python object that has either a __complex__() or a __float__() method: these methods are used to convert the object to a complex or floating-point number, respectively, and the function is then applied to the result of the conversion.",
+enum ,"An enumeration is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over.",
+requests,"Requests is an Apache2 Licensed HTTP library, written in Python. It is designed to be used by humans to interact with the language. This means you don’t have to manually add query strings to URLs, or form-encode your POST data. Don’t worry if that made no sense to you. It will in due time.
+
+What can Requests do?
+
+Requests will allow you to send HTTP/1.1 requests using Python. With it, you can add content like headers, form data, multipart files, and parameters via simple Python libraries. It also allows you to access the response data of Python in the same way.
+
+In programming, a library is a collection or pre-configured selection of routines, functions, and operations that a program can use. These elements are often referred to as modules, and stored in object format.
+
+Libraries are important, because you load a module and take advantage of everything it offers without explicitly linking to every program that relies on them. They are truly standalone, so you can build your own programs with them and yet they remain separate from other programs.
+
+Think of modules as a sort of code template.
+
+To reiterate, Requests is a Python library.",
+sklearn,"Clustering: for grouping unlabeled data such as KMeans.
+Cross Validation: for estimating the performance of supervised models on unseen data.Datasets: for test datasets and for generating datasets with specific properties for investigating model behavior.Dimensionality Reduction: for reducing the number of attributes in data for summarization, visualization and feature selection such as Principal component analysis.Ensemble methods: for combining the predictions of multiple supervised models.Feature extraction: for defining attributes in image and text data.Feature selection: for identifying meaningful attributes from which to create supervised models.Parameter Tuning: for getting the most out of supervised models.Manifold Learning: For summarizing and depicting complex multi-dimensional data.Supervised Models: a vast array not limited to generalized linear models, discriminate analysis, naive bayes, lazy methods, neural networks, support vector machines and decision trees.",

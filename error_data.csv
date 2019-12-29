@@ -1,0 +1,139 @@
+﻿error,how to solve
+"
+TypeError: '____' not supported between instances of '____' and '____'","all(3 < i for i in [4, 5])
+all acts on a sequence of Booleans; it does not distribute over arbitrary arguments. "
+TypeError: ____() missing ____ required positional argument: 'self',Use the object you created not the class
+MemoryError memory error,"A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead."
+SyntaxError: Missing parentheses in call to 'print',"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary."
+input() error - NameError: name '…' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use raw_input."
+KeyError key error,A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.
+ImportError: No module named <package>,Use pip install <package>
+When I try to run the code it gives me the following error:  “ 'dict' object has no attribute 'iteritems' ”,"if you are in python3 , use dict.items() instead of dict.iteritems()"
+How to fix Python Enum - AttributeError(name) from None error?,"The correct syntax for defining an enum is:
+
+class Status(Enum):
+    on = 1
+    off = 2"
+IndentationError: unindent does not match any outer indentation level. What does this mean and how it can be corrected,"Python uses indentation to define code blocks, you can indent code by any amount, but it must match exactly in order to be at the same level.
+so this is fine:
+Hide   Copy Code
+if a==b :
+   if c==d :
+      x()
+   y()
+z()
+But this:
+Hide   Copy Code
+if a==b :
+   if c==d :
+      x()
+ y()
+z()
+Will give you an indentation error because the call to y is not ""lined up"" with either if so the system doesn't know what to do with it."
+Do you mean that I should either use tabs or space in a code and not both because this confuses the compiler.,"It depends on the editor you use, and it's settings, but basically, yes"
+I am getting an AttributeError in python and I cannot figure out why. I am a newb to Python so the bar is not very high for stumping me. I keep getting the error message: AttributeError:<obj name> object has no attribute <attname>,An object can call only the methods defined in its own class definition or the method defined in its parent class.
+" I have a .py file for each function I need to use in a program.
+In this program, I need to call the function from the external files.
+But I get the error:
+ImportError: No module named 'file.py'; file is not a package","There isn't any need to add file.py while importing. Just write from file import function, and then call the function using function(a, b). The reason why this may not work, is because file is one of Python's core modules, so I suggest you change the name of your file.
+
+Note that if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory."
+str' object has no attribute 'decode'. Python 3 error? AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore."
+But have got no idea to solve the error.TypeError: unhashable type: 'list',You can't have a set of lists since lists are not hashable. There are several answers here. you can check this one out
+"tried reduce(xor, [1,2,3,4]) got the following error NameError: name 'reduce' is not defined in Python","You can add
+
+from functools import reduce
+before you use the reduce."
+TypeError: Can't convert 'int' object to str implicitly. Does anyone know how to solve this? Thanks ahead.,"You cannot concatenate a string with an int. You would need to convert your int to a string using the str function, or use formatting to format your output."
+"I'm trying learn Python (3 to be more specific) and I'm getting this error:
+ValueError: zero length field name in format
+I googled it and I found out you need to specify the numbers","I'm gonna guess that you are running python 2.6 by accident somehow.
+
+This feature is only available for at least 3.1 if you are using python 3, or 2.7 if you are using python 2."
+here is the error I get: IndexError: list index out of range,"As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Without debugging your code fully, I would check the line where you are adding guesses based on input"
+I am trying to read in a JSON file into Python pandas (0.14.0) data frame.I am getting the following error: ValueError: Trailing data,"From version 0.19.0 of Pandas you can use the lines parameter, like so:
+import pandas as pd
+data = pd.read_json('/path/to/file.json', lines=True)"
+When I execute this Python code I am getting EOFError: EOF when reading a line,"EOF error is expected if no data is given when calling input or raw_input as explained in the documentation.
+
+Also, it's advisable to use raw_input and not input when getting input from the user on python 2"
+"For the entire time-series I'm trying to divide today's value by yesterdays and log the result using the following:
+
+df[""B""] = math.log(df[""A""] / df[""A""].shift(1))
+However I get the following error:
+
+TypeError: cannot convert the series to <class 'float'>
+Could someone let me know how to fix this please?","You can use numpy.log instead. Math.log is expecting a single number, not array."
+"My code generates this error:
+
+TypeError: wrapper() takes exactly 1 argument (2 given)
+I know I'm creating the api instance correctly as I'm using it to successfully call the linode_ip_list method prior to calling the disk list method.
+
+Just to see what happens, if I don't provide the linode_id argument, I get this error:
+
+linode.api.MissingRequiredArgument: 'LinodeID'
+If I call the method with a linode ID, the error says I'm giving it two arguments. But if I don't give it any arguments, it says I'm missing an argument. At this point, I'm not sure if the LinodeID should be an integer or a string but I get the same error in either case. How do I call this method so that I don't get the TypeError argument?
+
+Thanks!","The @__api_request decorator takes a list for each of its arguments:
+
+def __api_request(required=[], optional=[], returns=[]):
+    """"""Decorator to define required and optional parameters""""""
+    for k in required:
+      [...]
+But, you are passing in an integer
+
+linode_id = 1800300
+disks = api.linode_disk_list(linode_id)
+And you are getting conflicting error message about the amount of parameters because the wrapper() method takes an arbitrary amount of keyword arguments
+
+ def wrapper(self, **kw):"
+It all pretty much runs smoothly but I can't figure out how to stop a type-error ocurring about half way through.TypeError: unsupported operand type(s) for +: 'int' and 'str'," you can't do arithmetic on strings. Python is a dynamically-typed language, but not a weakly-typed one. level= raw_input('blah')
+try:
+    level= int(level)
+except ValueError:
+    # user put something non-numeric in, tell them off"
+"I am trying to write an assert function in Python to test whether the output of my function is a particular array of values.
+
+Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.]), I get the following error:
+
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",the assert function doesn't work well when working with numpy. Use allclose() instead.
+"Throws this error message:
+ValueError: setting an array element with a sequence.
+Can anyone show me what to do to fix the problem in the broken code above so that it stops throwing an error message?","From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+
+numpy.array([[1,2], [2, 3, 4]])
+or
+
+numpy.array([[1,2], [2, [3, 4]]])
+will yield this error message, because the shape of the input list isn't a (generalised) ""box"" that can be turned into a multidimensional array. So probably UnFilteredDuringExSummaryOfMeansArray contains sequences of different lengths.
+
+Edit: Another possible cause for this error message is trying to use a string as an element in an array of type float:
+
+numpy.array([1.2, ""abc""], dtype=float)
+That is what you are trying according to your edit. If you really want to have a NumPy array containing both strings and floats, you could use the dtype object, which enables the array to hold arbitrary Python objects:
+
+numpy.array([1.2, ""abc""], dtype=object)
+Without knowing what your code shall accomplish, I can't judge if this is what you want.So you need to work with a scalar p, or perform your sum directly on the array."
+I'm getting the following error when executing the following script:TypeError: 'NoneType' object is not iterable,"The problem is that get_playable_podcast has no return statement. In such a case, Python defaults to returning None - which you then pass into compile_playable_podcast. Since None is not iterable, compile_playable_podcast rightfully raises a TypeError."
+Why am I getting 'str' object is not callable?,"Because on line 25 you defined Fill as a string
+
+ 
+
+Fill = ""DEMFWfill""
+
+ 
+
+Then you tried to call it on line 32
+
+ 
+
+outFill = Fill(DEMrs)
+
+ 
+
+because you overwrote the function 'Fill' with a string"
+"Why am I getting the error ""TypeError: list indices must be integers or slices, not str""? But if I change the values in the list to integers, wouldn't doing items.remove(items[1]) just remove the item in index position 1?","You are using a string as an integer here items.remove(items['1']), remove does not work like that."
