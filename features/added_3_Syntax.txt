@@ -1,0 +1,2 @@
+How (do|can|would) (I|we) write
+How is .* written

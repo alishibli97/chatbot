@@ -1,0 +1,1 @@
+["SyntaxError", "Missing parentheses", "error", "NameError", "not defined", "ImportError", "has no attribute", "How to fix", "AttributeError", "IndentationError", "corrected", "confuses the compiler", "error message", "not a package", "TypeError", "unhashable type", "Can't convert", "how to solve this", "ValueError", "IndexError", "list index out of range"]
