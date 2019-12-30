@@ -1,0 +1,205 @@
+Question,Answer,Link,Category
+How to write inline if statement for print?,Python does not have a trailing if statement.,https://stackoverflow.com/questions/11880430/how-to-write-inline-if-statement-for-print,3
+How to write the Fibonacci Sequence?,"from math import sqrt
+def F(n):
+    return ((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))",https://stackoverflow.com/questions/494594/how-to-write-the-fibonacci-sequence,3
+How to write header row with csv.DictWriter?,In 2.7 / 3.2 there is a new writeheader() method.,https://stackoverflow.com/questions/2982023/how-to-write-header-row-with-csv-dictwriter,3
+How to write a cell with multiple columns in xlwt?,"There are two methods on the Worksheet class to do this, write_merge and merge. merge takes existing cells and merges them, while write_merge writes a label (just like write) and then does the same stuff merge does.",https://stackoverflow.com/questions/19672760/how-to-write-a-cell-with-multiple-columns-in-xlwt,3
+How to write a multidimensional array to a text file?,"If you want to write it to disk so that it will be easy to read back in as a numpy array, look into numpy.save. If you want it to be human readable, look into numpy.savetxt.",https://stackoverflow.com/questions/3685265/how-to-write-a-multidimensional-array-to-a-text-file,3
+How to write a nested dictionary to json,"d = {
+ ""Laptop"": {
+            ""sony"": 1,
+            ""apple"": 2,
+            ""asus"": 5,
+          },
+ ""Camera"": {
+            ""sony"": 2,
+            ""sumsung"": 1,
+            ""nikon"" : 4,
+           },
+}
+with open(""my.json"",""w"") as f:
+    json.dump(d,f)
+
+",https://stackoverflow.com/questions/21560433/how-to-write-a-nested-dictionary-to-json,3
+How to write to a binary file?,"This is exactly what bytearray is for:
+
+newFileByteArray = bytearray(newFileBytes)
+newFile.write(newFileByteArray)
+
+If you're using Python 3.x, you can use bytes instead (and probably ought to, as it signals your intention better). ",https://stackoverflow.com/questions/18367007/python-how-to-write-to-a-binary-file,3
+How to write string on .Doc file,Use python-docx module,https://stackoverflow.com/questions/58689653/how-to-write-string-on-doc-file,3
+How to write subprocess results to a file?,"test = subprocess.check_output('command to run', shell=True)
+fdesc= open('result.txt','w')
+for line in test.decode('utf-8').split('\n'):
+    fdesc.write((line)+'/')",https://stackoverflow.com/questions/54320958/how-to-write-subprocess-results-to-a-file,3
+How to write output data into pdf?,"import fpdf
+
+data=[1,2,3,4,5,6]
+
+pdf = fpdf.FPDF(format='letter')
+pdf.add_page()
+pdf.set_font(""Arial"", size=12)
+
+for i in data:
+    pdf.write(5,str(i))
+    pdf.ln()
+pdf.output(""testings.pdf"")",https://stackoverflow.com/questions/49355443/how-to-write-output-data-into-pdf,3
+How to write a pep8 configuration (pep8.rc) file?,"The preferred way is to use a setup.cfg in the top-level of the project (.cfg has the same syntax as a .ini file), which should contain a [pep8] section. For example:
+
+[pep8]
+ignore = E226,E302,E41
+max-line-length = 160",https://stackoverflow.com/questions/30304409/how-to-write-a-pep8-configuration-pep8-rc-file,3
+How to write labels in Arabic tkinter Combobox?,"#!/usr/bin/env python2
+# -*- coding: UTF-8 -*-
+from tkinter import *
+from tkinter.ttk import Combobox
+
+
+t = Tk()
+t.geometry('1000x600')  # Make window big enough to display Combobox.
+
+v = [""???????"",""???????""]
+combo = Combobox(t, values=v, state=""readonly"")
+combo.place(x=758, y=145)
+
+def value_changed(event):
+    """""" Combobox callback function. """"""
+    print 'combo.get():', combo.get()
+
+combo.bind('<<ComboboxSelected>>', value_changed)  # Bind event-handling function.
+
+t.mainloop()",https://stackoverflow.com/questions/54754979/how-to-write-labels-in-arabic-tkinter-combobox,3
+How to write if statement with *args or arguments?,"def __num__(*args):
+    if any([arg for arg in args if arg > 10]):
+        print('I am testing args using {}'.format(args['x']))
+    else :
+        print('Something Goes Wrong')",https://stackoverflow.com/questions/58436769/how-to-write-if-statement-with-args,3
+How to write the requirements.txt file with “--no-binary”?,"# requirements.txt
+spam --no-binary=eggs
+bacon --only-binary=eggs",https://stackoverflow.com/questions/54194962/how-to-write-the-requirements-txt-file-with-no-binary,3
+How to write a Python module/package?,"create hello.py then write the following function as its content:
+
+def helloworld():
+   print ""hello""
+
+Then you can import hello:
+
+>>> import hello
+>>> hello.helloworld()
+'hello'
+>>>
+
+To group many .py files put them in a folder. Any folder with an __init__.py is considered a module by python and you can call them a package
+
+|-HelloModule
+  |_ __init__.py
+  |_ hellomodule.py",https://stackoverflow.com/questions/15746675/how-to-write-a-python-module-package,3
+How to write to PLC input registers using pymodbus,"Input registers are read-only. You can write to holding registers, using Modbus functions Write Single Register or Write Multiple Registers (ModbusTcpClient.write_register or ModbusTcpClient.write_registers in pymodbus)",https://stackoverflow.com/questions/31912493/how-to-write-to-plc-input-registers-using-pymodbus,3
+How to write quotes with your python script,"You can simply use double quotes:
+
+    pg.typewrite(""''"")
+
+",https://stackoverflow.com/questions/58891001/how-to-write-quotes-with-your-python-script,3
+How to write a set containing a set?,"The inner most sets need to be of type frozenset which is an immutable version of a set.
+
+>>> a_set = {1, frozenset(['xyz'])}",https://stackoverflow.com/questions/16619121/in-python-how-to-write-a-set-containing-a-set,3
+How to write my data in json file?,"with open(""file.json"", ""w"") as out:
+    json_serializer = serializers.get_serializer('json')()
+    json_serializer.serialize(User.objects.all(), stream=out)
+    json_serializer.serialize(Delivery.objects.all(), stream=out)",https://stackoverflow.com/questions/14857856/how-to-write-my-data-in-json-file,3
+How to write specific iptables rules using python-iptables,"rule = iptc.Rule()
+match = rule.create_match('state')
+match.state = 'RELATED,ESTABLISHED'
+match.target = iptc.Target('ACCEPT')
+
+chain = iptc.Chain(iptc.Table.(iptc.Table.FILTER), ""INPUT"")
+chain.insert_rule(rule)",https://stackoverflow.com/questions/20734319/how-to-write-specific-iptables-rules-using-python-iptables,3
+How to write typing.overload decorator for bool arguments by value,"Install the typing-extensions module which contains official backports of various typing constructs. Then, do:
+
+from typing import overload, Union
+
+# typing_extensions defines Literal for Python 3.7 and earlier, but
+# re-exports it from 'typing' for later versions of Python.
+from typing_extensions import Literal
+
+@overload
+def myfunc(arg: Literal[True]) -> str: ...
+
+@overload
+def myfunc(arg: Literal[False]) -> int: ...
+
+@overload
+def myfunc(arg: bool) -> Union[str, int]: ...
+
+def myfunc(arg: bool) -> Union[int, str]:
+    if arg: return ""something""
+    else: return 0",https://stackoverflow.com/questions/59359943/python-how-to-write-typing-overload-decorator-for-bool-arguments-by-value,3
+How to write XML declaration using xml.etree.ElementTree,"You can however use ElementTree.ElementTree.write() to write your XML document to a fake file:
+
+from io import BytesIO
+from xml.etree import ElementTree as ET
+
+document = ET.Element('outer')
+node = ET.SubElement(document, 'inner')
+et = ET.ElementTree(document)
+
+f = BytesIO()
+et.write(f, encoding='utf-8', xml_declaration=True) 
+print(f.getvalue())  # your XML file, encoded as UTF-8",https://stackoverflow.com/questions/15356641/how-to-write-xml-declaration-using-xml-etree-elementtree,3
+How to write to Elastic db in Dask?,"Alternatively, assuming that you're using dask dataframe you could use operations like map_partitions or to_delayed and then your own custom code. ",https://stackoverflow.com/questions/58839187/how-to-write-to-elastic-db-in-dask,3
+How to write the output of a os.walk to file,"In Python 3 you can use the file parameter to the print() function:
+
+import os
+
+with open('outfile', 'w') as outfile:
+    print(next(os.walk('/var/lib/tomcat7/webapps/'))[1], file=outfile)",https://stackoverflow.com/questions/35338871/how-to-write-the-output-of-a-os-walk-to-file,3
+How to write mirrored text with 'ezdxf'?,"modelspace.add_text(label, dxfattribs={'layer': 'TEXTLAYER', 'text_generation_flag': 2, 'height': 4}).set_pos((cx, cy), align='CENTER')",https://stackoverflow.com/questions/55377283/how-to-write-mirrored-text-with-ezdxf,3
+How to write elements to the array in Python,array.append(array_parts),https://stackoverflow.com/questions/47992019/how-to-write-elements-to-the-array-in-python,3
+How to write a for loop in python,"for b in range((i - a) / 2, i - a + 1):
+    …",https://stackoverflow.com/questions/42815189/how-to-write-a-for-loop-in-python,3
+How to write/read pandas Series to/from csv?,"In [3]: s.to_csv('/home/wesm/tmp/sfoo.csv')
+
+In [4]: Series.from_csv('/home/wesm/tmp/sfoo.csv')",https://stackoverflow.com/questions/13557559/how-to-write-read-pandas-series-to-from-csv,3
+How to write data of type DataFrame using asksaveasfile dialog,"import csv
+    import pandas as pd
+    import os
+    import tkinter as tk
+    from tkinter import filedialog
+
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename() 
+    dataFile=pd.read_csv(file_path,usecols=['Name','Email','Gender'])
+    SAVING_PATH = filedialog.asksaveasfile(mode='w', defaultextension="".csv"")
+    dataFile.to_csv(SAVING_PATH)",https://stackoverflow.com/questions/47453050/how-to-write-data-of-type-dataframe-using-asksaveasfile-dialog,3
+How to write DataFrame to postgres table?,"from sqlalchemy import create_engine
+engine = create_engine('postgresql://scott:tiger@localhost:5432/mydatabase')
+df.to_sql('table_name', engine)",https://stackoverflow.com/questions/23103962/how-to-write-dataframe-to-postgres-table,3
+How can “from A.B import *” be interpreted?,"That statement would import all names from the __init__.py module in the package, not the files contained.",https://stackoverflow.com/questions/12748843/how-can-from-a-b-import-be-interpreted,4
+"How is Python interpreted with wxPython, PyQt, PySide or Tkinter?","The python bindings provide a wrapping around calls into the C++ code. PyQt4 for instance uses sip, while PySide uses shiboken. These are just language wrapping tools that take specifications for how to map between the C++ objects and their intended python interface.",https://stackoverflow.com/questions/13867475/how-is-python-interpreted-with-wxpython-pyqt-pyside-or-tkinter,4
+How do I interpret spaces in python byte arrays,"32 is the decimal value for the string "" "" (a space). In Python, a bytes object is an iterable of bytes 0-255, which can be represented by \x14 for 0x14, or ASCII characters like a, b, or c. Or a combination of the two",https://stackoverflow.com/questions/57697983/how-do-i-interpret-spaces-in-python-byte-arrays,4
+How exactly is the %y directive interpreted when parsing dates?,"all dates and times are represented internally as seconds since the epoch. Function strptime() can parse 2-digit years when given %y format code. When 2-digit years are parsed, they are converted according to the POSIX and ISO C standards: values 69–99 are mapped to 1969–1999, and values 0–68 are mapped to 2000–2068.",https://stackoverflow.com/questions/49950892/how-exactly-is-the-y-directive-interpreted-when-parsing-dates,4
+How python interpret a function as a generator,"When Python parses the def statement, it decides if the code is defining a generator or a function. If the code contains a yield expression, then it is a generator. So when the generator function a is called, it returns a generator object, b.
+
+The code inside the def statement is not executed until b.next() is called.",https://stackoverflow.com/questions/25835629/how-python-interpret-a-function-as-a-generator,4
+How does Python interpret its code? ,"Python interprets any given code file top-to-bottom. However, there are many ways that code that be interpreted top-to-bottom but not run in exactly that way.",https://stackoverflow.com/questions/27262108/how-does-python-interpret-its-code,4
+Is there a way in python to show how a line is interpreted?,"The ast module can show an abstract syntax tree for an expression or statement. The dis module can show bytecode. dis can also operate on the the compiled bytecode stored in a function, and also as a standalone utility with python3 -m dis.",https://stackoverflow.com/questions/40179427/is-there-a-way-in-python-to-show-how-a-line-is-interpreted,4
+How does Python interpret backslash in string?,"Unlike Standard C, all unrecognized escape sequences are left in the string unchanged, i.e., the backslash is left in the result. (This behavior is useful when debugging: if an escape sequence is mistyped, the resulting output is more easily recognized as broken.)",https://stackoverflow.com/questions/58254234/how-does-python-interpret-backslash-in-string,4
+"How does Python interpret this conditional?                                                                                                                                                                                                                                                                      elif answer >= ""k"":","Because in general, Python sequences (strings included) implement lexicographical ordering for their elements. So first element 0 is compared, if the same then element 1, etc.",https://stackoverflow.com/questions/8775467/how-does-python-interpret-this-conditional,4
+How does python interpret operator precedence work with double comparisons?,This is a chained comparison. It's actually treated as (-3 < -2) and (-2 < -1) except that -2 is evaluated at most once.,https://stackoverflow.com/questions/42821002/how-does-python-operator-precedence-work-with-double-comparisons,4
+How can I change what python interprets as a integer?,Anything is possible when you smell like Old Spice and use Python's language services to generate a AST.,https://stackoverflow.com/questions/4320534/how-can-i-change-what-python-interprets-as-a-integer,4
+How does python interpret numbers with leading zeroes,"If a number starts with 0, it is interpreted as octal, or base 8.",https://stackoverflow.com/questions/13431324/how-does-python-interpret-numbers-with-leading-zeroes,4
+How do I tell Python not to interpret backslashes in strings?,"strings prefixed with R or r are interpreted as raw strings, escape characters are not processed.",https://stackoverflow.com/questions/23763365/how-do-i-tell-python-not-to-interpret-backslashes-in-strings,4
+How does decoding in UTF-8 interpret the byte boundaries?,"The byte boundaries are easily determined from the bit patterns. If a byte starts with 0, it is a regular ASCII character. If a byte starts with 10, it is part of a UTF-8 sequence (not the first character).",https://stackoverflow.com/questions/24113496/how-does-decoding-in-utf-8-know-the-byte-boundaries,4
+How does python interpret the “in” and “not in” statements,"for <expr> in <iterable> takes an iterable object, something that can produce elements, one after another. 
+<expr> [not] in <expr> only requires that the right-hand expression result supports membership testing, but Python will fall back to iteration if no explicit hooks are available for a membership test. The not in not in simply inverts the result of the in operation.",https://stackoverflow.com/questions/45707721/how-does-the-in-and-not-in-statement-work-in-python,4
+How to get Web-based Python interpretations with explanations,The Online Python Tutor is probably what you want.,https://stackoverflow.com/questions/8205330/web-based-python-interpreter-with-explanations,4
+How can I tell Vim what version of python to use to interpret my programs,"When you use :python it will use the version vim was built with. However, the syntax :!commandname will use the usual shell command search rules to execute commandname,hence :!python depends on which version you have installed.",https://stackoverflow.com/questions/25730927/does-vim-need-to-be-compiled-with-python-3-4-1-to-run-files-through-python-3-4-1,4
+How does Python read and interpret source files?,"Python loads the main script into memory, compiles it into bytecode and runs that. If you modify the source file in the meantime, you're not affecting the bytecode. If you're running the script as the main script (i. e. by calling it like python myfile.py, then the bytecode will be discarded when the script exits. If you're importing the script, however, then the bytecode will be written to disk as a .pyc file which won't be recompiled when imported again, unless you modify the corresponding .py file.",https://stackoverflow.com/questions/25189859/how-does-python-read-and-interpret-source-files,4
+How is hex function interpreted in python 3?,"In Python 3, hex looks for an __index__ function that returns an integer. You cannot use hex to print an arbitrary string.",https://stackoverflow.com/questions/42586397/python-3-generates-error-vs-python-2-using-decorator,4
+"How does Python interpret or implement tuple assignments like a,b = b,a","For tuple assignments, Python uses the stack structure directly. In python, assignments in a target list on the left-hand side are done from left to right.",https://stackoverflow.com/questions/51999353/a-b-b-a-in-python-vs-stdswap-in-c,4
+How can I exactly interpret code in apache(using xampp) and show it in browser.,use flask,https://stackoverflow.com/questions/31730795/running-python-scripts-on-local-host,4
+Is there a way to call static methods from within a class while declaring it? How python interpretor handles such declarations?,"The staticmethod is a descriptor. A descriptor exposes the __get__(instance, cls) method allowing it to be accessed either through an instance or at the class level.",https://stackoverflow.com/questions/45529384/python-how-to-call-static-method-from-inside-of-a-class-body,4
+How to force code to be interpreted using python 2.x not 3.x,"Upgrade Python 3.2 to 3.3 or later and use the Python Launcher for Windows. At the top of each Python 2 program, include the following line:
+#!/usr/bin/env python2",https://stackoverflow.com/questions/8631253/using-older-python-2-x-while-having-both-python-2-x-and-3-x-installed-on-windows,4
