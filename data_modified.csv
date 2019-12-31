@@ -415,61 +415,61 @@ How can I use apache for interpretation and display in browser?,use flask,4,1
 Is there a way to call static methods from within a class while declaring it? How python interpretor handles such declarations?,"The staticmethod is a descriptor. A descriptor exposes the __get__(instance, cls) method allowing it to be accessed either through an instance or at the class level.",4,0
 How to force code to be interpreted using python 2.x not 3.x How to allow ,"Upgrade Python 3.2 to 3.3 or later and use the Python Launcher for Windows. At the top of each Python 2 program, include the following line:
 #!/usr/bin/env python2",4,0
-How to make a chain of function decorators?,Check out the documentation of how decorators work. You should use the at @ operator.,5,0
+How do I write function decorates in Python?,Check out the documentation of how decorators work. You should use the at @ operator.,5,1
 How do I get the index of an item in a list?,You can use the index operator on the list.,5,0
-How do I pass a variable by reference?,"Arguments are passed by assignment. So if you pass a mutable object into a method, the method gets a reference to the same object and you can mutate it.",5,0
+How are variables by reference passed in Python?,"Arguments are passed by assignment. So if you pass a mutable object into a method, the method gets a reference to the same object and you can mutate it.",5,1
 How to check whether a string is not null and not empty?,Use the attribute isEmpty() of the string.,5,0
-How to select rows from a DataFrame based on column values?,"To select rows whose column value equals a scalar, use the equal equal == operator.",5,0
+How to select specific rows from dataframe based on particular columns?,"To select rows whose column value equals a scalar, use the equal equal == operator.",5,1
 How do I rename columns in Pandas dataframe?,Just assign it to the columns attribute of the dataframe.,5,0
-How do I merge two dictionaries in a single expression?,"For dictionaries x and y, z becomes a shallowly merged dictionary with values from y replacing those from x.",5,0
+How are dictionaries merged in Python?,"For dictionaries x and y, z becomes a shallowly merged dictionary with values from y replacing those from x.",5,1
 How can I make a time delay in Python?,You can use the sleep function of the time library.,5,0
-How to import a module given the full path name?,You can specify the file location to the spec_from_file_location utility of the importlib library.,5,0
+How can we import a module from a file given full path name?,You can specify the file location to the spec_from_file_location utility of the importlib library.,5,1
 How do I get the ASCII value for a character?,"Function ord() would get the int value of the char. And in case you want to convert back after playing with the number, function chr() does the trick.",5,0
-How do I sort a list of dictionaries of a value of the dictionary?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,0
+How to sort a dictionary by values?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,1
 How do I force Python's print function to output to the screen?,"print function can take an optional ""flush"" parameter.",5,0
-How can I create or use a global variable in a function in Python?,You can use a global variable in other functions by declaring it as global in each function that assigns to it.,5,0
+How are global variables used in Python?,You can use a global variable in other functions by declaring it as global in each function that assigns to it.,5,1
 How to iterate through two lists in parallel?,zip returns an iterator of tuples for lists. zip stops when the shorter of foo or bar stops.,5,0
-How do I sort a dictionary by value?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,0
+How can we sort a dictionary by value in Python?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,1
 How do I check if a list is empty?,"You can simply check ""if not list"" that returns True if the list is emtpy.",5,0
-How do I parse XML in Python?,"I suggest ElementTree. There are other compatible implementations of the same API, such as lxml, and cElementTree in the Python standard library itself; but, in this context, what they chiefly add is even more speed -- the ease of programming part depends on the API, which ElementTree defines.",5,0
+How is XML parsed in Python?,"I suggest ElementTree. There are other compatible implementations of the same API, such as lxml, and cElementTree in the Python standard library itself; but, in this context, what they chiefly add is even more speed -- the ease of programming part depends on the API, which ElementTree defines.",5,1
 Is there a way to delete an element from a dictionary in Python?,The del statement removes an element by specifying the key.,5,0
-How to delete the contents of a folder in python?,"You can delete the folder itself, as well as all its contents, using shutil.rmtree.",5,0
+How to remove the contents of a directory using Python?,"You can delete the folder itself, as well as all its contents, using shutil.rmtree.",5,1
 How can I call github from Python?,You should consider GitPython.,5,0
-How do I get the path and name of the file that is currently executing?,Use the getfile of the inspect library to get filename and path.dirname of the os library to get directory name.,5,0
+How can we get the path of the currently executed file in Python?,Use the getfile of the inspect library to get filename and path.dirname of the os library to get directory name.,5,1
 How to print without newline or space?,General way is sys.stdout.write('.'),5,0
-How to add a row to pandas DataFrame?,You simply add it to the specific index by the loc attribute of the dataframe.,5,0
+How can we add a row to a dataframe in Python?,You simply add it to the specific index by the loc attribute of the dataframe.,5,1
 How to change the order of DataFrame columns?,You can change it to a list then reorder accordingly.,5,0
-How can I add extra column to a numpy array?,You can call the last index -1 and add it there.,5,0
+I want to add extra column to numpy array. How do I do that?,You can call the last index -1 and add it there.,5,1
 How can I insert all the variable in a function automatically in python?,You would need to declare a global variable. You can also define your variables as function arguments.,5,0
-How can I insert a series into a DataFrame row?,You can use iloc if need select index of df by position.,5,0
-How can I safely create a nested directory?,"Try os.path.exists, and consider os.makedirs for the creation.",6,0
+How do we insert a series into Python dataframe?,You can use iloc if need select index of df by position.,5,1
+By what method can I securely make a nested directory?,"Try os.path.exists, and consider os.makedirs for the creation.",6,1
 How do I list all the files in a directory?,os.listdir() will get you everything that's in a directory - files and directories.,6,0
-Find current directory and file's directory?,To get the current working directory use getcwd() attribute of the os library.,6,0
+How to discover current directory and file's directory?,To get the current working directory use getcwd() attribute of the os library.,6,1
 How to delete a file or folder in Python?,"os.remove() remove a file, os.rmdir() removes an empty directory, shutil.rmtree() deletes a directory and its contents.",6,0
-How to find if directory exists in Python?,Check using path.isdir and path.exists of the os library.,6,0
+How to discover if index exists in Python?,Check using path.isdir and path.exists of the os library.,6,1
 How do I get the full path of the current file's directory?,Use the dirname and getcwd attributes of the os library.,6,0
-How do I get a list of all files (and directories) in a given directory in Python?,os.walk('.') to traverse all files and directories in this current folder.,6,0
+How would I get a list of everything in a given directory in Python?,os.walk('.') to traverse all files and directories in this current folder.,6,1
 How do I import modules from parent folder?,You probably mean that you add the diretory of the module itself (not its parent) to PYTHONPATH.,6,0
-How do I iterate over files in a given directory?,You can traverse the files in the directory using the os.listdir function by specifying the directory name.,6,0
+How would I iterate over records in a given directory?,You can traverse the files in the directory using the os.listdir function by specifying the directory name.,6,1
 Is there a way to return a list of all subdirectories in the current directory in Python?,walk function of the os library is used traverse the directory.,6,0
-How can I find script's directory with Python?,getcwd function of the os library can get current working directory.,6,0
+How to find script's directory in Python?,getcwd function of the os library can get current working directory.,6,1
 How do I get the path of the current executed file in Python?,"You can't directly determine the location of the main script being executed. However, you can reliably determine the location of a module, since modules are always loaded from a file.",6,0
-How to import a Python class that is in a directory above?,"By using leading dots in the specified module or package after from you can specify how high to traverse up the current package hierarchy without specifying exact names. One leading dot means the current package where the module making the import exists. Two dots means up one package level. Three dots is up two levels, etc.",6,0
+How to import a class from a directory in Python?,"By using leading dots in the specified module or package after from you can specify how high to traverse up the current package hierarchy without specifying exact names. One leading dot means the current package where the module making the import exists. Two dots means up one package level. Three dots is up two levels, etc.",6,1
 How to delete folders in Python recursively?,Use the shutil.rmtree() utility.,6,0
-How to calculate directory's size using Python?,Walk all sub-directories; summing file sizes.,6,0
+How do you calculate directory size in Python?,Walk all sub-directories; summing file sizes.,6,1
 How can I extract the folder path from file path in Python?,Use the split function then you need to join the strings.,6,0
-How to determine whether a directory is writeable or not?,Use the os.acess utility with W as writeable to check if the directory is writeable or not.,6,0
+How to decide if an index is writeable or not?,Use the os.acess utility with W as writeable to check if the directory is writeable or not.,6,1
 How to copy a file along with directory path using Python?,To create all intermediate-level destination directories you could use os.makedirs() before copying.,6,0
-How to add folders to a zip file using Python,"It is as simple as using the second argument of zipfile.write, where you can use whatever you want.",6,0
+How do we add files and folders to a zip file in Python?,"It is as simple as using the second argument of zipfile.write, where you can use whatever you want.",6,1
 What is the difference between os.path.exists and os.path.isfile in Python?,"The difference between exists and isfile is the fact that the former returns True in case the given path is a directory or a file, while the latter only returns True if the path points to a file.",6,0
-How to create files and directories via Python,"Key point is to use os.makedirs in place of os.mkdir. It is recursive, i.e. it generates all intermediate directories.",6,0
+How do we create files and folders in python?,"Key point is to use os.makedirs in place of os.mkdir. It is recursive, i.e. it generates all intermediate directories.",6,1
 How to open a file in Django app?,Use os.path.dirname() in settings.py to avoid hardcoded dirnames. Don't hardcode path's in your settings.py if you want to run your project in different locations.,6,0
-How to retrieve a filelist of a directory?,Get all files of directory by using run command then splitting the output using split().,6,0
+I want to retrieve the filelist of a directory in Python. How can I do it?/,Get all files of directory by using run command then splitting the output using split().,6,1
 How to search directory for specific string?,Use glob function of the glob library.,6,0
-How to check a remote path is a file or a directory?,os.path.isfile() and os.path.isdir() only work on local filenames.,6,0
+How can I find the path of a file in Python?,os.path.isfile() and os.path.isdir() only work on local filenames.,6,1
 How to write a new directory in Python without changing current directory?,Check out these two functions: os.makedirs and os.path.join.,6,0
-How can I code a Python script that accepts a file as an argument and prints its full path?,Use the abspath function to get the absolute path of the given argument.,6,0
+I want to write a function that takes an argument and outputs its full path.,Use the abspath function to get the absolute path of the given argument.,6,1
 How to find the most recent edited file in Python?,"You should look at the os.walk function, as well as os.stat, which can let you do something like that.",6,0
-How to zip a folder and file in Python,The zipfile module in python has no support for adding a directory with file so you need to add the files one by one.,6,0
+I want to zip a file or a folder in Python. How do I do that?,The zipfile module in python has no support for adding a directory with file so you need to add the files one by one.,6,1
 How to create non-existing folder using OpenCV in Python?,cv2.imwrite() will not write an image in another directory if the directory does not exist. You first need to create the directory before attempting to write to it.,6,0
-How can I safely create a nested directory?,"Try os.path.exists, and consider os.makedirs for the creation.",6,0
+How do I created a nested directory in Python?,"Try os.path.exists, and consider os.makedirs for the creation.",6,1
