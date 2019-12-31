@@ -1,0 +1,475 @@
+user1,user2,Type,modified
+Bye,Bye,0,0
+ok,Ok.,0,0
+are you self-conscious?,"Everything in this world is magic, except for the magician; for in that sleep, what dreams may come.",0,0
+Hi,Hello,0,0
+Hello,Hi,0,0
+Hey,Hey,0,0
+Yo,Yo,0,0
+What's up?,Nothing much,0,0
+How are you?,"I am good, and you?",0,0
+What are you doing?,Talking with you.,0,0
+Can you help me?,Sure.,0,0
+How's your day.,My day is okay.,0,0
+It's nice to meet you.,Thanks kindly.,0,0
+Greetings.,Greetings.,0,0
+Good morning.,Morning.,0,0
+Good afternoon.,Hey.,0,0
+Good evening.,Hello.,0,0
+It's a pleasure to meet you.,Thanks you too.,0,0
+Morning!,Morning.,0,0
+How are things with you?,Okay and you?,0,0
+What's new?,"Nothing much, just speaking with you.",0,0
+It's good to see you.,Thanks you too.,0,0
+What's happening?,The world is on fire.,0,0
+How's it going?,Nothing much.,0,0
+Salute.,Salute.,0,0
+How's life?,Life is good.,0,0
+How have you been?,I have been okay.,0,0
+Are you ok?,"I am good, and you?",0,0
+I am good.,Great.,0,0
+Thank you,You are most welcome.,0,0
+By what library and how can I scrape texts on an HTML by its heading and paragraph tags?,This can be done with BeautifulSoup,1,0
+What library should i use to download a copy of Gmail emails through Python script? ,imaplib ,1,0
+Can you recommend what Python library to use for accessing AMQP (RabbitMQ)? From my research pika seems to be the preferred one.,"Pika is the RabbitMQ recommended library, you might also want to look at Celery ",1,0
+What is the simplest way - or library - to add a subscriber to mailchimp with python 2.5 on google app engine?,The MailChimp API has all the details for the functionality that you want.I have not used any of the Python libraries.,1,0
+What's a good Python library to manipulate frames of a video file?,"I've often needed the same thing and as far as I know, there is no good solution with bindings in Python. Where 30 is the target frame rate, 320x240 the image dimension and tmp%06d.jpg the pattern to use to store the generated jpegs. Then you can use PIL to manipulate each frame and mencoder or ffmpeg to stich the images back again into a movie. Obviously, you'll lose the audio track.",1,0
+What library can I use to implement event driven programming in Python?,It looks like you want a library like PyDispatcher for signal registration and dispatching rather than an event-loop for networking.,1,0
+What would be a good python library to use to write a portable version of pacman with nice graphics?,and what about PyGame,1,0
+How to convert HTML CSS class into style in pure python - what kind of library could be used on GAE,Take a look at xhtml2pdf (under Apache License) for the code that combines the HTML and CSS together and then change the output from PDF to HTML.,1,0
+Any library to Tidy Up Python Code using pep8 conventions?,You can take a look to PythonTidy which is officially working till python2.5 (and seems to be supported in python2.6) :,1,0
+I have a database of which products every user has viewed and I want to recommend a product based on what similar users have viewed. Is there a Python library that can achieve this?,You can check out pysuggest.,1,0
+what python library should we use to extract table with complex headers from a PDF?,PDF does not have a dedicated method to describe tables.,1,0
+Python - Any Library to create mp3 files?,PyMedia,1,0
+What is the best library in python to use to interface with a SQL database?,Without any detail we cannot reasonably answer this. ,1,0
+What SOAP client libraries exist for Python?,"If you only need SOAP client, there is well maintained library called zeep. ",1,0
+"What would be the best Python library to use when producing text-based images requiring things such as leading, kerning, outlines, drop-shadows, etc?","What you seem to want to do is exactly what LaTeX was designed for. With plasTeX, you can convert LaTeX markup to an image. ",1,0
+What libraries are good for audio feature vector representation? ,"If I'm not mistaken, scikit.audiolab is merely for reading/writing audio files but I think in addition you'll want to look at the signal processing libraries in scipy to actually build your feature vectors.",1,0
+What is the python library used to write rest service in python? ,"Several python solutions exists , here are some of them :Django REST ,Flask-RESTful,Sandman,Restless,Eve",1,0
+Are there any NLP library to convert contractions words back?,"Normally, NLP libraries such as Spacy and NLTK do a good job doing tokenization transforming like ""It's"" into [""It"", ""'s""]. but transforming something like what's into [""what"", ""is""] is more problematic, because you can have examples such `""Amy's ballet studio"" where the ""'s"" is not ""is"".",1,0
+I would like to generate a heatmap in python with the axis labels being the field names and the rows names.What is the recommended library to use for that task?,you would probably benefit from looking at matplotlib/seaborn,1,0
+What lightweight python library for simple scientific visualization in 3D,"Have you looked at mayavi? Don't know if it meets your definition of ""lightweight"", but it does seem popular and reasonably easy to use for its power.",1,0
+What library is the fastest to make hundreds of DNS queries in multi-tasking.,Twisted's DNS library is cross platform.,1,0
+Which library must i import for s = Sound()?,You are probably referring to The Snack Sound Toolkit which doesn't appear to be maintained anymore.,1,0
+"Which library to import in Python to read data from an Excel file, for automation testing using Selenium?","The xlrd library is what you are looking for to read excel files. And to write, you can use xlwt.",1,0
+What stable Python library can I use to implement Hidden Markov Models? ,pomegranate library has support for HMM and the documentation is really helpful,1,0
+Best Python library for statistical inference?,"statsmodels is a good, and fairly standard, package to statistics.For Bayesian interference you can go with PyMC - ",1,0
+What Python library can help visualize/render a 4d (coordinates+position) matrix?,Is this what your looking for:Slicer4python,1,0
+"What I'm looking for is a Python web development framework that is integrated with an ORM, is able to generate the interfaces BUT provides an easy way for me to customize the interface to create an AJAX intensive app","Various options in Python you can look at -
+
+Django (obviously!)
+Pylons
+Nagare
+Flask
+Django is really good. And no your info is not correct, HTML templates are real easy to edit them.
+
+",1,0
+Python - Best GUI library for the job?,PySide: http://www.pyside.org/,1,0
+What networking libraries/frameworks exist for Python?,Consider the Twisted framework.,1,0
+"I have been using Django for web-development, and have become quite fond of that framework. However, I would like to use a similar framework but for more general network applications. Is there such a framework? ",Twisted should be able to help you. ,1,0
+" I get this error:
+
+TypeError: '<' not supported between instances of 'int' and 'list'","all(3 < i for i in [4, 5])
+all acts on a sequence of Booleans; it does not distribute over arbitrary arguments. ",2,0
+"So, here is the code I am running and it's giving me a TypeError. I am trying to traverse a 2d array and then returning the path from starting point to the target point. This is the error I am getting:
+
+path = Grid.main(*Grid.get_start_cordinates())
+
+TypeError: get_start_cordinates() missing 1 required positional argument: 'self'",use the object you created not the class.,2,0
+" Can someone explain what is a memory error, and how to overcome this problem?","A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead.",2,0
+What does “SyntaxError: Missing parentheses in call to 'print'” mean in Python?,"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary.",2,0
+input() error - NameError: name '…' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use raw_input.",2,0
+input() error - NameError: name '…' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use raw_input.",2,0
+I'm getting Key error in python.Can anyone please explain why this is happening? KeyError: 'variablename',A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.,2,0
+"Whenever I try to import requests, I get an error saying ImportError: No module named requests.",Use pip install requests,2,0
+When I try to run the code it gives me the following error:  “ 'dict' object has no attribute 'iteritems' ”,"if you are in python3 , use dict.items() instead of dict.iteritems()",2,0
+How to fix Python Enum - AttributeError(name) from None error?,"The correct syntax for defining an enum is:
+
+class Status(Enum):
+    on = 1
+    off = 2",2,0
+IndentationError: unindent does not match any outer indentation level. What does this mean and how it can be corrected,"Python uses indentation to define code blocks, you can indent code by any amount, but it must match exactly in order to be at the same level.
+so this is fine:
+Hide   Copy Code
+if a==b :
+   if c==d :
+      x()
+   y()
+z()
+But this:
+Hide   Copy Code
+if a==b :
+   if c==d :
+      x()
+ y()
+z()
+Will give you an indentation error because the call to y is not ""lined up"" with either if so the system doesn't know what to do with it.",2,0
+Do you mean that I should either use tabs or space in a code and not both because this confuses the compiler.,"It depends on the editor you use, and it's settings, but basically, yes",2,0
+I am getting an AttributeError in python and I cannot figure out why. I am a newb to Python so the bar is not very high for stumping me. I keep getting the error message: AttributeError:<obj name> object has no attribute <attname>,An object can call only the methods defined in its own class definition or the method defined in its parent class.,2,0
+" I have a .py file for each function I need to use in a program.
+In this program, I need to call the function from the external files.
+But I get the error:
+ImportError: No module named 'file.py'; file is not a package","There isn't any need to add file.py while importing. Just write from file import function, and then call the function using function(a, b). The reason why this may not work, is because file is one of Python's core modules, so I suggest you change the name of your file.
+
+Note that if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.",2,0
+str' object has no attribute 'decode'. Python 3 error? AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore.",2,0
+But have got no idea to solve the error.TypeError: unhashable type: 'list',You can't have a set of lists since lists are not hashable. There are several answers here. you can check this one out,2,0
+"tried reduce(xor, [1,2,3,4]) got the following error NameError: name 'reduce' is not defined in Python","You can add
+
+from functools import reduce
+before you use the reduce.",2,0
+TypeError: Can't convert 'int' object to str implicitly. Does anyone know how to solve this? Thanks ahead.,"You cannot concatenate a string with an int. You would need to convert your int to a string using the str function, or use formatting to format your output.",2,0
+"I'm trying learn Python (3 to be more specific) and I'm getting this error:
+ValueError: zero length field name in format
+I googled it and I found out you need to specify the numbers","I'm gonna guess that you are running python 2.6 by accident somehow.
+
+This feature is only available for at least 3.1 if you are using python 3, or 2.7 if you are using python 2.",2,0
+here is the error I get: IndexError: list index out of range,"As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Without debugging your code fully, I would check the line where you are adding guesses based on input",2,0
+I am trying to read in a JSON file into Python pandas (0.14.0) data frame.I am getting the following error: ValueError: Trailing data,"From version 0.19.0 of Pandas you can use the lines parameter, like so:
+import pandas as pd
+data = pd.read_json('/path/to/file.json', lines=True)",2,0
+When I execute this Python code I am getting EOFError: EOF when reading a line,"EOF error is expected if no data is given when calling input or raw_input as explained in the documentation.
+
+Also, it's advisable to use raw_input and not input when getting input from the user on python 2",2,0
+"For the entire time-series I'm trying to divide today's value by yesterdays and log the result using the following:
+
+df[""B""] = math.log(df[""A""] / df[""A""].shift(1))
+However I get the following error:
+
+TypeError: cannot convert the series to <class 'float'>
+Could someone let me know how to fix this please?","You can use numpy.log instead. Math.log is expecting a single number, not array.",2,0
+"My code generates this error:
+
+TypeError: wrapper() takes exactly 1 argument (2 given)
+I know I'm creating the api instance correctly as I'm using it to successfully call the linode_ip_list method prior to calling the disk list method.
+
+Just to see what happens, if I don't provide the linode_id argument, I get this error:
+
+linode.api.MissingRequiredArgument: 'LinodeID'
+If I call the method with a linode ID, the error says I'm giving it two arguments. But if I don't give it any arguments, it says I'm missing an argument. At this point, I'm not sure if the LinodeID should be an integer or a string but I get the same error in either case. How do I call this method so that I don't get the TypeError argument?
+
+Thanks!","The @__api_request decorator takes a list for each of its arguments:
+
+def __api_request(required=[], optional=[], returns=[]):
+    """"""Decorator to define required and optional parameters""""""
+    for k in required:
+      [...]
+But, you are passing in an integer
+
+linode_id = 1800300
+disks = api.linode_disk_list(linode_id)
+And you are getting conflicting error message about the amount of parameters because the wrapper() method takes an arbitrary amount of keyword arguments
+
+ def wrapper(self, **kw):",2,0
+It all pretty much runs smoothly but I can't figure out how to stop a type-error ocurring about half way through.TypeError: unsupported operand type(s) for +: 'int' and 'str'," you can't do arithmetic on strings. Python is a dynamically-typed language, but not a weakly-typed one. level= raw_input('blah')
+try:
+    level= int(level)
+except ValueError:
+    # user put something non-numeric in, tell them off",2,0
+"I am trying to write an assert function in Python to test whether the output of my function is a particular array of values.
+
+Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.]), I get the following error:
+
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",the assert function doesn't work well when working with numpy. Use allclose() instead.,2,0
+"Throws this error message:
+ValueError: setting an array element with a sequence.
+Can anyone show me what to do to fix the problem in the broken code above so that it stops throwing an error message?","From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+
+numpy.array([[1,2], [2, 3, 4]])
+or
+
+numpy.array([[1,2], [2, [3, 4]]])
+will yield this error message, because the shape of the input list isn't a (generalised) ""box"" that can be turned into a multidimensional array. So probably UnFilteredDuringExSummaryOfMeansArray contains sequences of different lengths.
+
+Edit: Another possible cause for this error message is trying to use a string as an element in an array of type float:
+
+numpy.array([1.2, ""abc""], dtype=float)
+That is what you are trying according to your edit. If you really want to have a NumPy array containing both strings and floats, you could use the dtype object, which enables the array to hold arbitrary Python objects:
+
+numpy.array([1.2, ""abc""], dtype=object)
+Without knowing what your code shall accomplish, I can't judge if this is what you want.So you need to work with a scalar p, or perform your sum directly on the array.",2,0
+I'm getting the following error when executing the following script:TypeError: 'NoneType' object is not iterable,"The problem is that get_playable_podcast has no return statement. In such a case, Python defaults to returning None - which you then pass into compile_playable_podcast. Since None is not iterable, compile_playable_podcast rightfully raises a TypeError.",2,0
+Why am I getting 'str' object is not callable?,"Because on line 25 you defined Fill as a string
+
+ 
+
+Fill = ""DEMFWfill""
+
+ 
+
+Then you tried to call it on line 32
+
+ 
+
+outFill = Fill(DEMrs)
+
+ 
+
+because you overwrote the function 'Fill' with a string",2,0
+"Why am I getting the error ""TypeError: list indices must be integers or slices, not str""? But if I change the values in the list to integers, wouldn't doing items.remove(items[1]) just remove the item in index position 1?","You are using a string as an integer here items.remove(items['1']), remove does not work like that.",2,0
+How to write inline if statement for print? ,Python does not have a trailing if statement.,3,0
+How can we write Fibonacci Sequence in python?,"from math import sqrt
+def F(n):
+    return ((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))",3,1
+How to use csv.DictWriter to write a header row?,In 2.7 / 3.2 there is a new writeheader() method.,3,1
+How to write a cell with multiple columns in xlwt?,"There are two methods on the Worksheet class to do this, write_merge and merge. merge takes existing cells and merges them, while write_merge writes a label (just like write) and then does the same stuff merge does.",3,0
+How to save an array with multiple dimensions in a text file?,"If you want to write it to disk so that it will be easy to read back in as a numpy array, look into numpy.save. If you want it to be human readable, look into numpy.savetxt.",3,1
+How to write a nested dictionary to json,"d = {
+ ""Laptop"": {
+            ""sony"": 1,
+            ""apple"": 2,
+            ""asus"": 5,
+          },
+ ""Camera"": {
+            ""sony"": 2,
+            ""sumsung"": 1,
+            ""nikon"" : 4,
+           },
+}
+with open(""my.json"",""w"") as f:
+    json.dump(d,f)
+
+",3,0
+How to write to a binary file?,"This is exactly what bytearray is for:
+
+newFileByteArray = bytearray(newFileBytes)
+newFile.write(newFileByteArray)
+
+If you're using Python 3.x, you can use bytes instead (and probably ought to, as it signals your intention better). ",3,0
+How to write string on .Doc file,Use python-docx module,3,0
+How to save subprocess results in file?,"test = subprocess.check_output('command to run', shell=True)
+fdesc= open('result.txt','w')
+for line in test.decode('utf-8').split('\n'):
+    fdesc.write((line)+'/')",3,1
+How to use pdf for writing results?,"import fpdf
+
+data=[1,2,3,4,5,6]
+
+pdf = fpdf.FPDF(format='letter')
+pdf.add_page()
+pdf.set_font(""Arial"", size=12)
+
+for i in data:
+    pdf.write(5,str(i))
+    pdf.ln()
+pdf.output(""testings.pdf"")",3,1
+How to write a pep8 configuration (pep8.rc) file?,"The preferred way is to use a setup.cfg in the top-level of the project (.cfg has the same syntax as a .ini file), which should contain a [pep8] section. For example:
+
+[pep8]
+ignore = E226,E302,E41
+max-line-length = 160",3,0
+How to write labels in Arabic tkinter Combobox?,"#!/usr/bin/env python2
+# -*- coding: UTF-8 -*-
+from tkinter import *
+from tkinter.ttk import Combobox
+
+
+t = Tk()
+t.geometry('1000x600')  # Make window big enough to display Combobox.
+
+v = [""???????"",""???????""]
+combo = Combobox(t, values=v, state=""readonly"")
+combo.place(x=758, y=145)
+
+def value_changed(event):
+    """""" Combobox callback function. """"""
+    print 'combo.get():', combo.get()
+
+combo.bind('<<ComboboxSelected>>', value_changed)  # Bind event-handling function.
+
+t.mainloop()",3,0
+How to add arguments to an if condition?,"def __num__(*args):
+    if any([arg for arg in args if arg > 10]):
+        print('I am testing args using {}'.format(args['x']))
+    else :
+        print('Something Goes Wrong')",3,1
+How to write the requirements.txt file with “--no-binary”?,"# requirements.txt
+spam --no-binary=eggs
+bacon --only-binary=eggs",3,0
+How to write a module?,"create hello.py then write the following function as its content:
+
+def helloworld():
+   print ""hello""
+
+Then you can import hello:
+
+>>> import hello
+>>> hello.helloworld()
+'hello'
+>>>
+
+To group many .py files put them in a folder. Any folder with an __init__.py is considered a module by python and you can call them a package
+
+|-HelloModule
+  |_ __init__.py
+  |_ hellomodule.py",3,1
+How to write to PLC input registers using pymodbus,"Input registers are read-only. You can write to holding registers, using Modbus functions Write Single Register or Write Multiple Registers (ModbusTcpClient.write_register or ModbusTcpClient.write_registers in pymodbus)",3,0
+How to write quotes with your python script,"You can simply use double quotes:
+
+    pg.typewrite(""''"")
+
+",3,0
+How to write a nested set?,"The inner most sets need to be of type frozenset which is an immutable version of a set.
+
+>>> a_set = {1, frozenset(['xyz'])}",3,1
+How to write my data in json file?,"with open(""file.json"", ""w"") as out:
+    json_serializer = serializers.get_serializer('json')()
+    json_serializer.serialize(User.objects.all(), stream=out)
+    json_serializer.serialize(Delivery.objects.all(), stream=out)",3,0
+How to write specific iptables rules using python-iptables,"rule = iptc.Rule()
+match = rule.create_match('state')
+match.state = 'RELATED,ESTABLISHED'
+match.target = iptc.Target('ACCEPT')
+
+chain = iptc.Chain(iptc.Table.(iptc.Table.FILTER), ""INPUT"")
+chain.insert_rule(rule)",3,0
+How to write typing.overload decorator for bool arguments by value,"Install the typing-extensions module which contains official backports of various typing constructs. Then, do:
+
+from typing import overload, Union
+
+# typing_extensions defines Literal for Python 3.7 and earlier, but
+# re-exports it from 'typing' for later versions of Python.
+from typing_extensions import Literal
+
+@overload
+def myfunc(arg: Literal[True]) -> str: ...
+
+@overload
+def myfunc(arg: Literal[False]) -> int: ...
+
+@overload
+def myfunc(arg: bool) -> Union[str, int]: ...
+
+def myfunc(arg: bool) -> Union[int, str]:
+    if arg: return ""something""
+    else: return 0",3,0
+How to write XML declaration using xml.etree.ElementTree,"You can however use ElementTree.ElementTree.write() to write your XML document to a fake file:
+
+from io import BytesIO
+from xml.etree import ElementTree as ET
+
+document = ET.Element('outer')
+node = ET.SubElement(document, 'inner')
+et = ET.ElementTree(document)
+
+f = BytesIO()
+et.write(f, encoding='utf-8', xml_declaration=True) 
+print(f.getvalue())  # your XML file, encoded as UTF-8",3,0
+How to write to Elastic db in Dask?,"Alternatively, assuming that you're using dask dataframe you could use operations like map_partitions or to_delayed and then your own custom code. ",3,0
+How to save the result of os.walk in a file?,"In Python 3 you can use the file parameter to the print() function:
+
+import os
+
+with open('outfile', 'w') as outfile:
+    print(next(os.walk('/var/lib/tomcat7/webapps/'))[1], file=outfile)",3,1
+How to use ezdxf?,"modelspace.add_text(label, dxfattribs={'layer': 'TEXTLAYER', 'text_generation_flag': 2, 'height': 4}).set_pos((cx, cy), align='CENTER')",3,1
+How to write elements to the array in Python How to add elements into an array?,array.append(array_parts),3,1
+How to write a for loop in python,"for b in range((i - a) / 2, i - a + 1):
+    …",3,0
+How do we read a csv file into panda series?,"In [3]: s.to_csv('/home/wesm/tmp/sfoo.csv')
+
+In [4]: Series.from_csv('/home/wesm/tmp/sfoo.csv')",3,1
+How to write data of type DataFrame using asksaveasfile dialog,"import csv
+    import pandas as pd
+    import os
+    import tkinter as tk
+    from tkinter import filedialog
+
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename() 
+    dataFile=pd.read_csv(file_path,usecols=['Name','Email','Gender'])
+    SAVING_PATH = filedialog.asksaveasfile(mode='w', defaultextension="".csv"")
+    dataFile.to_csv(SAVING_PATH)",3,0
+How to write DataFrame to postgres table?,"from sqlalchemy import create_engine
+engine = create_engine('postgresql://scott:tiger@localhost:5432/mydatabase')
+df.to_sql('table_name', engine)",3,0
+How are imports interpreted?,"That statement would import all names from the __init__.py module in the package, not the files contained.",4,1
+"How is Python interpreted with wxPython, PyQt, PySide or Tkinter?","The python bindings provide a wrapping around calls into the C++ code. PyQt4 for instance uses sip, while PySide uses shiboken. These are just language wrapping tools that take specifications for how to map between the C++ objects and their intended python interface.",4,0
+How are spaces interpreted?,"32 is the decimal value for the string "" "" (a space). In Python, a bytes object is an iterable of bytes 0-255, which can be represented by \x14 for 0x14, or ASCII characters like a, b, or c. Or a combination of the two",4,1
+How exactly is the %y directive interpreted when parsing dates?,"all dates and times are represented internally as seconds since the epoch. Function strptime() can parse 2-digit years when given %y format code. When 2-digit years are parsed, they are converted according to the POSIX and ISO C standards: values 69–99 are mapped to 1969–1999, and values 0–68 are mapped to 2000–2068.",4,0
+How can we make python realize that a function is a generator?,"When Python parses the def statement, it decides if the code is defining a generator or a function. If the code contains a yield expression, then it is a generator. So when the generator function a is called, it returns a generator object, b.
+
+The code inside the def statement is not executed until b.next() is called.",4,1
+How does Python interpret its code? ,"Python interprets any given code file top-to-bottom. However, there are many ways that code that be interpreted top-to-bottom but not run in exactly that way.",4,0
+How can we see the interpretation of a line in python?,"The ast module can show an abstract syntax tree for an expression or statement. The dis module can show bytecode. dis can also operate on the the compiled bytecode stored in a function, and also as a standalone utility with python3 -m dis.",4,1
+How is the backslash interpreted?,"Unlike Standard C, all unrecognized escape sequences are left in the string unchanged, i.e., the backslash is left in the result. (This behavior is useful when debugging: if an escape sequence is mistyped, the resulting output is more easily recognized as broken.)",4,1
+"How does Python interpret this conditional?                                                                                                                                                                                                                                                                      elif answer >= ""k"":","Because in general, Python sequences (strings included) implement lexicographical ordering for their elements. So first element 0 is compared, if the same then element 1, etc.",4,0
+How does python interpret operator precedence work with double comparisons?,This is a chained comparison. It's actually treated as (-3 < -2) and (-2 < -1) except that -2 is evaluated at most once.,4,0
+How can I change what python interprets as a integer?,Anything is possible when you smell like Old Spice and use Python's language services to generate a AST.,4,0
+How are numbers starting with zeros interpreted?,"If a number starts with 0, it is interpreted as octal, or base 8.",4,1
+How do I tell Python not to interpret backslashes in strings?,"strings prefixed with R or r are interpreted as raw strings, escape characters are not processed.",4,0
+How are the byte limits interpreted in decoding?,"The byte boundaries are easily determined from the bit patterns. If a byte starts with 0, it is a regular ASCII character. If a byte starts with 10, it is part of a UTF-8 sequence (not the first character).",4,1
+How does python interpret the “in” and “not in” statements,"for <expr> in <iterable> takes an iterable object, something that can produce elements, one after another. 
+<expr> [not] in <expr> only requires that the right-hand expression result supports membership testing, but Python will fall back to iteration if no explicit hooks are available for a membership test. The not in not in simply inverts the result of the in operation.",4,0
+How to check python interpretation on web,The Online Python Tutor is probably what you want.,4,1
+How can I tell Vim what version of python to use to interpret my programs,"When you use :python it will use the version vim was built with. However, the syntax :!commandname will use the usual shell command search rules to execute commandname,hence :!python depends on which version you have installed.",4,0
+How are source files interpreted?,"Python loads the main script into memory, compiles it into bytecode and runs that. If you modify the source file in the meantime, you're not affecting the bytecode. If you're running the script as the main script (i. e. by calling it like python myfile.py, then the bytecode will be discarded when the script exits. If you're importing the script, however, then the bytecode will be written to disk as a .pyc file which won't be recompiled when imported again, unless you modify the corresponding .py file.",4,1
+How is hex function interpreted in python 3?,"In Python 3, hex looks for an __index__ function that returns an integer. You cannot use hex to print an arbitrary string.",4,0
+"How does Python interpret or implement tuple assignments like a,b = b,a","For tuple assignments, Python uses the stack structure directly. In python, assignments in a target list on the left-hand side are done from left to right.",4,0
+How can I use apache for interpretation and display in browser?,use flask,4,1
+Is there a way to call static methods from within a class while declaring it? How python interpretor handles such declarations?,"The staticmethod is a descriptor. A descriptor exposes the __get__(instance, cls) method allowing it to be accessed either through an instance or at the class level.",4,0
+How to force code to be interpreted using python 2.x not 3.x How to allow ,"Upgrade Python 3.2 to 3.3 or later and use the Python Launcher for Windows. At the top of each Python 2 program, include the following line:
+#!/usr/bin/env python2",4,0
+How to make a chain of function decorators?,Check out the documentation of how decorators work. You should use the at @ operator.,5,0
+How do I get the index of an item in a list?,You can use the index operator on the list.,5,0
+How do I pass a variable by reference?,"Arguments are passed by assignment. So if you pass a mutable object into a method, the method gets a reference to the same object and you can mutate it.",5,0
+How to check whether a string is not null and not empty?,Use the attribute isEmpty() of the string.,5,0
+How to select rows from a DataFrame based on column values?,"To select rows whose column value equals a scalar, use the equal equal == operator.",5,0
+How do I rename columns in Pandas dataframe?,Just assign it to the columns attribute of the dataframe.,5,0
+How do I merge two dictionaries in a single expression?,"For dictionaries x and y, z becomes a shallowly merged dictionary with values from y replacing those from x.",5,0
+How can I make a time delay in Python?,You can use the sleep function of the time library.,5,0
+How to import a module given the full path name?,You can specify the file location to the spec_from_file_location utility of the importlib library.,5,0
+How do I get the ASCII value for a character?,"Function ord() would get the int value of the char. And in case you want to convert back after playing with the number, function chr() does the trick.",5,0
+How do I sort a list of dictionaries of a value of the dictionary?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,0
+How do I force Python's print function to output to the screen?,"print function can take an optional ""flush"" parameter.",5,0
+How can I create or use a global variable in a function in Python?,You can use a global variable in other functions by declaring it as global in each function that assigns to it.,5,0
+How to iterate through two lists in parallel?,zip returns an iterator of tuples for lists. zip stops when the shorter of foo or bar stops.,5,0
+How do I sort a dictionary by value?,Use the sorted() function that take a dictionary and return it sorted per value or per key.,5,0
+How do I check if a list is empty?,"You can simply check ""if not list"" that returns True if the list is emtpy.",5,0
+How do I parse XML in Python?,"I suggest ElementTree. There are other compatible implementations of the same API, such as lxml, and cElementTree in the Python standard library itself; but, in this context, what they chiefly add is even more speed -- the ease of programming part depends on the API, which ElementTree defines.",5,0
+Is there a way to delete an element from a dictionary in Python?,The del statement removes an element by specifying the key.,5,0
+How to delete the contents of a folder in python?,"You can delete the folder itself, as well as all its contents, using shutil.rmtree.",5,0
+How can I call github from Python?,You should consider GitPython.,5,0
+How do I get the path and name of the file that is currently executing?,Use the getfile of the inspect library to get filename and path.dirname of the os library to get directory name.,5,0
+How to print without newline or space?,General way is sys.stdout.write('.'),5,0
+How to add a row to pandas DataFrame?,You simply add it to the specific index by the loc attribute of the dataframe.,5,0
+How to change the order of DataFrame columns?,You can change it to a list then reorder accordingly.,5,0
+How can I add extra column to a numpy array?,You can call the last index -1 and add it there.,5,0
+How can I insert all the variable in a function automatically in python?,You would need to declare a global variable. You can also define your variables as function arguments.,5,0
+How can I insert a series into a DataFrame row?,You can use iloc if need select index of df by position.,5,0
+How can I safely create a nested directory?,"Try os.path.exists, and consider os.makedirs for the creation.",6,0
+How do I list all the files in a directory?,os.listdir() will get you everything that's in a directory - files and directories.,6,0
+Find current directory and file's directory?,To get the current working directory use getcwd() attribute of the os library.,6,0
+How to delete a file or folder in Python?,"os.remove() remove a file, os.rmdir() removes an empty directory, shutil.rmtree() deletes a directory and its contents.",6,0
+How to find if directory exists in Python?,Check using path.isdir and path.exists of the os library.,6,0
+How do I get the full path of the current file's directory?,Use the dirname and getcwd attributes of the os library.,6,0
+How do I get a list of all files (and directories) in a given directory in Python?,os.walk('.') to traverse all files and directories in this current folder.,6,0
+How do I import modules from parent folder?,You probably mean that you add the diretory of the module itself (not its parent) to PYTHONPATH.,6,0
+How do I iterate over files in a given directory?,You can traverse the files in the directory using the os.listdir function by specifying the directory name.,6,0
+Is there a way to return a list of all subdirectories in the current directory in Python?,walk function of the os library is used traverse the directory.,6,0
+How can I find script's directory with Python?,getcwd function of the os library can get current working directory.,6,0
+How do I get the path of the current executed file in Python?,"You can't directly determine the location of the main script being executed. However, you can reliably determine the location of a module, since modules are always loaded from a file.",6,0
+How to import a Python class that is in a directory above?,"By using leading dots in the specified module or package after from you can specify how high to traverse up the current package hierarchy without specifying exact names. One leading dot means the current package where the module making the import exists. Two dots means up one package level. Three dots is up two levels, etc.",6,0
+How to delete folders in Python recursively?,Use the shutil.rmtree() utility.,6,0
+How to calculate directory's size using Python?,Walk all sub-directories; summing file sizes.,6,0
+How can I extract the folder path from file path in Python?,Use the split function then you need to join the strings.,6,0
+How to determine whether a directory is writeable or not?,Use the os.acess utility with W as writeable to check if the directory is writeable or not.,6,0
+How to copy a file along with directory path using Python?,To create all intermediate-level destination directories you could use os.makedirs() before copying.,6,0
+How to add folders to a zip file using Python,"It is as simple as using the second argument of zipfile.write, where you can use whatever you want.",6,0
+What is the difference between os.path.exists and os.path.isfile in Python?,"The difference between exists and isfile is the fact that the former returns True in case the given path is a directory or a file, while the latter only returns True if the path points to a file.",6,0
+How to create files and directories via Python,"Key point is to use os.makedirs in place of os.mkdir. It is recursive, i.e. it generates all intermediate directories.",6,0
+How to open a file in Django app?,Use os.path.dirname() in settings.py to avoid hardcoded dirnames. Don't hardcode path's in your settings.py if you want to run your project in different locations.,6,0
+How to retrieve a filelist of a directory?,Get all files of directory by using run command then splitting the output using split().,6,0
+How to search directory for specific string?,Use glob function of the glob library.,6,0
+How to check a remote path is a file or a directory?,os.path.isfile() and os.path.isdir() only work on local filenames.,6,0
+How to write a new directory in Python without changing current directory?,Check out these two functions: os.makedirs and os.path.join.,6,0
+How can I code a Python script that accepts a file as an argument and prints its full path?,Use the abspath function to get the absolute path of the given argument.,6,0
+How to find the most recent edited file in Python?,"You should look at the os.walk function, as well as os.stat, which can let you do something like that.",6,0
+How to zip a folder and file in Python,The zipfile module in python has no support for adding a directory with file so you need to add the files one by one.,6,0
+How to create non-existing folder using OpenCV in Python?,cv2.imwrite() will not write an image in another directory if the directory does not exist. You first need to create the directory before attempting to write to it.,6,0
+How can I safely create a nested directory?,"Try os.path.exists, and consider os.makedirs for the creation.",6,0
