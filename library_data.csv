@@ -3,19 +3,16 @@ Beautiful Soup,"Beautiful Soup is a Python library for getting data out of HTML,
 
 The Beautiful Soup documentation will give you a sense of variety of things that the Beautiful Soup library will help with, from isolating titles and links, to extracting all of the text from the html tags, to altering the HTML within the document you’re working with.",scrape-webpage-web page-web-HTML-tags-parse-tree
 Statsmodels,Statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.,statistical-computations-descriptive statistics-estimation-inference-statistical models
-pomegranate,"pomegranate has a variety of built-in features that are implemented for all of the models. These include different training strategies such as semi-supervised learning, learning with missing values, and mini-batch learning. It also includes support for massive data supports with out-of-core learning, multi-threaded parallelism, and GPU support.",
-pomegranate,"pomegranate is a Python package that implements fast and flexible probabilistic models ranging from individual probability distributions to compositional models such as Bayesian networks and hidden Markov models. The core philosophy behind pomegranate is that all probabilistic models can be viewed as a probability distribution in that they all yield probability estimates for samples and can be updated given samples and their associated weights. The primary consequence of this view is that the components that are implemented in pomegranate can be stacked more flexibly than other packages. For example, one can build a Gaussian mixture model just as easily as building an exponential or log normal mixture model. But that’s not all! One can create a Bayes classifier that uses different types of distributions on each features, perhaps modeling time-associated features using an exponential distribution and counts using a Poisson distribution. Lastly, since these compositional models themselves can be viewed as probability distributions, one can build a mixture of Bayesian networks or a hidden Markov model Bayes’ classifier that makes predictions over sequences.
-
-",probabilistic models-probability-distributions-compositional models-bayesian-hidden markov models-HMM-estimates-samples-Gaussian mixture model-mixture model-Bayes-classifier-Poisson distribution-predictions-semi-supervised learning-missing values-mini-batch learning-GPU
+pomegranate,"pomegranate has a variety of built-in features that are implemented for all of the models. These include different training strategies such as semi-supervised learning, learning with missing values, and mini-batch learning. It also includes support for massive data supports with out-of-core learning, multi-threaded parallelism, and GPU support. pomegranate is a Python package that implements fast and flexible probabilistic models ranging from individual probability distributions to compositional models such as Bayesian networks and hidden Markov models. The core philosophy behind pomegranate is that all probabilistic models can be viewed as a probability distribution in that they all yield probability estimates for samples and can be updated given samples and their associated weights. The primary consequence of this view is that the components that are implemented in pomegranate can be stacked more flexibly than other packages. For example, one can build a Gaussian mixture model just as easily as building an exponential or log normal mixture model. But that’s not all! One can create a Bayes classifier that uses different types of distributions on each features, perhaps modeling time-associated features using an exponential distribution and counts using a Poisson distribution. Lastly, since these compositional models themselves can be viewed as probability distributions, one can build a mixture of Bayesian networks or a hidden Markov model Bayes’ classifier that makes predictions over sequences.",
 xlrd,"Extract data from Excel spreadsheets (.xls and .xlsx, versions 2.0 onwards) on any platform. Pure Python (2.7, 3.4+). Strong support for Excel dates. Unicode-aware.",Extract-data-Excel-spreadsheets-.xls-.xlsx
 Twisted,"Twisted is an event-based framework for internet applications, supporting Python 2.7 and Python 3.5+. It includes modules for many different purposes, including the following:
 
-twisted.web: HTTP clients and servers, HTML templating, and a WSGI server
-twisted.conch: SSHv2 and Telnet clients and servers and terminal emulators
-twisted.words: Clients and servers for IRC, XMPP, and other IM protocols
-twisted.mail: IMAPv4, POP3, SMTP clients and servers
-twisted.positioning: Tools for communicating with NMEA-compatible GPS receivers
-twisted.names: DNS client and tools for making your own DNS servers
+twisted.web: HTTP clients and servers, HTML templating, and a WSGI server.
+twisted.conch: SSHv2 and Telnet clients and servers and terminal emulators.
+twisted.words: Clients and servers for IRC, XMPP, and other IM protocols.
+twisted.mail: IMAPv4, POP3, SMTP clients and servers.
+twisted.positioning: Tools for communicating with NMEA-compatible GPS receivers.
+twisted.names: DNS client and tools for making your own DNS servers.
 twisted.trial: A unit testing framework that integrates well with Twisted-based code.
 Twisted supports all major system event loops – select (all platforms), poll (most POSIX platforms), epoll (Linux), kqueue (FreeBSD, macOS), IOCP (Windows), and various GUI event loops (GTK+2/3, Qt, wxWidgets). Third-party reactors can plug into Twisted, and provide support for additional event loops.",event-internet-applications-HTTP-clients-servers-HTML templating-WSGI-SSH-Telnet-terminal-emulator-IRC-XMPP-IM-protocols-IMAPv4-POP3-SMTP-NMEA-compatible-GPS-receiver-DNS-tools-making your own DNS-unit testing-event loops-select-poll-POSIX-epoll-Linux-kqueue-FreeBSD-macOS-IOCP-Windows-GUI-GTK-Qt-wxWidgets-Third-party-reactors
 PyOpenGL,"PyOpenGL is the most common cross platform Python binding to OpenGL and related APIs. The binding is created using the standard ctypes library, and is provided under an extremely liberal BSD-style Open-Source license. OpenGL v1.1 to 4.4
@@ -24,7 +21,7 @@ GLU
 EGL, WGL, GLX
 GLUT, FreeGLUT
 GLE 3 (GL Extrusion Library)
-hundreds of extensions to GL, GLES, EGL, WGL and GLX
+hundreds of extensions to GL, GLES, EGL, WGL and GLX.
 PyOpenGL is interoperable with a large number of external GUI libraries for Python including (but not limited to):
 
 wxPython
@@ -38,14 +35,13 @@ Tkinter (if you have installed the Togl widget for Tk) There are quite a few 3D-
 ",binding-OpenGL-APIs-extensions-GL-GLES-EGL-WGL-GLX-external-GUI libraries-wxPython-PyGame-PyQt-PySide-PyGTK-Raw XLib-OSMesa-Raspberry Pi BCM-Tkinter-Togl widget-3D-Pyglet
 mayavi,"Mayavi is a general purpose, cross-platform tool for 2-D and 3-D scientific data visualization. Its features include:
 
-Visualization of scalar, vector and tensor data in 2 and 3 dimensions
-Easy scriptability using Python
-Easy extendability via custom sources, modules, and data filters
+Visualization of scalar, vector and tensor data in 2 and 3 dimensions.
+Easy scriptability using Python.
+Easy extendability via custom sources, modules, and data filters.
 Reading several file formats: VTK (legacy and XML), PLOT3D, etc.
-Saving of visualizations
-Saving rendered visualization in a variety of image formats
-Convenient functionality for rapid scientific plotting via mlab (see mlab documentation)
-See the Mayavi Users Guide for more information.
+Saving of visualizations.
+Saving rendered visualization in a variety of image formats.
+Convenient functionality for rapid scientific plotting via mlab (see mlab documentation).
 Unlike its predecessor MayaVi1, Mayavi has been designed with scriptability and extensibility in mind from the ground up. While the mayavi2 application is usable by itself, it may be used as an Envisage plugin which allows it to be embedded in user applications natively. Alternatively, it may be used as a visualization engine for any application.",2D-3D-scientific-data-visualization-scalar-vector-tensor-VTK-XML- PLOT3D-rapid-plotting-mlab-scriptability-extensibility-Envisage-plugin-embedded-user-applications-natively-visualization engine
 matplotlib,"Matplotlib is an amazing visualization library in Python for 2D plots of arrays. Matplotlib is a multi-platform data visualization library built on NumPy arrays and designed to work with the broader SciPy stack. It was introduced by John Hunter in the year 2002.
 
@@ -58,18 +54,18 @@ Building histograms.
 Plotting Kernel Density Estimates.
 Building beautiful scatterplots in order to get a feeling about the data.
 Boxplots are also available in this library as they give you a sense on how data is distributed.
-Building Heatmaps…
+Building Heatmap…
 In short, Seaborn would allow to quickly understand the data on hand in a more visual way.",statistical-graphics-matplotlib-visualizing-univariate-bivariate-distributions-automatic estimation-estimation-plotting-linear regression-dependent variables-grids-explore-data-patterns
-nltk,"The Natural Language Toolkit (NLTK) is a Python package for natural language processing. NLTK requires Python 2.7, 3.5, 3.6, or 3.7. 2. Accessing Text Corpora and Lexical Resources
-3. Processing Raw Text
-4. Writing Structured Programs
-5. Categorizing and Tagging Words (minor fixes still required)
-6. Learning to Classify Text
-7. Extracting Information from Text
-8. Analyzing Sentence Structure
-9. Building Feature Based Grammars
-10. Analyzing the Meaning of Sentences (minor fixes still required)
-11. Managing Linguistic Data (minor fixes still required)",Natural Language-natural language processing-NLP-Text-Corpora-Lexical-processing -raw-categorizing-Tagging-Words-Classify Text-Extracting-Information-Analyzing-Sentence Structure-Grammars-Meaning of Sentences-Linguistic-Tokenize-parse tree
+nltk,"The Natural Language Toolkit (NLTK) is a Python package for natural language processing.  Accessing Text Corpora and Lexical Resources.
+ Processing Raw Text.
+Writing Structured Programs.
+Categorizing and Tagging Words (minor fixes still required).
+Learning to Classify Text.
+Extracting Information from Text.
+ Analyzing Sentence Structure.
+ Building Feature Based Grammars.
+ Analyzing the Meaning of Sentences (minor fixes still required).
+Managing Linguistic Data (minor fixes still required).",Natural Language-natural language processing-NLP-Text-Corpora-Lexical-processing -raw-categorizing-Tagging-Words-Classify Text-Extracting-Information-Analyzing-Sentence Structure-Grammars-Meaning of Sentences-Linguistic-Tokenize-parse tree
 spacy,"spaCy: Industrial-strength NLP
 spaCy is a library for advanced Natural Language Processing in Python and Cython. It's built on the very latest research, and was designed from day one to be used in real products. spaCy comes with pretrained statistical models and word vectors, and currently supports tokenization for 50+ languages. It features state-of-the-art speed, convolutional neural network models for tagging, parsing and named entity recognition and easy deep learning integration. It's commercial open-source software, released under the MIT license.",NLP-Natural Language Processing-Cython-pretrained-statistical models-word vectors-tokenization-tagging- parsing-named entity recognition-NER
 Django REST framework ,"Django REST framework is a powerful and flexible toolkit for building Web APIs.
@@ -196,13 +192,13 @@ pysuggest,"SUGGEST is a Top-N recommendation engine that implements a variety of
 The algorithms implemented by SUGGEST are based on collaborative filtering that is the most successful and widely used framework for building recommender systems. SUGGEST implements two classes of collaborative filtering-based top-N recommendation algorithms, called user-based and item-based.",SUGGEST-Top N-recommendation-recommendation algorithms-recommender systems-personalized-information filtering-interest-certain user-recommend-information-collaborative filtering
 NumPy,"NumPy is the fundamental package for scientific computing with Python. It contains among other things:
 
-a powerful N-dimensional array object
+a powerful N-dimensional array object.
 
-sophisticated (broadcasting) functions
+sophisticated (broadcasting) functions.
 
-tools for integrating C/C++ and Fortran code
+tools for integrating C/C++ and Fortran code.
 
-useful linear algebra, Fourier transform, and random number capabilities
+useful linear algebra, Fourier transform, and random number capabilities.
 
 Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases.
 
@@ -252,69 +248,69 @@ Data set merging and joining.
 Hierarchical axis indexing to work with high-dimensional data in a lower-dimensional data structure.
 Time series-functionality: Date range generation[4] and frequency conversion, moving window statistics, moving window linear regressions, date shifting and lagging.
 Provides data filtration.",
-SciKit-Learn,"1. Supervised learning
-1.1. Linear Models
-1.2. Linear and Quadratic Discriminant Analysis
-1.3. Kernel ridge regression
-1.4. Support Vector Machines
-1.5. Stochastic Gradient Descent
-1.6. Nearest Neighbors
-1.7. Gaussian Processes
-1.8. Cross decomposition
-1.9. Naive Bayes
-1.10. Decision Trees
-1.11. Ensemble methods
-1.12. Multiclass and multilabel algorithms
-1.13. Feature selection
-1.14. Semi-Supervised
-1.15. Isotonic regression
-1.16. Probability calibration
-1.17. Neural network models (supervised)
-2. Unsupervised learning
-2.1. Gaussian mixture models
-2.2. Manifold learning
-2.3. Clustering
-2.4. Biclustering
-2.5. Decomposing signals in components (matrix factorization problems)
-2.6. Covariance estimation
-2.7. Novelty and Outlier Detection
-2.8. Density Estimation
-2.9. Neural network models (unsupervised)
-3. Model selection and evaluation
-3.1. Cross-validation: evaluating estimator performance
-3.2. Tuning the hyper-parameters of an estimator
-3.3. Metrics and scoring: quantifying the quality of predictions
-3.4. Model persistence
-3.5. Validation curves: plotting scores to evaluate models
-4. Inspection
-4.1. Partial dependence plots
-4.2. Permutation feature importance
-5. Visualizations
-5.1. Available Plotting Utilities
-6. Dataset transformations
-6.1. Pipelines and composite estimators
-6.2. Feature extraction
-6.3. Preprocessing data
-6.4. Imputation of missing values
-6.5. Unsupervised dimensionality reduction
-6.6. Random Projection
-6.7. Kernel Approximation
-6.8. Pairwise metrics, Affinities and Kernels
-6.9. Transforming the prediction target (y)
-7. Dataset loading utilities
-7.1. General dataset API
-7.2. Toy datasets
-7.3. Real world datasets
-7.4. Generated datasets
-7.5. Loading other datasets
-8. Computing with scikit-learn
-8.1. Strategies to scale computationally: bigger data
-8.2. Computational Performance
-8.3. Parallelism, resource management, and configuration
+SciKit-Learn,"Supervised learning.
+Linear Models.
+Linear and Quadratic Discriminant Analysis.
+Kernel ridge regression.
+Support Vector Machines.
+Stochastic Gradient Descent.
+Nearest Neighbors.
+Gaussian Processes.
+Cross decomposition.
+Naive Bayes.
+Decision Trees.
+Ensemble methods.
+Multiclass and multilabel algorithms.
+Feature selection.
+Semi-Supervised.
+Isotonic regression.
+Probability calibration.
+Neural network models (supervised).
+Unsupervised learning.
+Gaussian mixture models.
+Manifold learning.
+Clustering.
+Biclustering.
+Decomposing signals in components (matrix factorization problems).
+Covariance estimation.
+Novelty and Outlier Detection.
+Density Estimation.
+Neural network models (unsupervised).
+Model selection and evaluation.
+Cross-validation: evaluating estimator performance.
+Tuning the hyper-parameters of an estimator.
+Metrics and scoring: quantifying the quality of predictions.
+Model persistence.
+Validation curves: plotting scores to evaluate models.
+Inspection.
+Partial dependence plots.
+Permutation feature importance.
+Visualizations.
+Available Plotting Utilities.
+Dataset transformations.
+Pipelines and composite estimators.
+Feature extraction.
+Preprocessing data.
+Imputation of missing values.
+Unsupervised dimensionality reduction.
+Random Projection.
+Kernel Approximation.
+Pairwise metrics, Affinities and Kernels.
+Transforming the prediction target (y).
+Dataset loading utilities.
+General dataset API.
+Toy datasets.
+Real world datasets.
+Generated datasets.
+Loading other datasets.
+Computing with scikit-learn.
+Strategies to scale computationally: bigger data.
+Computational Performance.
+Parallelism, resource management, and configuration.
 ",
 gensim,"Gensim is an open-source library for unsupervised topic modeling and natural language processing, using modern statistical machine learning.
 
-Gensim is implemented in Python and Cython. Gensim is designed to handle large text collections using data streaming and incremental online algorithms, which differentiates it from most other machine learning software packages that target only in-memory processing. Gensim includes streamed parallelized implementations of fastText,word2vec and doc2vec algorithms,[2] as well as latent semantic analysis (LSA, LSI, SVD), non-negative matrix factorization (NMF), latent Dirichlet allocation (LDA), tf-idf and random projections.[3]
+Gensim is implemented in Python and Cython. Gensim is designed to handle large text collections using data streaming and incremental online algorithms, which differentiates it from most other machine learning software packages that target only in-memory processing. Gensim includes streamed parallelized implementations of fastText.word2vec and doc2vec algorithms. as well as latent semantic analysis (LSA, LSI, SVD). non-negative matrix factorization (NMF).latent Dirichlet allocation (LDA), tf-idf and random projections.
 
 Some of the novel online algorithms in Gensim were also published in the 2011 PhD dissertation Scalability of Semantic Analysis in Natural Language Processing of Radim Řehůřek, the creator of Gensim",
 Tensorflow,"TensorFlow Federated (TFF) is an open-source framework for machine learning and other computations on decentralized data. TFF has been developed to facilitate open research and experimentation with Federated Learning (FL), an approach to machine learning where a shared global model is trained across many participating clients that keep their training data locally. For example, FL has been used to train prediction models for mobile keyboards without uploading sensitive typing data to servers.
@@ -341,7 +337,7 @@ Suffice it to say that input defaults to ‘-‘, the standard input, and output
 
 It means to encapsulate the wisdom revealed in:
 
-o Rossum, Guido van, and Barry Warsaw. “PEP 8: Style Guide for Python Code.” 23 Mar. 2006. Python.org. 28 Nov. 2006 <http://www.python.org/dev/peps/pep-0008/>.
+o Rossum, Guido van, and Barry Warsaw. “PEP 8: Style Guide for Python Code.” 
 
 ",
 PyGame,"Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language. It is a Free and Open Source python programming language library for making multimedia applications like games built on top of the excellent SDL library. Like SDL, pygame is highly portable and runs on nearly every platform and operating system. Millions of people have downloaded pygame itself, which is a whole lot of bits flying across the interwebs.
@@ -350,7 +346,7 @@ pygame.org (the website) welcomes all Python game, art, music, sound, video and 
 xhtml2pdf,"xhtml2pdf is a html2pdf converter using the ReportLab Toolkit, the HTML5lib and pyPdf. It supports HTML 5 and CSS 2.1 (and some of CSS 3). It is completely written in pure Python so it is platform independent.
 
 The main benefit of this tool that a user with Web skills like HTML and CSS is able to generate PDF templates very quickly without learning new technologies.",
-PyDispatcher,"Dispatcher mechanism for creating event models
+PyDispatcher,"Dispatcher mechanism for creating event models.
 
 PyDispatcher is an enhanced version of Patrick K. O’Brien’s original dispatcher.py module. It provides the Python programmer with a robust mechanism for event routing within various application contexts.
 

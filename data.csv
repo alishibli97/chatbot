@@ -1,3 +1,4 @@
+SEP=,
 user1,user2,Link,Type,<U>appened user1,<U>appended user2,<U>appended type<END>
 Bye,Bye,,0,<U>Bye,<U>Bye,<U>0
 ok,Ok.,,0,<U>ok,<U>Ok.,<U>0
