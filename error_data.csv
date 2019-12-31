@@ -1,24 +1,24 @@
 ﻿error,how to solve
-"error
+"
 TypeError: '<' not supported between instances of 'int' and 'list'","all() acts on a sequence of Booleans; it does not distribute over arbitrary arguments. You can try this:  all(3 < i for i in [4, 5])
 "
-TypeError: ____() missing ____ required positional argument: 'self' error,Use the object you created not the class i.e objectname.objectmethod()
-MemoryError memory error,"A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+TypeError: ____() missing ____ required positional argument: 'self',Use the object you created not the class i.e objectname.objectmethod()
+MemoryError memory,"A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
 
 The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
 
 The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead."
-SyntaxError: Missing parentheses in call to 'print' error,"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary."
-input() error - NameError: name '____' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input()."
-KeyError key error,A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.
-ImportError: No module named <package> error,"Use pip install <package> if the package exists. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory."
-dict' object has no attribute 'iteritems'  error,"if you are in python3 , use dict.items() instead of dict.iteritems()"
-Enum AttributeError(name) from None error,"The correct syntax for defining an enum is:
+SyntaxError: Missing parentheses in call to 'print',"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary."
+input() - NameError: name '____' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input()."
+KeyError key,A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.
+ImportError: No module named <package>,"You can use pip install <package> only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory."
+dict' object has no attribute 'iteritems' ,"if you are in python3 , use dict.items() instead of dict.iteritems()"
+Enum AttributeError(name) from None,"The correct syntax for defining an enum is:
 
 class Status(Enum):
     on = 1
     off = 2"
-IndentationError: unindent does not match any outer indentation level. Error,"Python uses indentation to define code blocks, you can indent code by any amount, but it must match exactly in order to be at the same level.
+IndentationError: unindent does not match any outer indentation level.,"Python uses indentation to define code blocks, you can indent code by any amount, but it must match exactly in order to be at the same level.
 so this is fine:
 if a==b :
    if c==d :
@@ -32,7 +32,7 @@ if a==b :
  y()
 z()
 Will give you an indentation error because the call to y is not ""lined up"" with either if so the system doesn't know what to do with it."
-AttributeError:____ object has no attribute ____ error,An object can call only the methods defined in its own class definition or the method defined in its parent class.
+AttributeError:____ object has no attribute ____,An object can call only the methods defined in its own class definition or the method defined in its parent class.
 AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore."
 TypeError: unhashable type: 'list',You can't have a set of lists since lists are not hashable.
 NameError: name '____' is not defined in Python,Try to import the corresponding library before using <name>
@@ -75,8 +75,8 @@ except ValueError:
 
 Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.])
 
-ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all() error",the assert function doesn't work well when working with numpy. Use allclose() instead.
-ValueError: setting an array element with a sequence error,"From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",the assert function doesn't work well when working with numpy. Use allclose() instead.
+ValueError: setting an array element with a sequence,"From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
 
 numpy.array([[1,2], [2, 3, 4]])
 or
@@ -91,6 +91,6 @@ That is what you are trying according to your edit. If you really want to have a
 
 numpy.array([1.2, ""abc""], dtype=object)
 Without knowing what your code shall accomplish, I can't judge if this is what you want."
-TypeError: 'NoneType' object is not iterable error,"Your code is probably returning a none somewhere you expect a list. Make sure you don’t forget the ""return"" keywords in your functions"
- '____' object is not callable error,You might have overwritten the function you have with an object of type <objType> having the same name .
-"TypeError: list indices must be integers or slices, not str error","You are using a string as an integer here, remove the ' ' around your int or try int(string_variable)"
+TypeError: 'NoneType' object is not iterable,"Your code is probably returning a none somewhere you expect a list. Make sure you don’t forget the ""return"" keywords in your functions"
+ '____' object is not callable,You might have overwritten the function you have with an object of type <objType> having the same name .
+"TypeError: list indices must be integers or slices, not str","You are using a string as an integer here, remove the ' ' around your int or try int(string_variable)"

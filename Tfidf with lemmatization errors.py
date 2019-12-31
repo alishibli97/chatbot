@@ -10,19 +10,19 @@ import numpy as np
 import re
 
 
-# In[29]:
+# In[70]:
 
 
 df=pd.read_csv("EECE 634\\chatbot\\error_data.csv")
 
 
-# In[30]:
+# In[71]:
 
 
 re.search(r'(?<=named\s)(.)*(?=\s)',"ImportError: No module named <package> blaaaaa".lower()).group(0)
 
 
-# In[31]:
+# In[72]:
 
 
 import re
@@ -33,7 +33,7 @@ for item in error_qs:
     print()
 
 
-# In[32]:
+# In[73]:
 
 
 nlp = spacy.load('en')
@@ -49,7 +49,7 @@ def lemmatize_text(input_list):
 lemmatized_descriptions=lemmatize_text(list(df['error']))
 
 
-# In[33]:
+# In[74]:
 
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -58,7 +58,7 @@ vectorizer = TfidfVectorizer(stop_words = list(stop_words.ENGLISH_STOP_WORDS)+['
 desc_vectors = vectorizer.fit_transform(lemmatized_descriptions)
 
 
-# In[37]:
+# In[80]:
 
 
 from scipy.sparse import csr_matrix
@@ -66,7 +66,8 @@ desc_vectors_arr=csr_matrix(desc_vectors).toarray()
 
 from scipy import spatial
 df1=pd.read_csv("data.csv")
-lemmatized_qs=lemmatize_text(['i get an typeerror']+list(df1[(df1['Type']==2)]['user1']))
+orig_qs=['i have error']+list(df1[(df1['Type']==2)]['user1'])
+lemmatized_qs=lemmatize_text(orig_qs)
 for i,qs in enumerate(lemmatized_qs):
     v=vectorizer.transform([qs.lower()])
     isAnswered=0
@@ -80,9 +81,17 @@ for i,qs in enumerate(lemmatized_qs):
         scores=np.array(scores)
         print('Ans: ')
         for item in scores.argsort()[-3:][::-1]:
-            if scores[item]>0.4:
-                    print(df['how to solve'][item],scores[item])
+            if scores[item]>0.3:
                     isAnswered=1
+                    if "pip install <package>" in df['how to solve'][item]:
+                        try:
+                            print(df['how to solve'][item].replace('<package>',re.search(r'(?<=named\s)(.)*?(?=[\s$;,.])',orig_qs[i].lower().replace("'","")).group(0)),scores[item])
+                        except:
+                            print(df['how to solve'][item],scores[item])
+                            
+                    else:
+                        print(df['how to solve'][item],scores[item])
+                        
                     break
 
             
