@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="/static/style.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   	<script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid fixed-top position-sticky" style="margin: auto;width:47%;">
+  <div class="container">
+<table   align="center">
+<tr>
+<td>
+<img src="/static/profilepic.jpg" alt="Stackbot" style="width:50px;">
+</td>
+<td>    
+<h1 class="display-4" >Stackbot</h1>
+</td>
+</tr>
+</table> 
+</div>
+</div>
+    
+<div class="container" style="padding:10px;">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <div id="chatbox" class="border border-primary">
+<p></p>
+                <p class="botText"><span>Hi! I'm Stackbot <3</span></p>
+            </div>
+            <div id="userInput">
+                <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here">
+                <input id="buttonInput" class="btn btn-primary form-control" type="submit" value="Send">
+            </div>
+        </div>
+    </div>
+
+<script>
+    function getResponse() {
+        let userText = $("#textInput").val();
+        let userHtml = '<p class="userText" ><span>' + userText + '</span></p>';
+        $("#textInput").val("");
+        $("#chatbox").append(userHtml);
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+        $.get("/get", { msg: userText }).done(function(data) {
+        var botHtml = '<p class="botText" ><span>' + data + '</span></p>';
+        $("#chatbox").append(botHtml);
+        document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+    $("#textInput").keyup(function(e) {
+    //if enter key is pressed
+        if(e.keyCode == 13) {
+            getResponse();
+        }
+    });
+    $("#buttonInput").click(function() {
+        getResponse();
+    });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</div>
+
+</body>
+
+</html>

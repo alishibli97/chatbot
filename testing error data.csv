@@ -1,0 +1,73 @@
+﻿error
+TypeError: '>=' not supported between instances of 'list' and 'int'. Hi I'm stuck with the above error. 
+"TypeError: '<=' not supported between instances of 'list' and 'int' Why is it not supported?
+Or did I miss something?"
+TypeError: '<' not supported between instances of 'list' and 'int'. How can I fix this?
+"This is not working on version 3.0.5, besides used to work on version 1.90.3. If no button is pressed, error above shows:
+
+TypeError: ‘>=’ not supported between instances of ‘list’ and ‘float’
+
+Thanks for any help or ideas."
+"TypeError: '<' not supported between instances of 'int' and 'str'
+
+I am not sure what I am doing wrong. I only have int and float in my dataframe."
+"I am new to python and have hit a wall. I followed several tutorials but cant get past the error:
+    p = Pump.getPumps()
+TypeError: getPumps() missing 1 required positional argument: 'self'
+I examined several tutorials but there doesn't seem to be anything different from my code.
+If I understand correctly ""self"" is passed to the constructor and methods automatically. What am I doing wrong here?"
+"I understand that it wants self to be passed into database but cannot understand where I am going to get this from as self from my main.py contains the wrong context.
+I have my main class in which I want to call the database class and execute a function from withinclass
+ Main:
+    def __init__(self):
+        self.db = Database
+        self.db.createConnection()
+ When I run this, I am presented with the following error.
+TypeError: createConnection() missing 1 required positional argument: 'self' "
+"I'm getting this error: MemoryError: memory allocation failed, allocating 964 bytes
+Now, I don't know how to approach for the fix as I don't really understand what's really happening here.
+Please let me know about the error and what should I do to fix this? "
+"When you try to run file (test.py) with size of 18447 bytes, the error is generated:
+
+MemoryError: memory allocation failed, allocating %u bytes"
+"MemoryError: memory allocation failed, allocating 80 bytes
+
+I can't seem to get it running. The simple sample code does seem to work just fine."
+"When I try to use a print statement in Python, it gives me this error:
+SyntaxError: Missing parentheses in call to 'print'
+
+What does that mean?"
+"Hi. I just started with learning Python today. 
+
+I Written below basic function in jupyter text file and saved. 
+
+def sayhello():
+    print ""hello python""
+after that when I run it, I get this error:
+
+ SyntaxError: Missing parentheses in call to ""print"". Did you mean print(""hello python"")?"
+"Am new to python, a new concept which i love.... i started 3days back.... and am using a text book to teach myself.... i got to a section of the textbook and i saw a new concept which i love.but i entered the code the way it was entered in the text book.... but the program did not run...here is the code, and the result i was getting.......
+
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(x*y)?"
+"I'm trying to write a function that will ask to input name, last name and year of birth. Also, it will later print out the initials and the age.
+
+First of all, it doesn't ask for any of it.
+
+Second of all, it doesn't matter what I'll enter it will print the error:
+
+NameError: name ""____""  is not defined.
+I'm using Python 3."
+"I am getting an error when I try to run this simple python script:
+
+input_variable = input (""Enter your name: "")
+print (""your name is"" + input_variable)
+Lets say I type in ""dude"", the error I am getting is:
+
+line 1, in <module>
+input_variable = input (""Enter your name: "")
+File ""<string>"", line 1, in <module>
+NameError: name 'dude' is not defined"
+"KeyError: 'Name' , What's the issue?Can anyone tell me why I am getting this error? I see no issue with the code"
+"I installed odoo 10 and after running ./odoo-bin -c odoo10-server.conf command on Terminal
+
+ImportError: No module named pychart error occured."

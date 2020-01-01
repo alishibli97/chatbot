@@ -1,0 +1,24 @@
+.userText {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: right;
+    line-height: 30px;
+}
+.userText span {
+    background-color: #0084FF;
+    padding: 10px;
+    border-radius: 2px;
+}
+.botText {
+    color: black;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+}
+.botText span {
+    background-color: #e9ebee;
+    padding: 10px;
+    border-radius: 2px;
+}

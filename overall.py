@@ -117,34 +117,33 @@ class Application(tk.Frame):
         else: return "I don't understand, please be more specific."
 
     def answer_functional(self, question, cat):
-        with open("data.csv", encoding='unicode_escape') as file:
-            file_data = pd.read_csv(file)
-            questions = list(file_data[(file_data['Type'] == cat)]['user1'])
-            answers = list(file_data[(file_data['Type'] == cat)]['user2'])
+        file_data = pd.read_csv("data.csv",encoding='utf-8')
+        questions = list(file_data[(file_data['Type'] == cat)]['user1'])
+        answers = list(file_data[(file_data['Type'] == cat)]['user2'])
 
-            indexes = {}
-            i = 0
-            for q in questions:
-                if (self.filterString(q) != []): indexes[i] = self.filterString(q)
-                i += 1
+        indexes = {}
+        i = 0
+        for q in questions:
+            if (self.filterString(q) != []): indexes[i] = self.filterString(q)
+            i += 1
 
-            question = self.filterString(question)
-            min = 0
-            threshold = 0.1
-            index_target = -1
-            for index in indexes:
-                # computing Jaccard Similarity [intersection/union]
-                inter = set(question).intersection(set(indexes[index]))
-                un = set(question).union(indexes[index])
-                percent_sim = len(inter) / len(un)
-                if (percent_sim > min and percent_sim > threshold):  # and percent_sim<0.65
-                    min = percent_sim
-                    output = questions[index]
-                    index_target = index
-            if (index_target != -1):
-                return answers[index_target]
-            else:
-                return "I can't answer this question yet."
+        question = self.filterString(question)
+        min = 0
+        threshold = 0.1
+        index_target = -1
+        for index in indexes:
+            # computing Jaccard Similarity [intersection/union]
+            inter = set(question).intersection(set(indexes[index]))
+            un = set(question).union(indexes[index])
+            percent_sim = len(inter) / len(un)
+            if (percent_sim > min and percent_sim > threshold):  # and percent_sim<0.65
+                min = percent_sim
+                output = questions[index]
+                index_target = index
+        if (index_target != -1):
+            return answers[index_target]
+        else:
+            return "I can't answer this question yet."
 
     def filterString(self, str):
         lemmatizer = WordNetLemmatizer()

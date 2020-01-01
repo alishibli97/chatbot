@@ -78,7 +78,7 @@ Serialization that supports both ORM and non-ORM data sources.
 Customizable all the way down - just use regular function-based views if you don't need the more powerful features.
 Extensive documentation, and great community support.
 Used and trusted by internationally recognised companies including Mozilla, Red Hat, Heroku, and Eventbrite.",REST-Web API-API-OAuth1a-OAuth2-Serialization-ORM-Restful
-Flask-RESTful,Flask-RESTful provides the building blocks for creating a great REST API.,REST-API-Restful
+Flask-RESTful,Flask-RESTful provides the building blocks for creating a great REST API. It is a lightweight abstraction that works with your existing ORM/libraries. Flask-RESTful encourages best practices with minimal setup.,REST-API-Restful
 sandman,"sandman2 automagically generates a RESTful API service from your existing database, without requiring you to write a line of code. Simply point sandman2 to your database, add salt for seasoning, and voila!, a fully RESTful API service with hypermedia support starts running, ready to accept HTTP requests.
 
 This is a big deal. It means every single database you interact with, from the SQLite database that houses your web browser’s data up to your production PostgreSQL server can be endowed with a REST API and accessed programatically, using any number of HTTP client libraries available in every language. sandman2 frees your data.",generates-RESTful API service-from database-automatically-SQLite-PostgreSQL-automatically generates

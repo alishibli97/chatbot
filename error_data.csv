@@ -1,8 +1,8 @@
 ﻿error,how to solve
 "
-TypeError: '<' not supported between instances of 'int' and 'list'","all() acts on a sequence of Booleans; it does not distribute over arbitrary arguments. You can try this:  all(3 < i for i in [4, 5])
+TypeError: '<' not supported between instances of 'int' and 'list'","You can not compare objects of different types
 "
-TypeError: ____() missing ____ required positional argument: 'self',Use the object you created not the class i.e objectname.objectmethod()
+TypeError: ____() missing ____ required positional argument: 'self',"Use the object you created not the class i.e objectname.objectmethod(), where you instantiate objectname=classname(parameters)"
 MemoryError memory,"A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
 
 The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
