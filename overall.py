@@ -9,6 +9,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import warnings
+import numpy as np
+from scipy import spatial
+from scipy.sparse import csr_matrix
 
 class Application(tk.Frame):
     def __init__(self, master=None,method=None):
@@ -16,8 +19,6 @@ class Application(tk.Frame):
         self.master = master
         self.method = method
         self.grid(row=0, column=0)
-        self.scrollbar = tk.Scrollbar(orient=tk.VERTICAL)
-        self.scrollbar.grid(row=0, column=1, sticky='ns')
         self.create_widgets()
         self.n = 0
         self.labels = self.get_labels("annotations.json")
@@ -43,16 +44,16 @@ class Application(tk.Frame):
         self.n += 1
         self.AI_name = tk.Label(self, text="AI: ", fg='red').grid(row=self.n, column=0)
         self.AI_text = tk.Label(self, text=self.compute_answer(self.retrieve_input()), anchor=tk.W, justify=tk.LEFT,
-                                width=120, fg='red', wraplength=700).grid(row=self.n, column=1)
+                                width=120, fg='red').grid(row=self.n, column=1)
         self.txt.delete(0, 'end')
 
     def retrieve_input(self):
         return self.txt.get()
 
     def compute_answer(self, question):
-        if self.method=="functional_functional": return self.classify_functional(question)
-        elif self.method=="functional_databased": return self.classify_databased(question)
-        else: return "yala min hon"
+        if self.method=="functional_functional" or self.method=="function_databased": return self.classify_functional(question)
+        elif self.method=="databased_functional" or self.method=="databased_databased": return self.classify_databased(question)
+        else: return 'You had inputted wrong method type: "{}"'.format(self.method)
 
     def classify_functional(self, question):
         cat = -1
@@ -86,7 +87,8 @@ class Application(tk.Frame):
         if (cat == -1):
             return "I don't understand, please be more specific."
         else:
-            return self.answer_functional(question, cat)
+            if self.method=="functional_functional" or self.method=="databased_functional": return self.answer_functional(question,cat)
+            elif self.method=="functional_databased" or self.method=="databased_databased": return self.answer_databased(question,cat)
 
     def classify_databased(self,question):
         warnings.filterwarnings('ignore')
@@ -145,6 +147,26 @@ class Application(tk.Frame):
                 return answers[index_target]
             else:
                 return "I can't answer this question yet."
+
+    def answer_databased(self,question,cat):
+        df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+        df = df[df['Type'] == cat]
+        df = df.reset_index(drop=True)
+        corpus = list(df['user1'])
+
+        for i, item in enumerate(corpus):
+            corpus[i] = corpus[i].lower().replace('python', "").replace('library', "").replace('pure', "").replace('package', "")
+        vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 1))
+        X = vectorizer.fit_transform(corpus)
+        k = csr_matrix(X).toarray()
+
+        v = vectorizer.transform([question.lower()])
+        scores = []
+        for item in k:
+            scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+        scores = np.array(scores)
+        index = scores.argsort()[-3:][::-1][0]
+        return df['user2'][index]
 
     def filterString(self, str):
         lemmatizer = WordNetLemmatizer()
@@ -210,10 +232,8 @@ if __name__ == '__main__':
     if (args["name"]!=None): method = args["name"]
 
     root = tk.Tk()
-
     root.geometry("1000x500")
     root.title("Python Chatbot: "+method)
     root.resizable(width=False, height=False)
-
     app = Application(master=root,method=method)
     app.mainloop()
