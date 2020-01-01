@@ -19,6 +19,8 @@ class Application(tk.Frame):
         self.master = master
         self.method = method
         self.grid(row=0, column=0)
+        #self.scrollbar = tk.Scrollbar(orient=tk.VERTICAL)
+        #self.scrollbar.grid(row=0, column=1, sticky='ns')
         self.create_widgets()
         self.n = 0
         self.labels = self.get_labels("annotations.json")
@@ -44,7 +46,7 @@ class Application(tk.Frame):
         self.n += 1
         self.AI_name = tk.Label(self, text="AI: ", fg='red').grid(row=self.n, column=0)
         self.AI_text = tk.Label(self, text=self.compute_answer(self.retrieve_input()), anchor=tk.W, justify=tk.LEFT,
-                                width=120, fg='red').grid(row=self.n, column=1)
+                                width=120, fg='red', wraplength=700).grid(row=self.n, column=1)
         self.txt.delete(0, 'end')
 
     def retrieve_input(self):
