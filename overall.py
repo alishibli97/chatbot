@@ -12,18 +12,38 @@ import warnings
 import numpy as np
 from scipy import spatial
 from scipy.sparse import csr_matrix
+import spacy
+from sklearn.feature_extraction import stop_words
 
 class Application(tk.Frame):
     def __init__(self, master=None,method=None):
         super().__init__(master)
         self.master = master
         self.method = method
+        self.spacy_model = spacy.load('en')
         self.grid(row=0, column=0)
         #self.scrollbar = tk.Scrollbar(orient=tk.VERTICAL)
         #self.scrollbar.grid(row=0, column=1, sticky='ns')
         self.create_widgets()
         self.n = 0
         self.labels = self.get_labels("annotations.json")
+
+        self.library_df = pd.read_csv("library_data.csv")
+        self.library_df.drop_duplicates(subset=['name'])
+        self.lemmatized_library_descriptions = self.lemmatize_text(list(self.library_df['description']))
+        self.library_vectorizer = TfidfVectorizer(
+            stop_words=list(stop_words.ENGLISH_STOP_WORDS) + ['a', 'python', 'framework', 'library', 'should', 'import',
+                                                              'want', 'use', 'pron'], ngram_range=(1, 1))
+        self.library_desc_vectors = self.library_vectorizer.fit_transform(self.lemmatized_library_descriptions)
+        self.library_desc_vectors = csr_matrix(self.library_desc_vectors).toarray()
+
+        self.error_df = pd.read_csv("error_data.csv")
+        self.error_lemmatized_descriptions = self.lemmatize_text(list(self.error_df['error']))
+        self.error_vectorizer = TfidfVectorizer(
+            stop_words=list(stop_words.ENGLISH_STOP_WORDS) + ['python', 'should', 'want', 'use', 'pron'],
+            ngram_range=(1, 1))
+        self.error_desc_vectors = self.error_vectorizer.fit_transform(self.error_lemmatized_descriptions)
+        self.error_desc_vectors_arr = csr_matrix(self.error_desc_vectors).toarray()
 
     def create_widgets(self):
         self.user = tk.Label(self, text="User").grid(row=0, column=0)
@@ -38,8 +58,7 @@ class Application(tk.Frame):
         if (message != ""):
             self.n += 1
             self.user_name = tk.Label(self, text="User: ").grid(row=self.n, column=0)
-            self.user_text = tk.Label(self, text=message, anchor=tk.W, justify=tk.LEFT, width=120).grid(row=self.n,
-                                                                                                        column=1)
+            self.user_text = tk.Label(self, text=message, anchor=tk.W, justify=tk.LEFT, width=120).grid(row=self.n,column=1)
             self.reply()
 
     def reply(self):
@@ -53,7 +72,7 @@ class Application(tk.Frame):
         return self.txt.get()
 
     def compute_answer(self, question):
-        if self.method=="functional_functional" or self.method=="function_databased": return self.classify_functional(question)
+        if self.method=="functional_functional" or self.method=="functional_databased": return self.classify_functional(question)
         elif self.method=="databased_functional" or self.method=="databased_databased": return self.classify_databased(question)
         else: return 'You had inputted wrong method type: "{}"'.format(self.method)
 
@@ -121,7 +140,7 @@ class Application(tk.Frame):
         else: return "I don't understand, please be more specific."
 
     def answer_functional(self, question, cat):
-        file_data = pd.read_csv("data.csv",encoding='utf-8')
+        file_data = pd.read_csv("data.csv",encoding='ISO-8859-1')
         questions = list(file_data[(file_data['Type'] == cat)]['user1'])
         answers = list(file_data[(file_data['Type'] == cat)]['user2'])
 
@@ -150,24 +169,82 @@ class Application(tk.Frame):
             return "I can't answer this question yet."
 
     def answer_databased(self,question,cat):
-        df = pd.read_csv("data.csv", encoding="ISO-8859-1")
-        df = df[df['Type'] == cat]
-        df = df.reset_index(drop=True)
-        corpus = list(df['user1'])
+        if (cat==0): return self.answer_functional(question,cat)
+        elif(cat==1):
 
-        for i, item in enumerate(corpus):
-            corpus[i] = corpus[i].lower().replace('python', "").replace('library', "").replace('pure', "").replace('package', "")
-        vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 1))
-        X = vectorizer.fit_transform(corpus)
-        k = csr_matrix(X).toarray()
+            v = self.library_vectorizer.transform(self.lemmatize_text([question.lower()]))
+            isAnswered = 0
+            if self.library_vectorizer.inverse_transform(
+                    self.library_vectorizer.transform(self.lemmatize_text([question.lower()])))[0].shape[0] == 0:
+                scores = [0] * len(self.library_desc_vectors)
+            else:
+                scores = []
+                for item in self.library_desc_vectors:
+                    scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+                scores = np.array(scores)
+                answer_list = []
+                for item in scores.argsort()[-3:][::-1]:
+                    if scores[item] > 0.173:
+                        if isAnswered:
+                            answer_list.append("Maybe " + self.library_df['name'][item] + " would help")
+                        else:
+                            answer_list.append(self.library_df['name'][item] + " is a good choice")
+                            isAnswered = 1
+                    elif 0.173 > scores[item] > 0.129:
+                        answer_list.append("I'm not sure, but " + self.library_df['name'][item] + " may help")
+                        isAnswered = 1
+            if isAnswered == 0:
+                return 'Sorry i cannot answer this question yet :)'
+            else:
+                return ". ".join(answer_list)
 
-        v = vectorizer.transform([question.lower()])
-        scores = []
-        for item in k:
-            scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
-        scores = np.array(scores)
-        index = scores.argsort()[-3:][::-1][0]
-        return df['user2'][index]
+        elif(cat==2):
+
+            lemmatized_qs = self.lemmatize_text([question])
+            for i, qs in enumerate(lemmatized_qs):
+                v = self.error_vectorizer.transform([qs.lower()])
+                isAnswered = 0
+                if self.error_vectorizer.inverse_transform(self.error_vectorizer.transform([qs]))[0].shape[0] == 0:
+                    scores = [0] * len(self.error_desc_vectors_arr)
+                else:
+                    scores = []
+                    for item in self.error_desc_vectors_arr:
+                        scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+                    scores = np.array(scores)
+                    for item in scores.argsort()[-3:][::-1]:
+                        if scores[item] > 0.3:
+                            isAnswered = 1
+                            if "pip install <package>" in self.error_df['how to solve'][item]:
+                                try:
+                                    return self.error_df['how to solve'][item].replace('<package>', re.search(
+                                        r'(?<=named\s)(.)*?(?=[\s;,.]*).*$', question.lower().replace("'", "")).group(
+                                        0))
+                                except:
+                                    return self.error_df['how to solve'][item]
+                            else:
+                                return self.error_df['how to solve'][item]
+                if isAnswered == 0:
+                    return 'Be more specific :)'
+
+        else:
+            df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+            df = df[df['Type'] == cat]
+            df = df.reset_index(drop=True)
+            corpus = list(df['user1'])
+
+            for i, item in enumerate(corpus):
+                corpus[i] = corpus[i].lower().replace('python', "").replace('library', "").replace('pure', "").replace('package', "")
+            vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 1))
+            X = vectorizer.fit_transform(corpus)
+            k = csr_matrix(X).toarray()
+
+            v = vectorizer.transform([question.lower()])
+            scores = []
+            for item in k:
+                scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+            scores = np.array(scores)
+            index = scores.argsort()[-3:][::-1][0]
+            return df['user2'][index]
 
     def filterString(self, str):
         lemmatizer = WordNetLemmatizer()
@@ -176,6 +253,16 @@ class Application(tk.Frame):
         index = [re.sub(r'\W+', '', word) for word in index]
         index = list(filter(None, index))
         return index
+
+    def lemmatize_text(self, input_list):
+        lemmatized_descriptions = []
+        for desc in input_list:
+            current_desc = []
+            doc = self.spacy_model(desc)
+            for token in doc:
+                current_desc.append(token.lemma_)
+            lemmatized_descriptions.append(" ".join(current_desc))
+        return lemmatized_descriptions
 
     def get_labels(self, arg):
         with open(arg) as json_file:
@@ -229,7 +316,8 @@ if __name__ == '__main__':
     args = vars(ap.parse_args())
 
     # default method
-    method = "functional_functional"
+    methods =["functional_functional","functional_databased","databased_functional","databased_databased"]
+    method = methods[1]
     if (args["name"]!=None): method = args["name"]
 
     root = tk.Tk()
