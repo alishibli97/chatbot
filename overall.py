@@ -45,6 +45,7 @@ class Application(tk.Frame):
         self.error_desc_vectors = self.error_vectorizer.fit_transform(self.error_lemmatized_descriptions)
         self.error_desc_vectors_arr = csr_matrix(self.error_desc_vectors).toarray()
 
+    # this function is for creating the GUI widgets
     def create_widgets(self):
         self.user = tk.Label(self, text="User").grid(row=0, column=0)
         self.txt = tk.Entry(self, width=140)
@@ -53,6 +54,7 @@ class Application(tk.Frame):
         self.quit = tk.Button(self, text="Quit", command=self.master.destroy).grid(row=1, column=2)
         self.master.bind('<Return>', self.send_message)
 
+    # this function is triggered on hitting the "send" button or pressing "Enter" from keyboard
     def send_message(self, event=None):
         message = self.retrieve_input()
         if (message != ""):
@@ -61,6 +63,7 @@ class Application(tk.Frame):
             self.user_text = tk.Label(self, text=message, anchor=tk.W, justify=tk.LEFT, width=120).grid(row=self.n,column=1)
             self.reply()
 
+    # this function is for starting the replying procedure
     def reply(self):
         self.n += 1
         self.AI_name = tk.Label(self, text="AI: ", fg='red').grid(row=self.n, column=0)
@@ -68,14 +71,17 @@ class Application(tk.Frame):
                                 width=120, fg='red', wraplength=700).grid(row=self.n, column=1)
         self.txt.delete(0, 'end')
 
+    # retrives the input from the user
     def retrieve_input(self):
         return self.txt.get()
 
+    # directs search towards particular method
     def compute_answer(self, question):
         if self.method=="functional_functional" or self.method=="functional_databased": return self.classify_functional(question)
         elif self.method=="databased_functional" or self.method=="databased_databased": return self.classify_databased(question)
         else: return 'You had inputted wrong method type: "{}"'.format(self.method)
 
+    # functional model based on regex for classification
     def classify_functional(self, question):
         cat = -1
         cat_found = []
@@ -108,9 +114,10 @@ class Application(tk.Frame):
         if (cat == -1):
             return "I don't understand, please be more specific."
         else:
-            if self.method=="functional_functional" or self.method=="databased_functional": return self.answer_functional(question,cat)
-            elif self.method=="functional_databased" or self.method=="databased_databased": return self.answer_databased(question,cat)
+            if cat==0 or self.method=="functional_functional" or self.method=="databased_functional": return self.answer_functional(question,cat)
+            else: return self.answer_databased(question,cat)
 
+    # databased models based (machine learning models and tf-idf measure) for classification
     def classify_databased(self,question):
         warnings.filterwarnings('ignore')
 
@@ -139,6 +146,7 @@ class Application(tk.Frame):
 
         else: return "I don't understand, please be more specific."
 
+    # functional model for answering (based on Jaccard similarity)
     def answer_functional(self, question, cat):
         file_data = pd.read_csv("data.csv",encoding='ISO-8859-1')
         questions = list(file_data[(file_data['Type'] == cat)]['user1'])
@@ -168,84 +176,94 @@ class Application(tk.Frame):
         else:
             return "I can't answer this question yet."
 
+    # directing the answering procedure towards 3 main ways
+    # first for answering library questions by the help of library descriptions
+    # second for answering error questions by the help of error descriptions
+    # the third answers for rest of categories 3 4 5 6
     def answer_databased(self,question,cat):
-        if (cat==0): return self.answer_functional(question,cat)
-        elif(cat==1):
+        if(cat==1): return self.answer_databased_library(question,cat)    # answer for library
+        elif(cat==2): return self.answer_databased_error(question,cat)      # answer for error
+        else: return self.answer_databased_rest(question,cat)               # answer rest of categories
 
-            v = self.library_vectorizer.transform(self.lemmatize_text([question.lower()]))
-            isAnswered = 0
-            if self.library_vectorizer.inverse_transform(
-                    self.library_vectorizer.transform(self.lemmatize_text([question.lower()])))[0].shape[0] == 0:
-                scores = [0] * len(self.library_desc_vectors)
-            else:
-                scores = []
-                for item in self.library_desc_vectors:
-                    scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
-                scores = np.array(scores)
-                answer_list = []
-                for item in scores.argsort()[-3:][::-1]:
-                    if scores[item] > 0.173:
-                        if isAnswered:
-                            answer_list.append("Maybe " + self.library_df['name'][item] + " would help")
-                        else:
-                            answer_list.append(self.library_df['name'][item] + " is a good choice")
-                            isAnswered = 1
-                    elif 0.173 > scores[item] > 0.129:
-                        answer_list.append("I'm not sure, but " + self.library_df['name'][item] + " may help")
-                        isAnswered = 1
-            if isAnswered == 0:
-                return 'Sorry i cannot answer this question yet :)'
-            else:
-                return ". ".join(answer_list)
-
-        elif(cat==2):
-
-            lemmatized_qs = self.lemmatize_text([question])
-            for i, qs in enumerate(lemmatized_qs):
-                v = self.error_vectorizer.transform([qs.lower()])
-                isAnswered = 0
-                if self.error_vectorizer.inverse_transform(self.error_vectorizer.transform([qs]))[0].shape[0] == 0:
-                    scores = [0] * len(self.error_desc_vectors_arr)
-                else:
-                    scores = []
-                    for item in self.error_desc_vectors_arr:
-                        scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
-                    scores = np.array(scores)
-                    for item in scores.argsort()[-3:][::-1]:
-                        if scores[item] > 0.3:
-                            isAnswered = 1
-                            if "pip install <package>" in self.error_df['how to solve'][item]:
-                                try:
-                                    return self.error_df['how to solve'][item].replace('<package>', re.search(
-                                        r'(?<=named\s)(.)*?(?=[\s;,.]*).*$', question.lower().replace("'", "")).group(
-                                        0))
-                                except:
-                                    return self.error_df['how to solve'][item]
-                            else:
-                                return self.error_df['how to solve'][item]
-                if isAnswered == 0:
-                    return 'Be more specific :)'
-
+    # answering for library related questions
+    def answer_databased_library(self,question,cat):
+        v = self.library_vectorizer.transform(self.lemmatize_text([question.lower()]))
+        isAnswered = 0
+        if self.library_vectorizer.inverse_transform(
+                self.library_vectorizer.transform(self.lemmatize_text([question.lower()])))[0].shape[0] == 0:
+            scores = [0] * len(self.library_desc_vectors)
         else:
-            df = pd.read_csv("data.csv", encoding="ISO-8859-1")
-            df = df[df['Type'] == cat]
-            df = df.reset_index(drop=True)
-            corpus = list(df['user1'])
-
-            for i, item in enumerate(corpus):
-                corpus[i] = corpus[i].lower().replace('python', "").replace('library', "").replace('pure', "").replace('package', "")
-            vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 1))
-            X = vectorizer.fit_transform(corpus)
-            k = csr_matrix(X).toarray()
-
-            v = vectorizer.transform([question.lower()])
             scores = []
-            for item in k:
+            for item in self.library_desc_vectors:
                 scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
             scores = np.array(scores)
-            index = scores.argsort()[-3:][::-1][0]
-            return df['user2'][index]
+            answer_list = []
+            for item in scores.argsort()[-3:][::-1]:
+                if scores[item] > 0.173:
+                    if isAnswered:
+                        answer_list.append("Maybe " + self.library_df['name'][item] + " would help")
+                    else:
+                        answer_list.append(self.library_df['name'][item] + " is a good choice")
+                        isAnswered = 1
+                elif 0.173 > scores[item] > 0.129:
+                    answer_list.append("I'm not sure, but " + self.library_df['name'][item] + " may help")
+                    isAnswered = 1
+        if isAnswered == 0:
+            return 'Sorry i cannot answer this question yet :)'
+        else:
+             return ". ".join(answer_list)
 
+    # answering for error related questions
+    def answer_databased_error(self,question,cat):
+        lemmatized_qs = self.lemmatize_text([question])
+        for i, qs in enumerate(lemmatized_qs):
+            v = self.error_vectorizer.transform([qs.lower()])
+            isAnswered = 0
+            if self.error_vectorizer.inverse_transform(self.error_vectorizer.transform([qs]))[0].shape[0] == 0:
+                 scores = [0] * len(self.error_desc_vectors_arr)
+            else:
+                scores = []
+                for item in self.error_desc_vectors_arr:
+                    scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+                scores = np.array(scores)
+                for item in scores.argsort()[-3:][::-1]:
+                    if scores[item] > 0.3:
+                        isAnswered = 1
+                        if "pip install <package>" in self.error_df['how to solve'][item]:
+                            try:
+                                return self.error_df['how to solve'][item].replace('<package>', re.search(
+                                    r'(?<=named\s)(.)*?(?=[\s;,.]*).*$', question.lower().replace("'", "")).group(
+                                    0))
+                            except:
+                                   return self.error_df['how to solve'][item]
+                        else:
+                            return self.error_df['how to solve'][item]
+            if isAnswered == 0:
+                return 'Be more specific :)'
+
+    # answering for the rest of the categories 3 4 5 6
+    def answer_databased_rest(self,question,cat):
+        df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+        df = df[df['Type'] == cat]
+        df = df.reset_index(drop=True)
+        corpus = list(df['user1'])
+
+        for i, item in enumerate(corpus):
+            corpus[i] = corpus[i].lower().replace('python', "").replace('library', "").replace('pure', "").replace(
+                'package', "")
+        vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 1))
+        X = vectorizer.fit_transform(corpus)
+        k = csr_matrix(X).toarray()
+
+        v = vectorizer.transform([question.lower()])
+        scores = []
+        for item in k:
+            scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+        scores = np.array(scores)
+        index = scores.argsort()[-3:][::-1][0]
+        return df['user2'][index]
+
+    # filtering the string by lemmatizing and removing non alphanumeric
     def filterString(self, str):
         lemmatizer = WordNetLemmatizer()
         word_tokens = [word.lower() for word in word_tokenize(str)]
@@ -254,6 +272,7 @@ class Application(tk.Frame):
         index = list(filter(None, index))
         return index
 
+    # lemmatizing text
     def lemmatize_text(self, input_list):
         lemmatized_descriptions = []
         for desc in input_list:
@@ -264,6 +283,7 @@ class Application(tk.Frame):
             lemmatized_descriptions.append(" ".join(current_desc))
         return lemmatized_descriptions
 
+    # getting and reading the labels from the json file for functional classification
     def get_labels(self, arg):
         with open(arg) as json_file:
             data = json.load(json_file)
@@ -308,9 +328,8 @@ class Application(tk.Frame):
                     file.close()
             return labels
 
-
 if __name__ == '__main__':
-
+    
     ap = argparse.ArgumentParser()
     ap.add_argument("-n", "--name", required=False, help="name of the method")
     args = vars(ap.parse_args())
