@@ -1,4 +1,5 @@
 import tkinter as tk
+import tkinter.scrolledtext as ScrolledText
 import json
 import re
 from nltk.tokenize import word_tokenize
@@ -14,6 +15,7 @@ from scipy import spatial
 from scipy.sparse import csr_matrix
 import spacy
 from sklearn.feature_extraction import stop_words
+import time
 
 class Application(tk.Frame):
     def __init__(self, master=None,method=None):
@@ -22,8 +24,6 @@ class Application(tk.Frame):
         self.method = method
         self.spacy_model = spacy.load('en')
         self.grid(row=0, column=0)
-        #self.scrollbar = tk.Scrollbar(orient=tk.VERTICAL)
-        #self.scrollbar.grid(row=0, column=1, sticky='ns')
         self.create_widgets()
         self.n = 0
         self.labels = self.get_labels("annotations.json")
@@ -53,23 +53,21 @@ class Application(tk.Frame):
         self.send = tk.Button(self, text="Send", command=self.send_message).grid(row=0, column=2)
         self.quit = tk.Button(self, text="Quit", command=self.master.destroy).grid(row=1, column=2)
         self.master.bind('<Return>', self.send_message)
+        self.conversation = ScrolledText.ScrolledText(self, state='disabled')
+        self.conversation.grid(column=0, row=2, columnspan=2, sticky='nesw', padx=3, pady=3)
 
     # this function is triggered on hitting the "send" button or pressing "Enter" from keyboard
     def send_message(self, event=None):
         message = self.retrieve_input()
+        self.txt.delete(0,'end')
         if (message != ""):
             self.n += 1
-            self.user_name = tk.Label(self, text="User: ").grid(row=self.n, column=0)
-            self.user_text = tk.Label(self, text=message, anchor=tk.W, justify=tk.LEFT, width=120).grid(row=self.n,column=1)
-            self.reply()
-
-    # this function is for starting the replying procedure
-    def reply(self):
-        self.n += 1
-        self.AI_name = tk.Label(self, text="AI: ", fg='red').grid(row=self.n, column=0)
-        self.AI_text = tk.Label(self, text=self.compute_answer(self.retrieve_input()), anchor=tk.W, justify=tk.LEFT,
-                                width=120, fg='red', wraplength=700).grid(row=self.n, column=1)
-        self.txt.delete(0, 'end')
+            self.conversation['state']='normal'
+            self.conversation.insert(
+                tk.END, "User: "+message+"\n"+"AI: "+ self.compute_answer(message) + "\n"
+            )
+            self.conversation['state']='disabled'
+            time.sleep(0.5)
 
     # retrives the input from the user
     def retrieve_input(self):
@@ -329,7 +327,7 @@ class Application(tk.Frame):
             return labels
 
 if __name__ == '__main__':
-    
+
     ap = argparse.ArgumentParser()
     ap.add_argument("-n", "--name", required=False, help="name of the method")
     args = vars(ap.parse_args())
