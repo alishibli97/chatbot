@@ -2,6 +2,20 @@
 # coding: utf-8
 import pandas as pd
 import numpy as np
+import spacy
+from sklearn.feature_extraction import stop_words
+
+
+def lemmatize_text(input_list):
+    spacy_model = spacy.load('en')
+    lemmatized_descriptions = []
+    for desc in input_list:
+        current_desc = []
+        doc = spacy_model(desc)
+        for token in doc:
+            current_desc.append(token.lemma_)
+        lemmatized_descriptions.append(" ".join(current_desc))
+    return lemmatized_descriptions
 
 
 df = pd.read_csv("data.csv", encoding = "ISO-8859-1")
@@ -12,10 +26,11 @@ df = df[df['Type'] != 0]
 df = df.reset_index(drop=True)
 corpus = list(df['user1'])
 
-for i,item in enumerate(corpus):
-    corpus[i]=corpus[i].lower().replace('python',"").replace('library',"").replace('pure',"").replace('package',"")
-vectorizer = TfidfVectorizer(stop_words = 'english', ngram_range=(1,1))
-X = vectorizer.fit_transform(corpus)
+# for i,item in enumerate(corpus):
+#     corpus[i]=corpus[i].lower()
+lemmatized_corpus = lemmatize_text(corpus)
+vectorizer = TfidfVectorizer(stop_words = ['a', 'the','python', 'should', 'want', 'use', 'pron'], ngram_range=(1,1))
+X = vectorizer.fit_transform(lemmatized_corpus)
 
 
 vectorizer.inverse_transform(X)
@@ -29,12 +44,14 @@ k=csr_matrix(X).toarray()
 max(k[0])
 
 correct = 0
+correct_2 = 0
 
 from scipy import spatial
 df1=pd.read_csv("data_modified.csv", encoding="ISO-8859-1")
 df1=df1[df1['modified']==1]
 df1 = df1.reset_index(drop=True)
-for i,qs in enumerate(list(df1['user1'])):
+lemmatized_qs = lemmatize_text(list(df1['user1']))
+for i,qs in enumerate(lemmatized_qs):
     v=vectorizer.transform([qs.lower()])
     scores=[]
     for item in k:
@@ -43,13 +60,25 @@ for i,qs in enumerate(list(df1['user1'])):
     print('QS: '+qs)
     print('Ans: ')
     for item in scores.argsort()[-3:][::-1]:
-        print(df['user2'][item])
-        if df['user2'][item] == df1['user2'][i]:
-            correct += 1
+        if scores[item] > 0.45:
+            print(df['user2'][item])
+            print(scores[item])
+            if df['user2'][item] == df1['user2'][i]:
+                correct += 1
+            else:
+                print('wrong')
+            break
         else:
-            print('wrong')
-        break
+            print('Sorry i cannot answer this question yet :)')
+            if df1['user2'][i] == 'Sorry i cannot answer this question yet :)':
+                correct += 1
+                correct_2 += 1
+            else:
+                print('wrong')
+            break
     print()
+    print(correct_2)
     print(correct)
+    print(len(df1))
 
 print('Accuracy: ' + str(correct/len(df1)))

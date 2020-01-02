@@ -17,7 +17,7 @@ import re
 class Chatbot():
     def __init__(self, method=None):
         self.method = method
-        self.spacy_model= spacy.load('en')
+        self.spacy_model = spacy.load('en')
         self.labels = self.get_labels("annotations.json")
         
         self.library_df=pd.read_csv("library_data.csv")
