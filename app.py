@@ -33,6 +33,27 @@ class Chatbot():
         self.error_desc_vectors = self.error_vectorizer.fit_transform(self.error_lemmatized_descriptions)
         self.error_desc_vectors_arr=csr_matrix(self.error_desc_vectors).toarray()
             
+        self.k = []
+        self.threshold = [0.55, 0.5, 0.55, 0.55, 0.5]
+        self.vectorizers = []
+        self.dff = []
+        self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+        for cat in range(2, 7):
+            if cat == 2:  # represents category 0
+                vectorizer = TfidfVectorizer(stop_words=None, ngram_range=(1, 1))
+                self.vectorizers.append(vectorizer)
+                df1 = self.df[self.df['Type'] == 0]
+            else:
+                vectorizer = TfidfVectorizer(stop_words=['a', 'the', 'python', 'should', 'want', 'use', 'pron'],
+                                             ngram_range=(1, 1))
+                self.vectorizers.append(vectorizer)
+                df1 = self.df[self.df['Type'] == cat]
+            df1 = df1.reset_index(drop=True)
+            self.dff.append(df1)
+            corpus = list(df1['user1'])
+            lemmatized_corpus = self.lemmatize_text(corpus)
+            X = vectorizer.fit_transform(lemmatized_corpus)
+            self.k.append(csr_matrix(X).toarray())
 
     def lemmatize_text(self,input_list):
         lemmatized_descriptions=[]
@@ -144,24 +165,19 @@ class Chatbot():
                 if isAnswered==0:
                     return 'Be more specific :)'
         else:
-            df = pd.read_csv("data.csv", encoding="ISO-8859-1")
-            df = df[df['Type'] == cat]
-            df = df.reset_index(drop=True)
-            corpus = list(df['user1'])
-    
-            for i, item in enumerate(corpus):
-                corpus[i] = corpus[i].lower()
-            vectorizer = TfidfVectorizer(stop_words=None, ngram_range=(1, 1))
-            X = vectorizer.fit_transform(corpus)
-            k = csr_matrix(X).toarray()
-    
-            v = vectorizer.transform([question.lower()])
-            scores = []
-            for item in k:
-                scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
-            scores = np.array(scores)
-            index = scores.argsort()[-3:][::-1][0]
-            return df['user2'][index]
+            c = 0 if cat == 0 else cat - 2
+            lemmatized_qs = self.lemmatize_text([question])
+            for i, qs in enumerate(lemmatized_qs):
+                v = self.vectorizers[c].transform([qs.lower()])
+                scores = []
+                for item in self.k[c]:
+                    scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+                scores = np.array(scores)
+                index = scores.argsort()[-3:][::-1][0]
+                if scores[index] > self.threshold[c]:
+                    return self.dff[c]['user2'][index]
+                else:
+                    return 'Sorry i cannot answer this question yet :)'
 
     def classify_functional(self, question):
         cat = -1

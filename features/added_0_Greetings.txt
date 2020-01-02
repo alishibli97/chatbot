@@ -9,6 +9,22 @@ are you (|self-|self\s)conscious
 ok
 (|good|good\s)bye
 shut\s?up
-(what's|what is) your name
+your name
 joke
 you answer
+questions?
+you are
+stupid
+idiot
+love you
+who are
+what (do|can) you
+What (is|are) your
+Who is your boss
+you are
+(what|in\swhat).*language
+(who|what).*you(r)?
+name
+day
+do you
+where.*you
