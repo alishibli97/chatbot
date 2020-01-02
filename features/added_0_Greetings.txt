@@ -10,3 +10,5 @@ ok
 (|good|good\s)bye
 shut\s?up
 (what's|what is) your name
+joke
+you answer

@@ -2,14 +2,14 @@
 "
 TypeError: '<' not supported between instances of 'int' and 'list'","You can not compare objects of different types
 "
-TypeError: ____() missing ____ required positional argument: 'self',"Use the object you created not the class i.e objectname.objectmethod(), where you instantiate objectname=classname(parameters)"
+TypeError: () missing  required positional argument: 'self',"Use the object you created not the class i.e objectname.objectmethod(), where you instantiate objectname=classname(parameters)"
 MemoryError memory,"A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
 
 The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
 
 The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead."
 SyntaxError: Missing parentheses in call to 'print',"In Python 3, you can only print as: print(""STRING""). But in Python 2, the parentheses are not necessary."
-input() - NameError: name '____' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input()."
+input() - NameError: name '' is not defined,"You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input()."
 KeyError key,A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.
 ImportError: No module named <package>,"You can use pip install <package> only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory."
 dict' object has no attribute 'iteritems' ,"if you are in python3 , use dict.items() instead of dict.iteritems()"
@@ -32,16 +32,16 @@ if a==b :
  y()
 z()
 Will give you an indentation error because the call to y is not ""lined up"" with either if so the system doesn't know what to do with it."
-AttributeError:____ object has no attribute ____,An object can call only the methods defined in its own class definition or the method defined in its parent class.
+AttributeError: object has no attribute ,An object can call only the methods defined in its own class definition or the method defined in its parent class.
 AttributeError: 'str' object has no attribute 'decode',"You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore."
 TypeError: unhashable type: 'list',You can't have a set of lists since lists are not hashable.
-NameError: name '____' is not defined in Python,Try to import the corresponding library before using <name>
+NameError: name '' is not defined in Python,"Try to import the corresponding library before using its functions. Also, if its something you defined, maybe you defined it later and not before using it. In addition, make sure you have taken care of scope issues"
 TypeError: Can't convert 'int' object to str implicitly. ,"You cannot concatenate a string with an int. You would need to convert your int to a string using the str() function, or use formatting to format your output."
 "
 ValueError: zero length field name in format","I'm gonna guess that you are running python 2.6 by accident somehow.
 
 This feature is only available for at least 3.1 if you are using python 3, or 2.7 if you are using python 2."
-IndexError: list index out of range,"As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Without debugging your code fully, I would check the line where you are adding guesses based on input"
+IndexError: list index out of range,"As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Note that indexing starts at 0 not 1."
 JSON pandas (0.14.0) data frame. ValueError: Trailing data,"From version 0.19.0 of Pandas you can use the lines parameter, like so:
 import pandas as pd
 data = pd.read_json('/path/to/file.json', lines=True)"
@@ -51,32 +51,21 @@ Also, it's advisable to use raw_input and not input when getting input from the 
 TypeError: cannot convert the series to <class 'float'>,"The function is expecting a single number, not array."
 "
 
-TypeError: ____() takes exactly ____ argument (____ given)
+TypeError: () takes exactly  argument ( given)
 
-","The @__api_request decorator takes a list for each of its arguments:
-
-def __api_request(required=[], optional=[], returns=[]):
-    """"""Decorator to define required and optional parameters""""""
-    for k in required:
-      [...]
-But, you are passing in an integer
-
-linode_id = 1800300
-disks = api.linode_disk_list(linode_id)
-And you are getting conflicting error message about the amount of parameters because the wrapper() method takes an arbitrary amount of keyword arguments
-
- def wrapper(self, **kw):"
+","
+Check the number of arguments. You may be getting a conflicting error message about the amount of parameters because the method takes an arbitrary amount of keyword arguments as a list. 'self' is considered a parameter that you shouldn’t assign explicitly"
 TypeError: unsupported operand type(s) for +: 'int' and 'str'," you can't do arithmetic on strings. Python is a dynamically-typed language, but not a weakly-typed one. level= raw_input('blah')
 try:
     level= int(level)
 except ValueError:
-    # user put something non-numeric in, tell them off"
+    # user put something non-numeric in, tell them off. However if you are trying to concat strings, you can use str() on the int"
 "I am trying to write an assert function in Python to test whether the output of my function is a particular array of values.
 
 Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.])
 
 ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",the assert function doesn't work well when working with numpy. Use allclose() instead.
-ValueError: setting an array element with a sequence,"From the code you showed us, the only thing we can tell is that you are trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+ValueError: setting an array element with a sequence,"You may be trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
 
 numpy.array([[1,2], [2, 3, 4]])
 or
@@ -92,5 +81,5 @@ That is what you are trying according to your edit. If you really want to have a
 numpy.array([1.2, ""abc""], dtype=object)
 Without knowing what your code shall accomplish, I can't judge if this is what you want."
 TypeError: 'NoneType' object is not iterable,"Your code is probably returning a none somewhere you expect a list. Make sure you don’t forget the ""return"" keywords in your functions"
- '____' object is not callable,You might have overwritten the function you have with an object of type <objType> having the same name .
+ '' object is not callable,"You might have overwritten the function you have with an object of type <objType> having the same name . If x is an object (ie int ,str, etc) you cannot call it i.e you can not write x() with parantheses "
 "TypeError: list indices must be integers or slices, not str","You are using a string as an integer here, remove the ' ' around your int or try int(string_variable)"

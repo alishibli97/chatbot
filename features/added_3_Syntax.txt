@@ -1,2 +1,4 @@
-How (do|can|would) (I|we) write
+(|How )(do|can|would) (I|we) write
 How is .* written
+writing
+write

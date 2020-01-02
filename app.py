@@ -144,33 +144,24 @@ class Chatbot():
                 if isAnswered==0:
                     return 'Be more specific :)'
         else:
-            file_data = pd.read_csv("C:\\Users\\user\\EECE 634\\chatbot\\data.csv",encoding='utf-8')
-            questions = list(file_data[(file_data['Type'] == cat)]['user1'])
-            answers = list(file_data[(file_data['Type'] == cat)]['user2'])
+            df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+            df = df[df['Type'] == cat]
+            df = df.reset_index(drop=True)
+            corpus = list(df['user1'])
     
-            indexes = {}
-            i = 0
-            for q in questions:
-                if (self.lemmatize_text(q) != []): indexes[i] = self.lemmatize_text(q)
-                i += 1
+            for i, item in enumerate(corpus):
+                corpus[i] = corpus[i].lower()
+            vectorizer = TfidfVectorizer(stop_words=None, ngram_range=(1, 1))
+            X = vectorizer.fit_transform(corpus)
+            k = csr_matrix(X).toarray()
     
-            question = self.lemmatize_text(question)
-            min = 0
-            threshold = 0.1
-            index_target = -1
-            for index in indexes:
-                # computing Jaccard Similarity [intersection/union]
-                inter = set(question).intersection(set(indexes[index]))
-                un = set(question).union(indexes[index])
-                percent_sim = len(inter) / len(un)
-                if (percent_sim > min and percent_sim > threshold):  # and percent_sim<0.65
-                    min = percent_sim
-                    output = questions[index]
-                    index_target = index
-            if (index_target != -1):
-                return answers[index_target]
-            else:
-                return "I can't answer this question yet."
+            v = vectorizer.transform([question.lower()])
+            scores = []
+            for item in k:
+                scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
+            scores = np.array(scores)
+            index = scores.argsort()[-3:][::-1][0]
+            return df['user2'][index]
 
     def classify_functional(self, question):
         cat = -1
