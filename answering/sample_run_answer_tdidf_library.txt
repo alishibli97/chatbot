@@ -1,0 +1,141 @@
+1 - QS: library for decision tree
+Ans: 
+I'm not sure, but sklearn may help
+
+2 - QS: by what library and how can -PRON- scrape text on an html by -PRON- heading and paragraph tag ?
+Ans: 
+Beautiful Soup is a good choice
+Maybe nltk would help
+
+3 - QS: what library should i use to download a copy of gmail email through python script ?
+Ans: 
+imaplib  is a good choice
+Maybe mailchimp would help
+
+4 - QS: can -PRON- recommend what python library to use for access amqp ( rabbitmq ) ? from -PRON- research pika seem to be the preferred one .
+Ans: 
+I'm not sure, but Celery may help
+
+5 - QS: what be the simple way - or library - to add a subscriber to mailchimp with python 2.5 on google app engine ?
+Ans: 
+mailchimp is a good choice
+I'm not sure, but requests may help
+
+6 - QS: what be a good python library to manipulate frame of a video file ?
+Ans: 
+PyMedia is a good choice
+
+
+
+7 - QS: what library can -PRON- use to implement event drive programming in python ?
+Ans: 
+I'm not sure, but PyDispatcher may help
+I'm not sure, but Twisted may help
+
+8 - QS: what would be a good python library to use to write a portable version of pacman with nice graphic ?
+Ans: 
+I'm not sure, but PyGame may help
+
+9 - QS: how to convert html css class into style in pure python - what kind of library could be use on gae
+Ans: 
+xhtml2pdf is a good choice
+
+10 - QS: any library to tidy up python code use pep8 convention ?
+Ans: 
+autopep8 is a good choice
+
+11 - QS: -PRON- have a database of which product every user have view and -PRON- want to recommend a product base on what similar user have view . be there a python library that can achieve this ?
+Ans: 
+pysuggest is a good choice
+I'm not sure, but Django may help
+
+12 - QS: what python library should -PRON- use to extract table with complex header from a pdf ?
+Ans: 
+I'm not sure, but cmath may help
+
+13 - QS: python - any library to create mp3 file ?
+Ans: 
+PyMedia is a good choice
+
+14 - QS: what be the good library in python to use to interface with a sql database ?
+Ans: 
+sqlalchemy is a good choice
+Maybe ADOdb would help
+Maybe Kivy would help
+
+15 - QS: what soap client library exist for python ?
+Ans: 
+zeep is a good choice
+
+16 - QS: what would be the good python library to use when produce text - base image require thing such as lead , kerning , outline , drop - shadow , etc ?
+Ans: 
+nltk is a good choice
+
+
+17 - QS: what library be good for audio feature vector representation ?
+Ans: 
+scikits.audiolab is a good choice
+I'm not sure, but PyMedia may help
+
+18 - QS: what be the python library use to write rest service in python ?
+Ans: 
+sandman is a good choice
+Maybe Flask-RESTful would help
+I'm not sure, but Django REST framework  may help
+
+19 - QS: be there any nlp library to convert contraction word back ?
+Ans: 
+I'm not sure, but spacy may help
+
+20 - QS: -PRON- would like to generate a heatmap in python with the axis label be the field name and the row name . what be the recommend library to use for that task ?
+Ans: 
+Sorry i cannot answer this question yet :)
+
+21 - QS: what lightweight python library for simple scientific visualization in 3d
+Ans: 
+mayavi is a good choice
+I'm not sure, but matplotlib may help
+22 - QS: what library be the fast to make hundred of dns query in multi - tasking .
+Ans: 
+Sorry i cannot answer this question yet :)
+
+23 - QS: which library must i import for s = sound ( ) ?
+Ans: 
+PyGame is a good choice
+
+24 - QS: which library to import in python to read datum from an excel file , for automation testing use selenium ?
+Ans: 
+xlrd is a good choice
+Maybe PyMedia would help
+I'm not sure, but pandas may help
+
+25 - QS: what    stable    python library can -PRON- use to implement hidden markov models ?   
+Ans: 
+I'm not sure, but pomegranate may help
+
+26 - QS: good python library for statistical inference ?
+Ans: 
+Statsmodels is a good choice
+
+
+27 - QS: what python library can help visualize / render a 4d ( coordinates+position ) matrix ?
+Ans: 
+Sorry i cannot answer this question yet :)
+
+28 - QS: what -PRON- be look for be a python web development framework that be integrate with an orm , be able to generate the interface but provide an easy way for -PRON- to customize the interface to create an ajax intensive app
+Ans: 
+Kivy is a good choice
+I'm not sure, but Django may help
+
+29 - QS: python - good gui library for the job ?
+Ans: 
+appJar is a good choice
+
+30 - QS: what networking library / framework exist for python ?
+Ans: 
+Py-Networking is a good choice
+
+31 - QS: -PRON- have be use django for web - development , and have become quite fond of that framework . however , -PRON- would like to use a similar framework but for more general network application . be there such a framework ?
+Ans: 
+Django is a good choice
+I'm not sure, but PyQt may help

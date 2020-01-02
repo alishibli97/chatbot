@@ -1,0 +1,455 @@
+1  - QS: no module named pychart
+
+Ans: 
+You can use pip install pychart only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.
+
+2  - QS: TypeError: '>=' not supported between instances of 'list' and 'int'. Hi I'm stuck with the above error. 
+
+Ans: 
+You can not compare objects of different types
+
+
+3  - QS: TypeError: '<=' not supported between instances of 'list' and 'int' Why is it not supported?
+Or did I miss something?
+
+Ans: 
+You can not compare objects of different types
+
+
+4  - QS: TypeError: '<' not supported between instances of 'list' and 'int'. How can I fix this?
+
+Ans: 
+You can not compare objects of different types
+
+
+5  - QS: This is not working on version 3.0.5, besides used to work on version 1.90.3. If no button is pressed, error above shows:
+
+TypeError: ‘>=’ not supported between instances of ‘list’ and ‘float’
+
+Thanks for any help or ideas.
+
+Ans: 
+You can not compare objects of different types
+
+
+6  - QS: TypeError: '<' not supported between instances of 'int' and 'str'
+
+I am not sure what I am doing wrong. I only have int and float in my dataframe.
+
+Ans: 
+You can not compare objects of different types
+
+
+7  - QS: I am new to python and have hit a wall. I followed several tutorials but cant get past the error:
+    p = Pump.getPumps()
+TypeError: getPumps() missing 1 required positional argument: 'self'
+I examined several tutorials but there doesn't seem to be anything different from my code.
+If I understand correctly "self" is passed to the constructor and methods automatically. What am I doing wrong here?
+
+Ans: 
+Use the object you created not the class i.e objectname.objectmethod(), where you instantiate objectname=classname(parameters)
+
+8  - QS: I understand that it wants self to be passed into database but cannot understand where I am going to get this from as self from my main.py contains the wrong context.
+I have my main class in which I want to call the database class and execute a function from withinclass
+ Main:
+    def __init__(self):
+        self.db = Database
+        self.db.createConnection()
+ When I run this, I am presented with the following error.
+TypeError: createConnection() missing 1 required positional argument: 'self' 
+
+Ans: 
+Use the object you created not the class i.e objectname.objectmethod(), where you instantiate objectname=classname(parameters)
+
+9  - QS: I'm getting this error: MemoryError: memory allocation failed, allocating 964 bytes
+Now, I don't know how to approach for the fix as I don't really understand what's really happening here.
+Please let me know about the error and what should I do to fix this? 
+
+Ans: 
+A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead.
+
+10  - QS: When you try to run file (test.py) with size of 18447 bytes, the error is generated:
+
+MemoryError: memory allocation failed, allocating %u bytes
+
+Ans: 
+A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead.
+
+11  - QS: MemoryError: memory allocation failed, allocating 80 bytes
+
+I can't seem to get it running. The simple sample code does seem to work just fine.
+
+Ans: 
+A memory error means that your program has ran out of memory. This means that your program somehow creates too many objects.If you get an unexpected MemoryError and you think you should have plenty of RAM available, it might be because you are using a 32-bit python installation.
+
+The easy solution, if you have a 64-bit operating system, is to switch to a 64-bit installation of python.
+
+The issue is that 32-bit python only has access to ~4GB of RAM. This can shrink even further if your operating system is 32-bit, because of the operating system overhead.
+
+12  - QS: When I try to use a print statement in Python, it gives me this error:
+SyntaxError: Missing parentheses in call to 'print'
+
+What does that mean?
+
+Ans: 
+In Python 3, you can only print as: print("STRING"). But in Python 2, the parentheses are not necessary.
+
+13  - QS: Hi. I just started with learning Python today. 
+
+I Written below basic function in jupyter text file and saved. 
+
+def sayhello():
+    print "hello python"
+after that when I run it, I get this error:
+
+ SyntaxError: Missing parentheses in call to "print". Did you mean print("hello python")?
+
+Ans: 
+In Python 3, you can only print as: print("STRING"). But in Python 2, the parentheses are not necessary.
+
+14  - QS: Am new to python, a new concept which i love.... i started 3days back.... and am using a text book to teach myself.... i got to a section of the textbook and i saw a new concept which i love.but i entered the code the way it was entered in the text book.... but the program did not run...here is the code, and the result i was getting.......
+
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(x*y)?
+
+Ans: 
+In Python 3, you can only print as: print("STRING"). But in Python 2, the parentheses are not necessary.
+
+15  - QS: I'm trying to write a function that will ask to input name, last name and year of birth. Also, it will later print out the initials and the age.
+
+First of all, it doesn't ask for any of it.
+
+Second of all, it doesn't matter what I'll enter it will print the error:
+
+NameError: name "____"  is not defined.
+I'm using Python 3.
+
+Ans: 
+You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input().
+
+16  - QS: I am getting an error when I try to run this simple python script:
+
+input_variable = input ("Enter your name: ")
+print ("your name is" + input_variable)
+Lets say I type in "dude", the error I am getting is:
+
+line 1, in <module>
+input_variable = input ("Enter your name: ")
+File "<string>", line 1, in <module>
+NameError: name 'dude' is not defined
+
+Ans: 
+You are running Python 2, not Python 3. For this to work in Python 2, use  raw_input() instead of input().
+
+17  - QS: KeyError: 'Name' , What's the issue?Can anyone tell me why I am getting this error? I see no issue with the code
+
+Ans: 
+A KeyError generally means the key doesn't exist. Raised when a mapping (dictionary) key is not found in the set of existing keys.
+
+18  - QS: I installed odoo 10 and after running ./odoo-bin -c odoo10-server.conf command on Terminal
+
+ImportError: No module named pychart error occured.
+
+Ans: 
+You can use pip install pychart error occured. only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.
+
+19  - QS: I installed numpy following this link - as suggested in the question. The installation went fine but when I execute
+
+import numpy
+I got the following error:
+
+Import error: No module named numpy
+
+I know this is probably a super basic question, but I'm still learning.
+
+Thanks
+
+Ans: 
+You can use pip install numpy only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.
+
+20  - QS: Hi,
+
+I tried the notebook neptune_ensembling.ipynb on neptune, but I got this error message:
+...
+ModuleNotFoundError: No module named 'seaborn'
+
+I am not sure which combination of worker type, Python version and leading library I should use where this seaborn module is installed. 
+
+Ans: 
+You can use pip install seaborn only if the package exists on some package repo. However, if you're trying to import functions from a.py to a file called b.py, you will need to make sure that a.py and b.py are in the same directory.
+
+21  - QS: I'm trying to use NetworkX to read a Shapefile and use the function write_shp() to generate the Shapefiles that will contain the nodes and edges, but when I try to run the code it gives me the following error:
+
+Traceback (most recent call last): File "C:/Users/Felipe/PycharmProjects/untitled/asdf.py", line 4, in 
+
+<module>
+
+  nx.write_shp(redVial, "shapefiles") File     "C:\Python34\lib\site-    packages\networkx\readwrite\nx_shp.py", line 192, in  write_shp
+
+for key, data in e[2].iteritems(): AttributeError: '  dict' object has no attribute 'iteritems'
+
+I'm using Python 3.4 and installed NetworkX via pip install.
+
+Before this error it had already given me another one that said "xrange does not exist" or something like that, so I looked it up and just changed xrange to range in the nx_shp.py file, which seemed to solve it.
+
+From what I've read it could be related to the Python version (Python2 vs Python3).
+
+Ans: 
+if you are in python3 , use dict.items() instead of dict.iteritems()
+
+22  - QS: As I execute:
+
+kliep.fit(X_train, X_test)
+
+AttributeError: 'dict' object has no attribute 'iteritems' come. How to resolve this.
+
+Bothe X_train and X_test sets have shape of (5000, 256)
+
+Ans: 
+if you are in python3 , use dict.items() instead of dict.iteritems()
+
+23  - QS: I get the error :
+File "python", line 2
+def myFun(x):
+^
+IndentationError: unexpected indent
+Oops, try again.
+
+Ans: 
+Sorry I do not know :)
+
+24  - QS: IndentationError: unindent does not match any outer indentation level
+please help me .. I cant figure out what is wrong with my code.
+
+Ans: 
+Python uses indentation to define code blocks, you can indent code by any amount, but it must match exactly in order to be at the same level.
+so this is fine:
+if a==b :
+   if c==d :
+      x()
+   y()
+z()
+But this:
+if a==b :
+   if c==d :
+      x()
+ y()
+z()
+Will give you an indentation error because the call to y is not "lined up" with either if so the system doesn't know what to do with it.
+
+25  - QS: Hello, i'm trying to control mobile robot 'rb1 base', it has elevate function which can move its head up and down. You can see the Service caller in the down side of the picture, it has the service topic named '/rb1_base/robotnik_base_control/set_elevator', based on that information, i wrote the service call program, you can see this top of the picture. In the SetElevator.h there is only one variable named 'int32 action', if i make the action variable to 1 then the robot elevate up, if i make it to -1 then the robot elevate down. so i wrote the code 'srv(1)' to elevate up the robot. But it says 'AttributeError : 'int' object has no attribute 'action''. Is there special way to change the variable 'int32 action'? Is it not just int?
+
+
+
+Ans: 
+An object can call only the methods defined in its own class definition or the method defined in its parent class.
+
+26  - QS: AttributeError: 'str' object has no attribute 'decode'.Previously, I was regularly building two apps, and even published one to the Play Store. Recently, I received this error and couldn't continue with either app. Any insight would be greatly appreciated!
+
+Ans: 
+You are trying to decode an object that is already decoded. You have a str, there is no need to decode from UTF-8 anymore.
+
+27  - QS: I keep getting a TypeError: unhashable type: 'list'.I'm wondering if I made a mistake somewhere.
+
+Ans: 
+You can't have a set of lists since lists are not hashable.
+
+28  - QS: What is the meaning of 'unhashable type' error in Python?
+
+Ans: 
+You can't have a set of lists since lists are not hashable.
+
+29  - QS: I am a new user, just at very beginning. I am trying to write a simple function but I get the name error saying that I have not defined a variable. This variable is defined in my if statement, where it should return its value. Can anyone please help me to understand what I am doing wrong. Thank you.NameError: name 'guess_check' is not defined.
+
+Ans: 
+Try to import the corresponding library before using its functions. Also, if its something you defined, maybe you defined it later and not before using it. In addition, make sure you have taken care of scope issues
+
+30  - QS: For some reason, my code is not running. This is the error:
+
+Traceback (most recent call last):
+File "python", line 20, in
+NameError: name 'get_average' is not defined
+Can anyone help? Thank you in advance!
+
+Ans: 
+Try to import the corresponding library before using its functions. Also, if its something you defined, maybe you defined it later and not before using it. In addition, make sure you have taken care of scope issues
+
+31  - QS: Python - typeError: Can't convert 'int' object to str implicitly
+I really can't understand what is wrong with my code. I also tried it on my computer and everything works!
+
+I will appreciate any kind of help.
+
+Thank you! This error is drive me crazy!
+
+Ans: 
+You cannot concatenate a string with an int. You would need to convert your int to a string using the str() function, or use formatting to format your output.
+
+32  - QS: it gives me the following error: TypeError: Can't convert 'int' object to str implicitly
+What is the issue?
+
+Ans: 
+You cannot concatenate a string with an int. You would need to convert your int to a string using the str() function, or use formatting to format your output.
+
+33  - QS: When I run this shell in Python2.7.5, everything goes okay. But it occurs ValueError: zero length field name in format when Python version is 2.6.6. What should I run this shell fine when Python version is 2.6.6?
+
+Ans: 
+I'm gonna guess that you are running python 2.6 by accident somehow.
+
+This feature is only available for at least 3.1 if you are using python 3, or 2.7 if you are using python 2.
+
+34  - QS: IndexError: list index out of range and python. I'm telling my program to print out line 53 of an output. Is this error telling me that there aren't that many lines and therefore can not print it out?
+
+Ans: 
+As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Note that indexing starts at 0 not 1.
+
+35  - QS: IndexError: list index out of range
+n = [3,5,7]
+
+def myFun(x):
+    for i in x:
+        print x[i]
+
+IndexError: list index out of range
+
+I was playing around with this exercise, trying to get the same output a different way.
+Why do I get this error?
+Is it because 'i' starts at 1 and the list starts at 0?
+
+Ans: 
+As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Note that indexing starts at 0 not 1.
+
+36  - QS: What does list index out of range mean?
+
+Ans: 
+As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Note that indexing starts at 0 not 1.
+
+37  - QS: It keeps saying list index out of range and I can't understand why
+
+Ans: 
+As the error notes,the error is that your list indices are out of range--that is, you are trying to refer to some index that doesn't even exist. Note that indexing starts at 0 not 1.
+
+38  - QS: What is the Trailing data error? How do I read it into a data frame?
+
+Following some suggestions, here are few lines of the .json file
+
+Ans: 
+From version 0.19.0 of Pandas you can use the lines parameter, like so:
+import pandas as pd
+data = pd.read_json('/path/to/file.json', lines=True)
+
+39  - QS: How do you use input()? I'm getting EOF error
+This was very easy in 2.7, but I haven't gotten it to work in 3.3, and I haven't been able to figure out why.
+
+I have tried pasting the example code from the What's new documentation, and get the same error.
+
+The code:
+
+test = input("what is test?")
+
+print(test)
+The error:
+
+Traceback (most recent call last): File "./prog.py", line 1, in <module> EOFError: EOF when reading a line
+
+This is happening in Pycharm and on ideone.com. What am I doing wrong?
+
+Ans: 
+EOF error is expected if no data is given when calling input or raw_input as explained in the documentation.
+
+Also, it's advisable to use raw_input and not input when getting input from the user on python 2
+
+40  - QS: I'm getting a type error in Python that doesn't look right. The exact text is: "TypeError: cannot convert the series to /?" Can you help me find a programming website that mentions this specific error message and possible solutions for fixing it?
+
+Ans: 
+The function is expecting a single number, not array.
+
+41  - QS: I get the following error:
+
+TypeError: cannot convert the series to <class 'float'>
+Could someone let me know how to fix this please? I've tried to cast as float using:
+
+df["B"] .astype(float)
+But can't get anything to work. Any guidance would be much appreciated.
+
+Ans: 
+The function is expecting a single number, not array.
+
+42  - QS: when I use this library I cant even run the program, it says that the
+
+BlynkLib.Blynk(Blynk_AUTH, ‘111’, 8080)
+
+is wrong formatted,(error:)
+
+TypeError: init() takes exactly 2 arguments (4 given)
+
+Ans: 
+
+Check the number of arguments. You may be getting a conflicting error message about the amount of parameters because the method takes an arbitrary amount of keyword arguments as a list. 'self' is considered a parameter  that you shouldn’t assign explicitly
+
+43  - QS: When I run the program, entering in numbers for num1, num2 and num3, it returns this: Traceback (most recent call last):
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Ans: 
+ you can't do arithmetic on strings. Python is a dynamically-typed language, but not a weakly-typed one. level= raw_input('blah')
+try:
+    level= int(level)
+except ValueError:
+    # user put something non-numeric in, tell them off. However if you are trying to concat strings, you can use str() on the int
+
+44  - QS: How to fix the error? " Valueerror: setting an array element with a sequence'
+
+Ans: 
+You may be trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+
+numpy.array([[1,2], [2, 3, 4]])
+or
+
+numpy.array([[1,2], [2, [3, 4]]])
+will yield this error message, because the shape of the input list isn't a (generalised) "box" that can be turned into a multidimensional array. So probably UnFilteredDuringExSummaryOfMeansArray contains sequences of different lengths.
+
+Another possible cause for this error message is trying to use a string as an element in an array of type float:
+
+numpy.array([1.2, "abc"], dtype=float)
+That is what you are trying according to your edit. If you really want to have a NumPy array containing both strings and floats, you could use the dtype object, which enables the array to hold arbitrary Python objects:
+
+numpy.array([1.2, "abc"], dtype=object)
+Without knowing what your code shall accomplish, I can't judge if this is what you want.
+
+45  - QS: How can I fix this error? Why is it happening? Is my preprocessing wrong? I know it's a bit dodgy in places, but does this make is unfunctional? If so, how could I fix these issues in the preprocessor? Would this fix the ValueError: setting an array element with a sequence. error?
+
+Ans: 
+You may be trying to create an array from a list that isn't shaped like a multi-dimensional array. For example
+
+numpy.array([[1,2], [2, 3, 4]])
+or
+
+numpy.array([[1,2], [2, [3, 4]]])
+will yield this error message, because the shape of the input list isn't a (generalised) "box" that can be turned into a multidimensional array. So probably UnFilteredDuringExSummaryOfMeansArray contains sequences of different lengths.
+
+Another possible cause for this error message is trying to use a string as an element in an array of type float:
+
+numpy.array([1.2, "abc"], dtype=float)
+That is what you are trying according to your edit. If you really want to have a NumPy array containing both strings and floats, you could use the dtype object, which enables the array to hold arbitrary Python objects:
+
+numpy.array([1.2, "abc"], dtype=object)
+Without knowing what your code shall accomplish, I can't judge if this is what you want.
+
+46  - QS: What does error TypeError: 'NoneType' object is not iterable mean?
+
+Ans: 
+Your code is probably returning a none somewhere you expect a list. Make sure you don’t forget the "return" keywords in your functions
+
+47  - QS: Python: What “TypeError 'xxx' object is not callable” means?As a starting developer in Python I've seen this error message many times appearing in my console but I don't fully understand what does it means.
+
+Could anyone tell me, in a general way, what kind of action produces this error?
+
+Ans: 
+You might have overwritten the function you have with an object of type <objType> having the same name . If x is an object (ie int ,str, etc) you cannot call it i.e you can not write x() with parentheses 

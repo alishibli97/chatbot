@@ -1,0 +1,318 @@
+QS: How can we write Fibonacci Sequence in python?
+Ans:
+from math import sqrt
+def F(n):
+    return ((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))
+
+1
+QS: How to use csv.DictWriter to write a header row?
+Ans:
+In 2.7 / 3.2 there is a new writeheader() method.
+
+2
+QS: How to save an array with multiple dimensions in a text file?
+Ans:
+If you want to write it to disk so that it will be easy to read back in as a numpy array, look into numpy.save. If you want it to be human readable, look into numpy.savetxt.
+
+3
+QS: How to save subprocess results in file?
+Ans:
+test = subprocess.check_output('command to run', shell=True)
+fdesc= open('result.txt','w')
+for line in test.decode('utf-8').split('\n'):
+    fdesc.write((line)+'/')
+
+4
+QS: How to use pdf for writing results?
+Ans:
+test = subprocess.check_output('command to run', shell=True)
+fdesc= open('result.txt','w')
+for line in test.decode('utf-8').split('\n'):
+    fdesc.write((line)+'/')
+wrong
+
+4
+QS: How to add arguments to an if condition?
+Ans:
+You simply add it to the specific index by the loc attribute of the dataframe.
+wrong
+
+4
+QS: How to write a module?
+Ans:
+create hello.py then write the following function as its content:
+
+def helloworld():
+   print "hello"
+
+Then you can import hello:
+
+>>> import hello
+>>> hello.helloworld()
+'hello'
+>>>
+
+To group many .py files put them in a folder. Any folder with an __init__.py is considered a module by python and you can call them a package
+
+|-HelloModule
+  |_ __init__.py
+  |_ hellomodule.py
+
+5
+QS: How to write a nested set?
+Ans:
+The inner most sets need to be of type frozenset which is an immutable version of a set.
+
+>>> a_set = {1, frozenset(['xyz'])}
+
+6
+QS: How to save the result of os.walk in a file?
+Ans:
+In Python 3 you can use the file parameter to the print() function:
+
+import os
+
+with open('outfile', 'w') as outfile:
+    print(next(os.walk('/var/lib/tomcat7/webapps/'))[1], file=outfile)
+
+7
+QS: How to use ezdxf?
+Ans:
+modelspace.add_text(label, dxfattribs={'layer': 'TEXTLAYER', 'text_generation_flag': 2, 'height': 4}).set_pos((cx, cy), align='CENTER')
+
+8
+QS: How to write elements to the array in Python How to add elements into an array?
+Ans:
+array.append(array_parts)
+
+9
+QS: How do we read a csv file into panda series?
+Ans:
+In [3]: s.to_csv('/home/wesm/tmp/sfoo.csv')
+
+In [4]: Series.from_csv('/home/wesm/tmp/sfoo.csv')
+
+10
+QS: How are imports interpreted?
+Ans:
+That statement would import all names from the __init__.py module in the package, not the files contained.
+
+11
+QS: How are spaces interpreted?
+Ans:
+32 is the decimal value for the string " " (a space). In Python, a bytes object is an iterable of bytes 0-255, which can be represented by \x14 for 0x14, or ASCII characters like a, b, or c. Or a combination of the two
+
+12
+QS: How can we make python realize that a function is a generator?
+Ans:
+When Python parses the def statement, it decides if the code is defining a generator or a function. If the code contains a yield expression, then it is a generator. So when the generator function a is called, it returns a generator object, b.
+
+The code inside the def statement is not executed until b.next() is called.
+
+13
+QS: How can we see the interpretation of a line in python?
+Ans:
+The ast module can show an abstract syntax tree for an expression or statement. The dis module can show bytecode. dis can also operate on the the compiled bytecode stored in a function, and also as a standalone utility with python3 -m dis.
+
+14
+QS: How is the backslash interpreted?
+Ans:
+Unlike Standard C, all unrecognized escape sequences are left in the string unchanged, i.e., the backslash is left in the result. (This behavior is useful when debugging: if an escape sequence is mistyped, the resulting output is more easily recognized as broken.)
+
+15
+QS: How are numbers starting with zeros interpreted?
+Ans:
+That statement would import all names from the __init__.py module in the package, not the files contained.
+wrong
+
+15
+QS: How are the byte limits interpreted in decoding?
+Ans:
+The byte boundaries are easily determined from the bit patterns. If a byte starts with 0, it is a regular ASCII character. If a byte starts with 10, it is part of a UTF-8 sequence (not the first character).
+
+16
+QS: How to check python interpretation on web
+Ans:
+You can simply check "if not list" that returns True if the list is emtpy.
+wrong
+
+16
+QS: How are source files interpreted?
+Ans:
+Python loads the main script into memory, compiles it into bytecode and runs that. If you modify the source file in the meantime, you're not affecting the bytecode. If you're running the script as the main script (i. e. by calling it like python myfile.py, then the bytecode will be discarded when the script exits. If you're importing the script, however, then the bytecode will be written to disk as a .pyc file which won't be recompiled when imported again, unless you modify the corresponding .py file.
+
+17
+QS: How can I use apache for interpretation and display in browser?
+Ans:
+use flask
+
+18
+QS: How do I write function decorates in Python?
+Ans:
+When Python parses the def statement, it decides if the code is defining a generator or a function. If the code contains a yield expression, then it is a generator. So when the generator function a is called, it returns a generator object, b.
+
+The code inside the def statement is not executed until b.next() is called.
+wrong
+
+18
+QS: How are variables by reference passed in Python?
+Ans:
+Arguments are passed by assignment. So if you pass a mutable object into a method, the method gets a reference to the same object and you can mutate it.
+
+19
+QS: How to select specific rows from dataframe based on particular columns?
+Ans:
+To select rows whose column value equals a scalar, use the equal equal == operator.
+
+20
+QS: How are dictionaries merged in Python?
+Ans:
+Use the sorted() function that take a dictionary and return it sorted per value or per key.
+wrong
+
+20
+QS: How can we import a module from a file given full path name?
+Ans:
+You can specify the file location to the spec_from_file_location utility of the importlib library.
+
+21
+QS: How to sort a dictionary by values?
+Ans:
+Use the sorted() function that take a dictionary and return it sorted per value or per key.
+
+22
+QS: How are global variables used in Python?
+Ans:
+You can use a global variable in other functions by declaring it as global in each function that assigns to it.
+
+23
+QS: How can we sort a dictionary by value in Python?
+Ans:
+Use the sorted() function that take a dictionary and return it sorted per value or per key.
+
+24
+QS: How is XML parsed in Python?
+Ans:
+You can however use ElementTree.ElementTree.write() to write your XML document to a fake file:
+
+from io import BytesIO
+from xml.etree import ElementTree as ET
+
+document = ET.Element('outer')
+node = ET.SubElement(document, 'inner')
+et = ET.ElementTree(document)
+
+f = BytesIO()
+et.write(f, encoding='utf-8', xml_declaration=True)
+print(f.getvalue())  # your XML file, encoded as UTF-8
+wrong
+
+24
+QS: How to remove the contents of a directory using Python?
+Ans:
+You can delete the folder itself, as well as all its contents, using shutil.rmtree.
+
+25
+QS: How can we get the path of the currently executed file in Python?
+Ans:
+You can't directly determine the location of the main script being executed. However, you can reliably determine the location of a module, since modules are always loaded from a file.
+wrong
+
+25
+QS: How can we add a row to a dataframe in Python?
+Ans:
+You simply add it to the specific index by the loc attribute of the dataframe.
+
+26
+QS: I want to add extra column to numpy array. How do I do that?
+Ans:
+You can call the last index -1 and add it there.
+
+27
+QS: How do we insert a series into Python dataframe?
+Ans:
+You can use iloc if need select index of df by position.
+
+28
+QS: By what method can I securely make a nested directory?
+Ans:
+Try os.path.exists, and consider os.makedirs for the creation.
+
+29
+QS: How to discover current directory and file's directory?
+Ans:
+To get the current working directory use getcwd() attribute of the os library.
+
+30
+QS: How to discover if index exists in Python?
+Ans:
+Check using path.isdir and path.exists of the os library.
+
+31
+QS: How would I get a list of everything in a given directory in Python?
+Ans:
+os.walk('.') to traverse all files and directories in this current folder.
+
+32
+QS: How would I iterate over records in a given directory?
+Ans:
+You can traverse the files in the directory using the os.listdir function by specifying the directory name.
+
+33
+QS: How to find script's directory in Python?
+Ans:
+getcwd function of the os library can get current working directory.
+
+34
+QS: How to import a class from a directory in Python?
+Ans:
+By using leading dots in the specified module or package after from you can specify how high to traverse up the current package hierarchy without specifying exact names. One leading dot means the current package where the module making the import exists. Two dots means up one package level. Three dots is up two levels, etc.
+
+35
+QS: How do you calculate directory size in Python?
+Ans:
+Walk all sub-directories; summing file sizes.
+
+36
+QS: How to decide if an index is writeable or not?
+Ans:
+Use the os.acess utility with W as writeable to check if the directory is writeable or not.
+
+37
+QS: How do we add files and folders to a zip file in Python?
+Ans:
+It is as simple as using the second argument of zipfile.write, where you can use whatever you want.
+
+38
+QS: How do we create files and folders in python?
+Ans:
+Key point is to use os.makedirs in place of os.mkdir. It is recursive, i.e. it generates all intermediate directories.
+
+39
+QS: I want to retrieve the filelist of a directory in Python. How can I do it?/
+Ans:
+Get all files of directory by using run command then splitting the output using split().
+
+40
+QS: How can I find the path of a file in Python?
+Ans:
+Use the split function then you need to join the strings.
+wrong
+
+40
+QS: I want to write a function that takes an argument and outputs its full path.
+Ans:
+Use the abspath function to get the absolute path of the given argument.
+
+41
+QS: I want to zip a file or a folder in Python. How do I do that?
+Ans:
+The zipfile module in python has no support for adding a directory with file so you need to add the files one by one.
+
+42
+QS: How do I created a nested directory in Python?
+Ans:
+Try os.path.exists, and consider os.makedirs for the creation.
+
+43
+Accuracy: 0.8269230769230769
