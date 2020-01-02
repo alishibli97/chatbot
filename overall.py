@@ -46,15 +46,20 @@ class Application(tk.Frame):
         self.error_desc_vectors_arr = csr_matrix(self.error_desc_vectors).toarray()
 
         self.k = []
-        self.threshold = [0.5, 0.55, 0.55, 0.5]
+        self.threshold = [0.8, 0.5, 0.55, 0.55, 0.5]
         self.vectorizers = []
         self.dff = []
         self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
-        for cat in range(3, 7):
-            vectorizer = TfidfVectorizer(stop_words=['a', 'the', 'python', 'should', 'want', 'use', 'pron'],
-                                         ngram_range=(1, 1))
-            self.vectorizers.append(vectorizer)
-            df1 = self.df[self.df['Type'] == cat]
+        for cat in range(2, 7):
+            if cat == 2:  # represents category 0
+                vectorizer = TfidfVectorizer(stop_words=None, ngram_range=(1, 1))
+                self.vectorizers.append(vectorizer)
+                df1 = self.df[self.df['Type'] == 0]
+            else:
+                vectorizer = TfidfVectorizer(stop_words=['a', 'the', 'python', 'should', 'want', 'use', 'pron'],
+                                             ngram_range=(1, 1))
+                self.vectorizers.append(vectorizer)
+                df1 = self.df[self.df['Type'] == cat]
             df1 = df1.reset_index(drop=True)
             self.dff.append(df1)
             corpus = list(df1['user1'])
@@ -257,17 +262,18 @@ class Application(tk.Frame):
                 return 'Be more specific :)'
 
     # answering for the rest of the categories 3 4 5 6
-    def answer_databased_rest(self,question,cat):
+    def answer_databased_rest(self, question, cat):
+        c = 0 if cat == 0 else cat - 2
         lemmatized_qs = self.lemmatize_text([question])
         for i, qs in enumerate(lemmatized_qs):
-            v = self.vectorizers[cat-3].transform([qs.lower()])
+            v = self.vectorizers[c].transform([qs.lower()])
             scores = []
-            for item in self.k[cat-3]:
+            for item in self.k[c]:
                 scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
             scores = np.array(scores)
             index = scores.argsort()[-3:][::-1][0]
-            if scores[index] > self.threshold[cat-3]:
-                return self.dff[cat-3]['user2'][index]
+            if scores[index] > self.threshold[c]:
+                return self.dff[c]['user2'][index]
             else:
                 return 'Sorry i cannot answer this question yet :)'
 
