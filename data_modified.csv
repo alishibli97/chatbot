@@ -2,33 +2,33 @@ user1,user2,Type,modified
 Bye,Bye,0,0
 ok,Ok.,0,0
 are you self-conscious?,"Everything in this world is magic, except for the magician; for in that sleep, what dreams may come.",0,0
-Hi,Hello,0,0
-Hello,Hi,0,0
+Hi bot!,Hello,0,1
+Hello there,Hi,0,1
 Hey,Hey,0,0
 Yo,Yo,0,0
 What's up?,Nothing much,0,0
-How are you?,"I am good, and you?",0,0
+How you doin,"I am good, and you?",0,1
 What are you doing?,Talking with you.,0,0
-Can you help me?,Sure.,0,0
-How's your day.,My day is okay.,0,0
-It's nice to meet you.,Thanks kindly.,0,0
+I need help with an issue,Sure.,0,1
+How is your day going?,My day is okay.,0,1
+Nice meeting you!,Thanks kindly.,0,1
 Greetings.,Greetings.,0,0
 Good morning.,Morning.,0,0
-Good afternoon.,Hey.,0,0
+Afternoon!,Hey.,0,1
 Good evening.,Hello.,0,0
-It's a pleasure to meet you.,Thanks you too.,0,0
+Pleasure meeting you.,Thanks you too.,0,1
 Morning!,Morning.,0,0
 How are things with you?,Okay and you?,0,0
 What's new?,"Nothing much, just speaking with you.",0,0
-It's good to see you.,Thanks you too.,0,0
-What's happening?,The world is on fire.,0,0
+Nice seeing you!,Thanks you too.,0,1
+What is happening right now?,The world is on fire.,0,1
 How's it going?,Nothing much.,0,0
 Salute.,Salute.,0,0
-How's life?,Life is good.,0,0
-How have you been?,I have been okay.,0,0
+How is life treating you?,Life is good.,0,1
+How've you been lately?,I have been okay.,0,1
 Are you ok?,"I am good, and you?",0,0
 I am good.,Great.,0,0
-Thank you,You are most welcome.,0,0
+Thanks!,You are most welcome.,0,1
 By what library and how can I scrape texts on an HTML by its heading and paragraph tags?,This can be done with BeautifulSoup,1,0
 What library should i use to download a copy of Gmail emails through Python script? ,imaplib ,1,0
 Can you recommend what Python library to use for accessing AMQP (RabbitMQ)? From my research pika seems to be the preferred one.,"Pika is the RabbitMQ recommended library, you might also want to look at Celery ",1,0
