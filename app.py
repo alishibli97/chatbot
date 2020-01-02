@@ -175,7 +175,7 @@ class Chatbot():
                 scores = np.array(scores)
                 index = scores.argsort()[-3:][::-1][0]
                 if scores[index] > self.threshold[c]:
-                    return self.dff[c]['user2'][index]
+                    return self.dff[c]['user2'][index],scores[index]
                 else:
                     return 'Sorry i cannot answer this question yet :)'
 
