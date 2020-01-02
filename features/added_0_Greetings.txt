@@ -4,8 +4,8 @@ how are you
 I am good.
 good
 thank you
-can you please help me
-are you (|self-|self\s)conscious
+can you
+are you
 ok
 (|good|good\s)bye
 shut\s?up
@@ -26,5 +26,6 @@ you are
 (who|what).*you(r)?
 name
 day
-do you
+(do|are|can) you
 where.*you
+afternoon
