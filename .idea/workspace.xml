@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ffc8e84-af01-4a55-b982-71ef84072aad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/seq2seq_word.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_modified.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_modified.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,51 +17,6 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/answer_functional.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classifier_regex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tfidf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <folding>
-                <element signature="e#50#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/overall.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -73,13 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tfidf_qs-ans.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seq2seq_char.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="-1122">
               <folding>
-                <element signature="e#38#57#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/seq2seq_word.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
+              <caret line="180" selection-start-line="180" selection-end-line="180" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -125,6 +91,7 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/tfidf_qs-ans.py" />
         <option value="$PROJECT_DIR$/overall.py" />
+        <option value="$PROJECT_DIR$/seq2seq_word.py" />
       </list>
     </option>
   </component>
@@ -251,12 +218,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19270833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19270833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.43862522" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.28968903" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.28968903" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -369,7 +336,7 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -395,14 +362,23 @@
     <entry file="file://$PROJECT_DIR$/data.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_modified.csv">
+    <entry file="file://$PROJECT_DIR$/tfidf_qs-ans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3927" />
+        <state relative-caret-position="340">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#38#57#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_modified.csv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tfidf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state relative-caret-position="-90">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="e#50#69#0" expanded="true" />
           </folding>
@@ -419,12 +395,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tfidf_qs-ans.py">
+    <entry file="file://$PROJECT_DIR$/seq2seq_char.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="-1122">
           <folding>
-            <element signature="e#38#57#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
