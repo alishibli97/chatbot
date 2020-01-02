@@ -34,7 +34,7 @@ class Chatbot():
         self.error_desc_vectors_arr=csr_matrix(self.error_desc_vectors).toarray()
             
         self.k = []
-        self.threshold = [0.8, 0.5, 0.55, 0.55, 0.5]
+        self.threshold = [0, 0.5, 0.55, 0.55, 0.5]
         self.vectorizers = []
         self.dff = []
         self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
@@ -175,9 +175,9 @@ class Chatbot():
                 scores = np.array(scores)
                 index = scores.argsort()[-3:][::-1][0]
                 if scores[index] > self.threshold[c]:
-                    return self.dff[c]['user2'][index]
+                    return self.dff[c]['user2'][index],scores[index]
                 else:
-                    return 'Sorry i cannot answer this question yet :)'
+                    return 'Sorry i cannot answer this question yet :)',[scores[index],self.dff[c]['user2'][index],self.vectorizers[c].inverse_transform(self.vectorizers[c].transform([qs.lower()]))]
 
     def classify_functional(self, question):
         cat = -1
