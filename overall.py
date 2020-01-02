@@ -46,7 +46,7 @@ class Application(tk.Frame):
         self.error_desc_vectors_arr = csr_matrix(self.error_desc_vectors).toarray()
 
         self.k = []
-        self.threshold = [0.8, 0.5, 0.55, 0.55, 0.5]
+        self.threshold = [0.55, 0.5, 0.55, 0.55, 0.5]
         self.vectorizers = []
         self.dff = []
         self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
