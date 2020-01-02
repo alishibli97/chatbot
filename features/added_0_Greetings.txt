@@ -5,6 +5,8 @@ I am good.
 good
 thank you
 can you please help me
-are you (|self-|self )conscious
+are you (|self-|self\s)conscious
 ok
-(|good|good )bye
+(|good|good\s)bye
+shut\s?up
+(what's|what is) your name
