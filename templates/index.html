@@ -2,8 +2,8 @@
 <html>
 <head>
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="/static/style.css">
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
    	<script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
         <div class="col-sm-6 offset-sm-3">
             <div id="chatbox" class="border border-primary">
 <p></p>
-                <p class="botText"><span>Hi! I'm Stackbot <3</span></p>
+                <p class="botText"><pre class="bot">Hi! I'm Stackbot <3</pre></p>
             </div>
             <div id="userInput">
                 <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here">
@@ -39,12 +39,12 @@
 <script>
     function getResponse() {
         let userText = $("#textInput").val();
-        let userHtml = '<p class="userText" ><span>' + userText + '</span></p>';
+        let userHtml = '<p class="userText" ><pre class="user">' + userText + '</pre></p>';
         $("#textInput").val("");
         $("#chatbox").append(userHtml);
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
         $.get("/get", { msg: userText }).done(function(data) {
-        var botHtml = '<p class="botText" ><span>' + data + '</span></p>';
+        var botHtml = '<p class="botText" ><pre class="bot">' + data + '</pre></p>';
         $("#chatbox").append(botHtml);
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
 });

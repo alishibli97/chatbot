@@ -1,24 +1,53 @@
-.userText {
-    color: white;
-    font-family: monospace;
-    font-size: 17px;
-    text-align: right;
-    line-height: 30px;
-}
-.userText span {
-    background-color: #0084FF;
+
+.user{
+   background-color: #0084FF;
     padding: 10px;
     border-radius: 2px;
+  font-size: 16px;
+color:white;
+  border-radius: 5px;
+  padding: 14px;
+
+  margin-left:25%;
+  
+  /* Fixed line height */
+  line-height: 24px;
+  
+
+  /* Size background so that the height is 2x line-height */
+  background-size: 100% 48px;
+  
+  /* Offset the background along the y-axis by top padding */
+  background-position: 0 14px;
+  overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
 }
-.botText {
-    color: black;
-    font-family: monospace;
-    font-size: 17px;
-    text-align: justify;
-    line-height: 30px;
-}
-.botText span {
-    background-color: #e9ebee;
+
+.bot{
+   background-color: #e9ebee;
     padding: 10px;
     border-radius: 2px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px;
+  margin-right:25%;
+  /* Fixed line height */
+  line-height: 24px;
+  
+
+  /* Size background so that the height is 2x line-height */
+  background-size: 100% 48px;
+  
+  /* Offset the background along the y-axis by top padding */
+  background-position: 0 14px;
+  overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
 }

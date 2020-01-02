@@ -134,7 +134,6 @@ class Chatbot():
             else:
                 return ". ".join(answer_list)
         elif cat==2:
-            
             lemmatized_qs=self.lemmatize_text([question])
             for i,qs in enumerate(lemmatized_qs):
                 v=self.error_vectorizer.transform([qs.lower()])
@@ -156,6 +155,7 @@ class Chatbot():
                                         return self.error_df['how to solve'][item]
                                         
                                 else:
+                                    
                                     return self.error_df['how to solve'][item]
                                     
                                 break
@@ -175,7 +175,7 @@ class Chatbot():
                 scores = np.array(scores)
                 index = scores.argsort()[-3:][::-1][0]
                 if scores[index] > self.threshold[c]:
-                    return self.dff[c]['user2'][index],scores[index]
+                    return self.dff[c]['user2'][index]
                 else:
                     return 'Sorry i cannot answer this question yet :)'
 
@@ -228,7 +228,7 @@ def index():
 #function for the bot response
 def get_bot_response():
     userText = request.args.get('msg')
-    return str(chatbot.classify_functional(userText))
+    return chatbot.classify_functional(userText)
 if __name__ == "__main__":
     
     app.config['TEMPLATES_AUTO_RELOAD'] = True
