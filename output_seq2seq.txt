@@ -1,0 +1,473 @@
+Epoch 100/100
+
+  4/156 [..............................] - ETA: 54s - loss: 0.0328 - accuracy: 0.9937
+  8/156 [>.............................] - ETA: 1:03 - loss: 0.0312 - accuracy: 0.9936
+ 12/156 [=>............................] - ETA: 1:00 - loss: 0.0349 - accuracy: 0.9926
+ 16/156 [==>...........................] - ETA: 59s - loss: 0.0377 - accuracy: 0.9919 
+ 20/156 [==>...........................] - ETA: 57s - loss: 0.0399 - accuracy: 0.9919
+ 24/156 [===>..........................] - ETA: 54s - loss: 0.0492 - accuracy: 0.9896
+ 28/156 [====>.........................] - ETA: 53s - loss: 0.0454 - accuracy: 0.9903
+ 32/156 [=====>........................] - ETA: 53s - loss: 0.0476 - accuracy: 0.9900
+ 36/156 [=====>........................] - ETA: 52s - loss: 0.0500 - accuracy: 0.9894
+ 40/156 [======>.......................] - ETA: 50s - loss: 0.0504 - accuracy: 0.9894
+ 44/156 [=======>......................] - ETA: 47s - loss: 0.0488 - accuracy: 0.9898
+ 48/156 [========>.....................] - ETA: 46s - loss: 0.0476 - accuracy: 0.9899
+ 52/156 [=========>....................] - ETA: 45s - loss: 0.0457 - accuracy: 0.9903
+ 56/156 [=========>....................] - ETA: 42s - loss: 0.0447 - accuracy: 0.9905
+ 60/156 [==========>...................] - ETA: 40s - loss: 0.0441 - accuracy: 0.9907
+ 64/156 [===========>..................] - ETA: 39s - loss: 0.0449 - accuracy: 0.9905
+ 68/156 [============>.................] - ETA: 38s - loss: 0.0442 - accuracy: 0.9907
+ 72/156 [============>.................] - ETA: 35s - loss: 0.0434 - accuracy: 0.9910
+ 76/156 [=============>................] - ETA: 34s - loss: 0.0433 - accuracy: 0.9910
+ 80/156 [==============>...............] - ETA: 32s - loss: 0.0437 - accuracy: 0.9909
+ 84/156 [===============>..............] - ETA: 30s - loss: 0.0440 - accuracy: 0.9909
+ 88/156 [===============>..............] - ETA: 28s - loss: 0.0429 - accuracy: 0.9911
+ 92/156 [================>.............] - ETA: 27s - loss: 0.0437 - accuracy: 0.9909
+ 96/156 [=================>............] - ETA: 25s - loss: 0.0435 - accuracy: 0.9910
+100/156 [==================>...........] - ETA: 23s - loss: 0.0442 - accuracy: 0.9909
+104/156 [===================>..........] - ETA: 22s - loss: 0.0435 - accuracy: 0.9911
+108/156 [===================>..........] - ETA: 20s - loss: 0.0431 - accuracy: 0.9912
+112/156 [====================>.........] - ETA: 18s - loss: 0.0430 - accuracy: 0.9912
+116/156 [=====================>........] - ETA: 17s - loss: 0.0419 - accuracy: 0.9914
+120/156 [======================>.......] - ETA: 15s - loss: 0.0422 - accuracy: 0.9913
+124/156 [======================>.......] - ETA: 13s - loss: 0.0425 - accuracy: 0.9913
+128/156 [=======================>......] - ETA: 11s - loss: 0.0418 - accuracy: 0.9913
+132/156 [========================>.....] - ETA: 10s - loss: 0.0412 - accuracy: 0.9915
+136/156 [=========================>....] - ETA: 8s - loss: 0.0409 - accuracy: 0.9915 
+140/156 [=========================>....] - ETA: 6s - loss: 0.0419 - accuracy: 0.9913
+144/156 [==========================>...] - ETA: 5s - loss: 0.0430 - accuracy: 0.9911
+148/156 [===========================>..] - ETA: 3s - loss: 0.0424 - accuracy: 0.9912
+152/156 [============================>.] - ETA: 1s - loss: 0.0426 - accuracy: 0.9911
+156/156 [==============================] - 70s 448ms/step - loss: 0.0428 - accuracy: 0.9911 - val_loss: 0.3161 - val_accuracy: 0.9413
+-
+Input sentence: appened user1,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Hi,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Hello,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Hey,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Yo,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What's up?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How are you?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What are you doing?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Can you help me?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How's your day.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: It's nice to meet you.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Greetings.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Good morning.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Good afternoon.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Good evening.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: It's a pleasure to meet you.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Morning!,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How are things with you?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What's new?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: It's good to see you.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What's happening?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How's it going?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Salute.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How's life?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How have you been?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Are you ok?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: By what library and how can I scrape texts on an HTML by its heading and paragraph tags?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What library should i use to download a copy of Gmail emails through Python script? ,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Can you recommend what Python library to use for accessing AMQP (RabbitMQ)? From my research pika seems to be the preferred one.,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What is the simplest way - or library - to add a subscriber to mailchimp with python 2.5 on google app engine?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What's a good Python library to manipulate frames of a video file?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What library can I use to implement event driven programming in Python?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What would be a good python library to use to write a portable version of pacman with nice graphics?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to convert HTML CSS class into style in pure python - what kind of library could be used on GAE,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Any library to Tidy Up Python Code using pep8 conventions?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I have a database of which products every user has viewed and I want to recommend a product based on what similar users have viewed. Is there a Python library that can achieve this?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: what python library should we use to extract table with complex headers from a PDF?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Python - Any Library to create mp3 files?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What is the best library in python to use to interface with a SQL database?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What SOAP client libraries exist for Python?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What would be the best Python library to use when producing text-based images requiring things such as leading, kerning, outlines, drop-shadows, etc?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What libraries are good for audio feature vector representation? ,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What is the python library used to write rest service in python? ,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Are there any NLP library to convert contractions words back?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I would like to generate a heatmap in python with the axis labels being the field names and the rows names.What is the recommended library to use for that task?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What lightweight python library for simple scientific visualization in 3D,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What library is the fastest to make hundreds of DNS queries in multi-tasking.,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Which library must i import for s = Sound()?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Which library to import in Python to read data from an Excel file, for automation testing using Selenium?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What stable Python library can I use to implement Hidden Markov Models? ,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Best Python library for statistical inference?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What Python library can help visualize/render a 4d (coordinates+position) matrix?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What I'm looking for is a Python web development framework that is integrated with an ORM, is able to generate the interfaces BUT provides an easy way for me to customize the interface to create an AJAX intensive app","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Python - Best GUI library for the job?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What networking libraries/frameworks exist for Python?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I have been using Django for web-development, and have become quite fond of that framework. However, I would like to use a similar framework but for more general network applications. Is there such a framework? ",
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence:  I get this error:
+
+TypeError: '<' not supported between instances of 'int' and 'list'","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: So, here is the code I am running and it's giving me a TypeError. I am trying to traverse a 2d array and then returning the path from starting point to the target point. This is the error I am getting:
+
+path = Grid.main(*Grid.get_start_cordinates())
+
+TypeError: get_start_cordinates() missing 1 required positional argument: 'self'",
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence:  Can someone explain what is a memory error, and how to overcome this problem?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: What does SyntaxError: Missing parentheses in call to 'print' mean in Python?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: input() error - NameError: name '' is not defined,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: input() error - NameError: name '' is not defined,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I'm getting Key error in python.Can anyone please explain why this is happening? KeyError: 'variablename',
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Whenever I try to import requests, I get an error saying ImportError: No module named requests.",
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: When I try to run the code it gives me the following error:   'dict' object has no attribute 'iteritems' ,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to fix Python Enum - AttributeError(name) from None error?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: IndentationError: unindent does not match any outer indentation level. What does this mean and how it can be corrected,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Do you mean that I should either use tabs or space in a code and not both because this confuses the compiler.,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I am getting an AttributeError in python and I cannot figure out why. I am a newb to Python so the bar is not very high for stumping me. I keep getting the error message: AttributeError:<obj name> object has no attribute <attname>,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence:  I have a .py file for each function I need to use in a program.
+In this program, I need to call the function from the external files.
+But I get the error:
+ImportError: No module named 'file.py'; file is not a package","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: str' object has no attribute 'decode'. Python 3 error? AttributeError: 'str' object has no attribute 'decode',"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: But have got no idea to solve the error.TypeError: unhashable type: 'list',
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: tried reduce(xor, [1,2,3,4]) got the following error NameError: name 'reduce' is not defined in Python","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: TypeError: Can't convert 'int' object to str implicitly. Does anyone know how to solve this? Thanks ahead.,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I'm trying learn Python (3 to be more specific) and I'm getting this error:
+ValueError: zero length field name in format
+I googled it and I found out you need to specify the numbers","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: here is the error I get: IndexError: list index out of range,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I am trying to read in a JSON file into Python pandas (0.14.0) data frame.I am getting the following error: ValueError: Trailing data,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: When I execute this Python code I am getting EOFError: EOF when reading a line,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: For the entire time-series I'm trying to divide today's value by yesterdays and log the result using the following:
+
+df[""B""] = math.log(df[""A""] / df[""A""].shift(1))
+However I get the following error:
+
+TypeError: cannot convert the series to <class 'float'>
+Could someone let me know how to fix this please?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: My code generates this error:
+
+TypeError: wrapper() takes exactly 1 argument (2 given)
+I know I'm creating the api instance correctly as I'm using it to successfully call the linode_ip_list method prior to calling the disk list method.
+
+Just to see what happens, if I don't provide the linode_id argument, I get this error:
+
+linode.api.MissingRequiredArgument: 'LinodeID'
+If I call the method with a linode ID, the error says I'm giving it two arguments. But if I don't give it any arguments, it says I'm missing an argument. At this point, I'm not sure if the LinodeID should be an integer or a string but I get the same error in either case. How do I call this method so that I don't get the TypeError argument?
+
+Thanks!","
+Decoded sentence: The arser to matis decings moruler, whec shen definemen the fulce suntisn', etrites as ETded formenter.",
+
+-
+Input sentence: It all pretty much runs smoothly but I can't figure out how to stop a type-error ocurring about half way through.TypeError: unsupported operand type(s) for +: 'int' and 'str',"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I am trying to write an assert function in Python to test whether the output of my function is a particular array of values.
+
+Using assert simulate(15,0,3) == np.array([15.,15.,15.,15.]), I get the following error:
+
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Throws this error message:
+ValueError: setting an array element with a sequence.
+Can anyone show me what to do to fix the problem in the broken code above so that it stops throwing an error message?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: I'm getting the following error when executing the following script:TypeError: 'NoneType' object is not iterable,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Why am I getting 'str' object is not callable?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: Why am I getting the error ""TypeError: list indices must be integers or slices, not str""? But if I change the values in the list to integers, wouldn't doing items.remove(items[1]) just remove the item in index position 1?","
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write inline if statement for print?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write the Fibonacci Sequence?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write header row with csv.DictWriter?,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write a cell with multiple columns in xlwt?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write a multidimensional array to a text file?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write a nested dictionary to json,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write to a binary file?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write string on .Doc file,
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write subprocess results to a file?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write output data into pdf?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write a pep8 configuration (pep8.rc) file?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write labels in Arabic tkinter Combobox?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write if statement with *args?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",
+
+-
+Input sentence: How to write the requirements.txt file with --no-binary?,"
+Decoded sentence: The arser on unge defilis (ando becelasy to ereme teat object fan the stremenged unct. Andind eres to mand arge to perode for Byous intounct as and and acring to mething in erate becauses lo atrre. mopetabees coplist mempitss of you're write statement.",

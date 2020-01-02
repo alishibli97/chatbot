@@ -7,8 +7,10 @@ with open("annotations.json") as json_file:
     # e_7 -> greetings [0] -> label[0]
     # e_8 -> library [1] -> label[1]
     # e_9 -> error [2] -> label[2]
-    # e_12 -> methods [5] -> label[3]
-    # e_13 -> directory [6] -> label[4]
+    # e_10 -> syntax [3] -> label[3]
+    # e_11 -> interpreted [4] -> label[4]
+    # e_12 -> methods [5] -> label[5]
+    # e_13 -> directory [6] -> label[6]
     
     labels={
         "Greetings": [0,[]],
@@ -30,6 +32,8 @@ with open("annotations.json") as json_file:
             if value not in labels["Error"][1]: labels["Error"][1].append(value)
         elif(item["classId"]=="e_10"):
             if value not in labels["Syntax"][1]: labels["Syntax"][1].append(value)
+        elif(item["classId"]=="e_11"):
+            if value not in labels["Interpreted"][1]: labels["Interpreted"][1].append(value)
         elif(item["classId"]=="e_12"):
             if value not in labels["Methods"][1]: labels["Methods"][1].append(value)
         elif (item["classId"]=="e_13"):
@@ -60,17 +64,18 @@ with open("annotations.json") as json_file:
                     if(x is not None): 
                         cat_found.append(category)
                         break
-            print(cat_found)
-            if(cat_found==["Greetings"]): print("Belongs to Greetings, category 0.")
+            print("Categories found: ",cat_found)
+            if(cat_found==[]): print("Please be more precise.")
+            elif(cat_found==["Greetings"]): print("Belongs to Greetings, category 0.")
             elif (len(cat_found)>=1):
                     if("Greetings" in cat_found): cat_found.remove("Greetings")
-                    if(len(cat_found)==1): print("Belongs to {}.".format(cat_found[0]))
-                    elif("Error" in cat_found): print("Belongs to Error, category 1.")
-                    elif("Syntax" in cat_found): print("Belongs to Syntax, category 2.")
-                    elif("Interpreted" in cat_found): print("Belongs to Intepreted, category 3.")
-                    elif("Directory" in cat_found): print("Belongs to Directory, category 4.")
+                    if(len(cat_found)==1): print("Belongs to {}, category {}.".format(cat_found[0],labels[cat_found[0]][0]))
+                    elif("Error" in cat_found): print("Belongs to Error, category 2.")
+                    elif("Syntax" in cat_found): print("Belongs to Syntax, category 3.")
+                    elif("Interpreted" in cat_found): print("Belongs to Interpreted, category 4.")
+                    elif("Directory" in cat_found): print("Belongs to Directory, category 6.")
                     elif("Methods" in cat_found): print("Belongs to Methods, category 5.")
-                    else: print("Belongs to Library, category 6.")
+                    else: print("Belongs to Library, category 1.")
         else: break
         
         
