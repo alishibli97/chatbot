@@ -48,16 +48,18 @@ class Application(tk.Frame):
         self.k = []
         self.threshold = [0.5, 0.55, 0.55, 0.5]
         self.vectorizers = []
+        self.dff = []
         self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
         for cat in range(3, 7):
             vectorizer = TfidfVectorizer(stop_words=['a', 'the', 'python', 'should', 'want', 'use', 'pron'],
                                          ngram_range=(1, 1))
             self.vectorizers.append(vectorizer)
-            self.dff = self.df[self.df['Type'] == cat]
-            self.dff = self.dff.reset_index(drop=True)
-            corpus = list(self.dff['user1'])
+            df1 = self.df[self.df['Type'] == cat]
+            df1 = df1.reset_index(drop=True)
+            self.dff.append(df1)
+            corpus = list(df1['user1'])
             lemmatized_corpus = self.lemmatize_text(corpus)
-            X = self.vectorizer.fit_transform(lemmatized_corpus)
+            X = vectorizer.fit_transform(lemmatized_corpus)
             self.k.append(csr_matrix(X).toarray())
 
     # this function is for creating the GUI widgets
@@ -265,7 +267,7 @@ class Application(tk.Frame):
             scores = np.array(scores)
             index = scores.argsort()[-3:][::-1][0]
             if scores[index] > self.threshold[cat-3]:
-                return self.dff['user2'][index]
+                return self.dff[cat-3]['user2'][index]
             else:
                 return 'Sorry i cannot answer this question yet :)'
 
