@@ -34,7 +34,7 @@ class Chatbot():
         self.error_desc_vectors_arr=csr_matrix(self.error_desc_vectors).toarray()
             
         self.k = []
-        self.threshold = [0, 0.5, 0.55, 0.55, 0.5]
+        self.threshold = [0.8, 0.5, 0.55, 0.55, 0.5]
         self.vectorizers = []
         self.dff = []
         self.df = pd.read_csv("data.csv", encoding="ISO-8859-1")
@@ -163,7 +163,7 @@ class Chatbot():
                         
                         
                 if isAnswered==0:
-                    return 'Be more specific :)'
+                    return  'Sorry i cannot answer this question yet :)'
         else:
             c = 0 if cat == 0 else cat - 2
             lemmatized_qs = self.lemmatize_text([question])
@@ -177,7 +177,7 @@ class Chatbot():
                 if scores[index] > self.threshold[c]:
                     return self.dff[c]['user2'][index],scores[index]
                 else:
-                    return 'Sorry i cannot answer this question yet :)',[scores[index],self.dff[c]['user2'][index],self.vectorizers[c].inverse_transform(self.vectorizers[c].transform([qs.lower()]))]
+                    return 'Sorry i cannot answer this question yet :)'
 
     def classify_functional(self, question):
         cat = -1
