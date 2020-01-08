@@ -12,6 +12,22 @@ What is happening right now?,0,1
 How is life treating you?,0,1
 How've you been lately?,0,1
 Thanks!,0,1
+I want a library that helps me deal with complex numbers,1,1
+Please give me a library for statistical inference,1,1
+Can anyone suggest a library for visualization and plotting,1,1
+Possible library to create a nice graphics user interface,1,1
+Is there any framework that deals with web development,1,1
+I need the name of the library that helps parse html tags from webpages to extract data.,1,1
+What module should i import to use for enum,1,1
+Which module is capable of creating games with nice graphics,1,1
+I'm looking for a library that would allow me to edit a video file from python,1,1
+Does any library provide capability of automatically cleaning the code in pep8,1,1
+Can anyone assist me in finding a module to open excel spreadsheets in python,1,1
+What can i import to use N dimensional arrays,1,1
+What was the name of the library that allows using dataframes,1,1
+"Any recommended library to deal with dns, and other web related issues",1,1
+Good framework to enable sending http get and post requests,1,1
+"I have been using Django for web-development, and have become quite fond of that framework. However, I would like to use a similar framework but for more general network applications. Is there such a framework? ",1,1
 TypeError: '>=' not supported between instances of 'list' and 'int'. Hi I'm stuck with the above error. ,2,1
 "TypeError: '<=' not supported between instances of 'list' and 'int' Why is it not supported?
 Or did I miss something?",2,1
