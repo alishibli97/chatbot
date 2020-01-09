@@ -488,16 +488,16 @@ How to find the most recent edited file in Python?,"You should look at the os.wa
 I want to zip a file or a folder in Python. How do I do that?,The zipfile module in python has no support for adding a directory with file so you need to add the files one by one.,6,1
 How to create non-existing folder using OpenCV in Python?,cv2.imwrite() will not write an image in another directory if the directory does not exist. You first need to create the directory before attempting to write to it.,6,0
 How do I created a nested directory in Python?,"Try os.path.exists, and consider os.makedirs for the creation.",6,1
-How can we interpret weight,Sorry i cannot answer this question yet :),,1
-How can we write a song,Sorry i cannot answer this question yet :),,1
-How to interpret  a recursive function,Sorry i cannot answer this question yet :),,1
-How to write a gui interpreter,Sorry i cannot answer this question yet :),,1
-Where can I find hotdogs ,Sorry i cannot answer this question yet :),,1
-How can I lost weight,Sorry i cannot answer this question yet :),,1
-Can we transmit an AM signal in water?,Sorry i cannot answer this question yet :),,1
-What library do I use to paint paintings,Sorry i cannot answer this question yet :),,1
-How to fix a broken pipe in the kitchen?,Sorry i cannot answer this question yet :),,1
-How to create a function that flies?,Sorry i cannot answer this question yet :),,1
-How to write a TV program?,Sorry i cannot answer this question yet :),,1
-Can we have unlimited wishes in python?,Sorry i cannot answer this question yet :),,1
-How can we substitute humans with dogs?,Sorry i cannot answer this question yet :),,1
+How can we interpret weight,Sorry i cannot answer this question yet :),-1,1
+How can we write a song,Sorry i cannot answer this question yet :),-1,1
+How to interpret  a recursive function,Sorry i cannot answer this question yet :),-1,1
+How to write a gui interpreter,Sorry i cannot answer this question yet :),-1,1
+Where can I find hotdogs ,Sorry i cannot answer this question yet :),-1,1
+How can I lost weight,Sorry i cannot answer this question yet :),-1,1
+Can we transmit an AM signal in water?,Sorry i cannot answer this question yet :),-1,1
+What library do I use to paint paintings,Sorry i cannot answer this question yet :),-1,1
+How to fix a broken pipe in the kitchen?,Sorry i cannot answer this question yet :),-1,1
+How to create a function that flies?,Sorry i cannot answer this question yet :),-1,1
+How to write a TV program?,Sorry i cannot answer this question yet :),-1,1
+Can we have unlimited wishes in python?,Sorry i cannot answer this question yet :),-1,1
+How can we substitute humans with dogs?,Sorry i cannot answer this question yet :),-1,1
