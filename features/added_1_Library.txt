@@ -1,2 +1,6 @@
-(what|which) library
+fr(what|which) library
 (what|which|any|python|is\sthere|are\sthere|want|give\sme|best\recommended)(\s(\b\w*|\W*)){1,7}(library|libraries|module|modules|package|packages|frameworks|framework)
+module
+package
+import
+framework

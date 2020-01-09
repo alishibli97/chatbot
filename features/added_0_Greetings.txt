@@ -1,6 +1,6 @@
 yo!
 are you good
-how are you
+how('re|'ve|have|\sare) you (been)?
 I am good.
 good
 thank you
@@ -29,3 +29,8 @@ day
 (do|are|can) you
 where.*you
 afternoon
+how (are)?you doin
+(nice|pleasure) (seeing|meeting|to meet) you
+thank(s)?
+need help
+life

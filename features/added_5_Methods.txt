@@ -1,3 +1,4 @@
 how (to|can|do)
 method
 keys .* dictionary
+how (is|are) .* python
