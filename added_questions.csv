@@ -12,6 +12,22 @@ What is happening right now?,0,1
 How is life treating you?,0,1
 How've you been lately?,0,1
 Thanks!,0,1
+I want a library that helps me deal with complex numbers,1,1
+Please give me a library for statistical inference,1,1
+Can anyone suggest a library for visualization and plotting,1,1
+Possible library to create a nice graphics user interface,1,1
+Is there any framework that deals with web development,1,1
+I need the name of the library that helps parse html tags from webpages to extract data.,1,1
+What module should i import to use for enum,1,1
+Which module is capable of creating games with nice graphics,1,1
+I'm looking for a library that would allow me to edit a video file from python,1,1
+Does any library provide capability of automatically cleaning the code in pep8,1,1
+Can anyone assist me in finding a module to open excel spreadsheets in python,1,1
+What can i import to use N dimensional arrays,1,1
+What was the name of the library that allows using dataframes,1,1
+"Any recommended library to deal with dns, and other web related issues",1,1
+Good framework to enable sending http get and post requests,1,1
+"I have been using Django for web-development, and have become quite fond of that framework. However, I would like to use a similar framework but for more general network applications. Is there such a framework? ",1,1
 TypeError: '>=' not supported between instances of 'list' and 'int'. Hi I'm stuck with the above error. ,2,1
 "TypeError: '<=' not supported between instances of 'list' and 'int' Why is it not supported?
 Or did I miss something?",2,1
@@ -210,18 +226,14 @@ What does error TypeError: 'NoneType' object is not iterable mean?,2,1
 "Python: What “TypeError 'xxx' object is not callable” means?As a starting developer in Python I've seen this error message many times appearing in my console but I don't fully understand what does it means.
 
 Could anyone tell me, in a general way, what kind of action produces this error?",2,1
+I want to write a function that takes an argument and outputs its full path.,3,1
 How can we write Fibonacci Sequence in python?,3,1
 How to use csv.DictWriter to write a header row?,3,1
-How to save an array with multiple dimensions in a text file?,3,1
-How to save subprocess results in file?,3,1
 How to use pdf for writing results?,3,1
-How to add arguments to an if condition?,3,1
 How to write a module?,3,1
 How to write a nested set?,3,1
-How to save the result of os.walk in a file?,3,1
-How to use ezdxf?,3,1
 How to write elements to the array in Python How to add elements into an array?,3,1
-How do we read a csv file into panda series?,3,1
+How do I write function decorates in Python?,3,1
 How are imports interpreted?,4,1
 How are spaces interpreted?,4,1
 How can we make python realize that a function is a generator?,4,1
@@ -232,7 +244,11 @@ How are the byte limits interpreted in decoding?,4,1
 How to check python interpretation on web,4,1
 How are source files interpreted?,4,1
 How can I use apache for interpretation and display in browser?,4,1
-How do I write function decorates in Python?,5,1
+How to write a gui interpreter,4,1
+How to interpret  a recursive function,4,1
+How to add arguments to an if condition?,5,1
+How to use ezdxf?,5,1
+How to save an array with multiple dimensions in a text file?,5,1
 How are variables by reference passed in Python?,5,1
 How to select specific rows from dataframe based on particular columns?,5,1
 How are dictionaries merged in Python?,5,1
@@ -246,19 +262,32 @@ How can we get the path of the currently executed file in Python?,5,1
 How can we add a row to a dataframe in Python?,5,1
 I want to add extra column to numpy array. How do I do that?,5,1
 How do we insert a series into Python dataframe?,5,1
+How to discover if index exists in Python?,5,1
+How to decide if an index is writeable or not?,5,1
+How to save subprocess results in file?,6,1
+How do we read a csv file into panda series?,6,1
+How to save the result of os.walk in a file?,6,1
 By what method can I securely make a nested directory?,6,1
 How to discover current directory and file's directory?,6,1
-How to discover if index exists in Python?,6,1
 How would I get a list of everything in a given directory in Python?,6,1
 How would I iterate over records in a given directory?,6,1
 How to find script's directory in Python?,6,1
 How to import a class from a directory in Python?,6,1
 How do you calculate directory size in Python?,6,1
-How to decide if an index is writeable or not?,6,1
 How do we add files and folders to a zip file in Python?,6,1
 How do we create files and folders in python?,6,1
 I want to retrieve the filelist of a directory in Python. How can I do it?/,6,1
 How can I find the path of a file in Python?,6,1
-I want to write a function that takes an argument and outputs its full path.,6,1
 I want to zip a file or a folder in Python. How do I do that?,6,1
 How do I created a nested directory in Python?,6,1
+How can we interpret weight,-1,1
+How can we write a song,-1,1
+Where can I find hotdogs ,-1,1
+How can I lost weight,-1,1
+Can we transmit an AM signal in water?,-1,1
+What library do I use to paint paintings,-1,1
+How to fix a broken pipe in the kitchen?,-1,1
+How to create a function that flies?,-1,1
+How to write a TV program?,-1,1
+Can we have unlimited wishes in python?,-1,1
+How can we substitute humans with dogs?,-1,1
