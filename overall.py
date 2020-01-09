@@ -247,13 +247,11 @@ class Application(tk.Frame):
                     scores.append(1 - spatial.distance.cosine(item, csr_matrix(v).toarray()))
                 scores = np.array(scores)
                 for item in scores.argsort()[-3:][::-1]:
-                    if scores[item] > 0.3:
+                    if scores[item] > 0.45:
                         isAnswered = 1
                         if "pip install <package>" in self.error_df['how to solve'][item]:
                             try:
-                                return self.error_df['how to solve'][item].replace('<package>', re.search(
-                                    r'(?<=named\s)(.)*?(?=[\s;,.]*).*$', question.lower().replace("'", "")).group(
-                                    0))
+                                return self.error_df['how to solve'][item].replace('<package>',re.search(r'(?<=named\s)\s*(.)*?(?=([\s;,\.\n]|$))',question.lower().replace("'","")).group(0))
                             except:
                                    return self.error_df['how to solve'][item]
                         else:
