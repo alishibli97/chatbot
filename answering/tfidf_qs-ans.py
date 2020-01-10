@@ -44,6 +44,7 @@ k=csr_matrix(X).toarray()
 max(k[0])
 
 correct = 0
+correct_1 = 0
 correct_2 = 0
 
 from scipy import spatial
@@ -65,6 +66,7 @@ for i,qs in enumerate(lemmatized_qs):
             print(scores[item])
             if df['user2'][item] == df1['user2'][i]:
                 correct += 1
+			correct_1 += 1
             else:
                 print('wrong')
             break
@@ -76,9 +78,14 @@ for i,qs in enumerate(lemmatized_qs):
             else:
                 print('wrong')
             break
-    print()
-    print(correct_2)
-    print(correct)
-    print(len(df1))
-
+    
+print('Confusion Matrix:')
+print("\t\t\tAnswered\tDidn't Answer")
+print('Should Answer\t\t' + str(correct_1) + '\t\t' + str(len(df1) - 13 - correct_1))
+print("Shouldn't Answer\t" + str(13 - correct_2) + '\t\t' + str(correct_2))
+print('')
+print('Total Answered Correctly: ' + str(correct) + ' out of ' + str(len(df1)))
+print('')
+print('Recall: ' + str(correct_1/(len(df1) - 13)))
+print('Precision: ' + str(correct_1/(correct_1 + 13 - correct_2)))
 print('Accuracy: ' + str(correct/len(df1)))
